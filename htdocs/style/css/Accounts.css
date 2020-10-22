@@ -1,0 +1,335 @@
+.panel-Accounts_Apps .content {
+    position: absolute;
+    padding: 0px 10px 0 80px;
+    top: 51px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    background-color: #f7f7f7;
+    margin-left: 0;
+    border-radius: 0 0 4px 4px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+.panel-Accounts_Apps .content .item {
+    display: inline-block;
+    height: 256px;
+    width: 260px;
+    background-color: #fff;
+    margin-top: 40px;
+    margin-right: 70px;
+    text-align: center;
+    padding: 33px 0 22px 0;
+    box-sizing: border-box;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+}
+.panel-Accounts_Apps .content .item.qj {
+    background-image: url('../img/kis.png');
+}
+.panel-Accounts_Apps .content .item.zy {
+    background-image: url('../img/kiscloud.png');
+}
+.panel-Accounts_Apps .content .item.share {
+    background-image: url('../img/share.png');
+}
+.panel-Accounts_Apps .content .item.sm {
+    background-image: url('../img/sm.png');
+}
+.panel-Accounts_Apps .content .item.jgj {
+    background-image: url('../img/jgj.png');
+}
+.panel-Accounts_Apps .content .item.jxc {
+    background-image: url('../img/jxc.png');
+}
+.panel-Accounts_Apps .content .title {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 24px;
+    margin-top: 85px;
+    font-weight: bold;
+}
+.panel-Accounts_Apps .content .time,
+.panel-Accounts_Apps .content .company {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 22px;
+    margin: 0px 0 12px 0;
+}
+.panel-Accounts_Apps .content .company {
+    visibility: hidden;
+    margin: 0;
+    line-height: 18px;
+}
+.panel-Accounts_Apps .content .company.show {
+    visibility: visible;
+}
+.panel-Accounts_Apps .content .use {
+    height: 40px;
+    width: 130px;
+    background: #47C1F8;
+    border-radius: 4px;
+    color: #fff;
+}
+.panel-Accounts_Apps .content .use:hover {
+    background-color: #59C7F8;
+}
+.panel-Accounts_Apps .content .use:active {
+    background-color: #3FADDE;
+}
+
+.pro-delete .content {
+    margin: 20px 0 0 24px;
+}
+.pro-delete .cont-div {
+    margin-top: 24px;
+}
+.pro-delete .cont-div .cont-div-msg {
+    color: #7F848B;
+}
+.pro-delete .cont-div .cont-div-btn {
+    margin: 16px 0 0 16px;
+}
+.pro-delete .cont-div .cont-div-btn button {
+    margin-right: 10px;
+    margin-bottom: 4px;
+}
+.pro-delete .cont-div .cont-div-btn button.on {
+    color: #fff;
+    background-color: #47C1F8;
+}
+.pro-delete .cont-div .cont-div-btn button.long {
+    width: 184px;
+}
+.pro-delete .cont-div .cont-div-btn button.short {
+    width: 120px;
+}
+
+.pro-delete .content {
+    margin: 10px;
+}
+.pro-delete .content .cont-input {
+    margin-top: 24px;
+}
+.pro-delete .content .cont-input > span {
+    display: inline-block;
+    width: 68px;
+    margin-right: 0;
+}
+.pro-delete .content .first {
+    width: 240px;
+}
+.pro-delete .content .second {
+    width: 146px;
+}
+.pro-delete .content .send {
+    border-top: 1px solid #EAEFF3;
+    border-right: 1px solid #EAEFF3;
+    border-bottom: 1px solid #EAEFF3;
+    width: 96px;
+    height: 30px;
+    position: absolute;
+    line-height: 30px;
+    margin-left: 156px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.view-Accounts .nav-right button,
+.view-Accounts .nav-right .create,
+.view-Accounts .nav-right .recover {
+    display: inline-block;
+    line-height: 34px;
+}
+.view-Accounts .nav-right .recover {
+    margin-left: 16px;
+}
+.view-Accounts .nav-right .delete-tip {
+    display: inline-block;
+    position: absolute;
+    top: -20px;
+    right: -2px;
+    height: 18px;
+    width: 18px;
+    background: url(../img/del.png) no-repeat center;
+    background-size: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.view-Accounts .nav-right .hide {
+    display: none;
+}
+.view-Accounts .nav-right a {
+    margin-left: 16px !important;
+    display: inline-block !important;
+}
+.view-Accounts .nav-right a:hover {
+    background-color: #59C7F8 !important;
+}
+.view-Accounts .nav-right a:active {
+    background-color: #3FADDE !important;
+}
+.view-Accounts .main .main-tip {
+    margin-left: 64px;
+    margin-top: 16px;
+    color: #fff;
+    font-size: 15px;
+    background-color: #ff8503;
+    width: 380px;
+    padding: 3px 12px;
+}
+.view-Accounts .main .main-tip a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.view-Accounts .list {
+    position: relative;
+}
+.view-Accounts .list .table-thead .product-table tr {
+    height: 65px;
+}
+.view-Accounts .list .table-tbody tr td:first-child {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.view-Accounts .list .table-tbody .Global-tip a {
+    padding: 6px;
+}
+.view-Accounts .list .table-tbody .Global-tip .center {
+    bottom: -24px;
+}
+.view-Accounts .list .table-tbody.no-data {
+    background-position: center 136px;
+}
+.view-Accounts .list .no-data-add {
+    top: 400px;
+    position: absolute;
+    left: 50%;
+    margin-left: -80px;
+    font-size: 20px;
+    height: 50px;
+    width: 160px;
+}
+.view-Accounts .list .no-data-add button {
+    height: 50px;
+    width: 160px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+.view-Accounts .list .product-table tr td {
+    width: 10%;
+    position: relative;
+}
+.view-Accounts .list .product-table tr td .has-remark {
+    display: inline-block;
+    height: 19px;
+    line-height: 19px;
+    width: 16px;
+    text-align: center;
+    background: url(../img/question.png) no-repeat center;
+    vertical-align: top;
+}
+.view-Accounts .list .product-table tr td .no-remark {
+    display: none;
+}
+.view-Accounts .list .product-table tr td.editbar p {
+    display: none;
+}
+.view-Accounts .list .product-table tr td.editbar input {
+    display: inline-block;
+    width: 80%;
+    margin-right: 32px;
+}
+.view-Accounts .list .product-table tr td.editbar .icon {
+    background-image: url('../img/ok.png');
+}
+.view-Accounts .list .product-table tr td p {
+    margin-right: 32px;
+}
+.view-Accounts .list .product-table tr td input {
+    display: none;
+}
+.view-Accounts .list .product-table tr td .icon {
+    position: absolute;
+    top: 23px;
+    right: 0px;
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    cursor: pointer;
+    background-image: url('../img/edit.png');
+}
+.view-Accounts .list .product-table tr td.button button {
+    height: 24px;
+    margin: 0;
+    border-radius: 4px 0 0 4px;
+}
+.view-Accounts .list .product-table tr td.button .drop-btn-click {
+    vertical-align: middle;
+}
+.view-Accounts .list .product-table tr td.button .drop-btn-click span .has-some li.btn {
+    display: none;
+}
+.view-Accounts .list .product-table tr td.button.no-delete .delete {
+    display: none;
+}
+.view-Accounts .list .product-table tr td.button.gray .drop-btn-click button {
+    background-color: #d1d1d1;
+    cursor: not-allowed;
+}
+.view-Accounts .list .product-table tr td.button.gray .drop-btn-click span ul > li {
+    display: none;
+}
+.view-Accounts .list .product-table tr td.button.gray .drop-btn-click span ul > li.delete {
+    display: block;
+}
+.view-Accounts .list .product-table tr td.button.all-gray .drop-btn-click span:hover:after {
+    content: '';
+    margin-top: auto;
+    transform: rotate(0);
+    transition: all 0.3s ease;
+}
+.view-Accounts .list .product-table tr td.button.all-gray .drop-btn-click button {
+    background-color: #d1d1d1;
+    cursor: not-allowed;
+}
+.view-Accounts .list .product-table tr td.button.all-gray .drop-btn-click span {
+    background-color: #d1d1d1;
+    cursor: not-allowed;
+    height: 24px;
+    border-radius: 0 4px 4px 0;
+}
+.view-Accounts .list .product-table tr td.button.all-gray .drop-btn-click span ul {
+    display: none;
+}
+.view-Accounts .list .product-table tr td.long {
+    width: 20%;
+}
+.view-Accounts .list .product-table tr td.short {
+    width: 6%;
+}
+.view-Accounts .list .product-table tr td i {
+    cursor: pointer;
+    margin-left: 8px;
+    font-size: 1.7em;
+    color: #cecece;
+    position: absolute;
+}
+.view-Accounts .list .product-table tr td i:hover {
+    color: #47C1F8;
+}
+.view-Accounts .list .product-table tr.status-2 .btn-enable {
+    display: none;
+}
+.view-Accounts .list .product-table tr.status-3 .btn-disable,
+.view-Accounts .list .product-table tr.status-4 .btn-disable,
+.view-Accounts .list .product-table tr.status-5 .btn-disable {
+    display: none;
+}

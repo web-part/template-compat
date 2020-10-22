@@ -1,0 +1,177 @@
+<section data-view="/Accounts" class="view-Accounts" style="display: none;">
+    <nav data-panel="/Accounts/Header" class="common-nav">
+        <template>
+            <ul class="user-nav-ul">
+                <li data-cmd="company-list">
+                    <a>我的企业</a>
+                    <span></span>
+                </li>
+                <li data-cmd="product-list">
+                    <a title="{company}">{company}</a>
+                    <span></span>
+                </li>
+                <li data-cmd="account-list">
+                    <a title="{product}">{product}</a>
+                    <span></span>
+                </li>
+                <li>我的账套</li>
+            </ul>
+            <div class="nav-right">
+                <div class="create">
+                    <button data-cmd="create-account" class="primary">创建账套</button>
+                </div>
+                <div class="recover">
+                    <button data-cmd="recover-account" class="normal">恢复账套</button>
+                </div>
+                <!-- <span data-type="download" class="Global-tip on child orange">
+                    <a href="{plugin}" class="primary large">下载金蝶KIS云插件</a>
+                    <div class="tip right">
+                        <span data-type="delete-tip" class="delete-tip"></span>
+
+                        首次进入账套请下载插件，否则将无法进入账套！
+                    </div>
+                </span> -->      <!-- 跟需求确认把下载账套插件放到导航栏 -->
+            </div>
+        </template>
+    </nav>
+
+    <main data-panel="/Accounts/Main" class="main">
+        <!-- <p class="main-tip">
+            温馨提示：点击进入账套没反应时，请单击 <a data-type="plugin-href" href="#" class="primary large">下载账套插件</a>
+        </p> -->
+        <div class="list table-common">
+            <header class="table-thead">
+                <table class="product-table">
+                    <thead>
+                        <tr>
+                            <td rowspan="2" class="long">账套名称</td>
+                            <td rowspan="2" class="long">账套号</td>
+                            <td rowspan="2">账套大小</td>
+                            <td rowspan="2">使用状态</td>
+                            <td rowspan="2">操作</td>
+                        </tr>
+                    </thead>
+                </table>
+            </header>
+            <article data-panel="/Accounts/Main/List" class="table-tbody">
+                <template name="table" placeholder="table">
+                    <table class="product-table">
+                        <tbody>
+                            <template name="row" placeholder="rows">
+                                <tr data-index="{index}" class="status-{status}">
+                                    <td title="{name}" class="long" data-edit="{index}">
+                                        <input value="{name}"></input>
+                                        <p>{name}</p>
+                                        <i class="icon" data-index="{index}" data-cmd="edit"></i>
+                                    </td>
+                                    <td data-num="{index}" class="long Global-tip child">
+                                        <a data-index="{index}" data-cmd="apps" title="点击进入账套或应用列表">{number}</a>
+                                        <div class="tip center">
+                                            单击此进入账套或应用列表
+                                        </div>
+                                    </td>
+                                    <td>{usedSize}M</td>
+
+                                    <td class="{status-text-class}" title="{remark}">
+                                        <span>{status-text}</span>
+                                        <span class="{remark-status}"></span>
+                                        <template name="refresh" placeholder="refresh">
+                                            <span data-cmd="refresh" data-index="{index}" title="刷新状态">
+                                                <i class="fa fa-refresh "></i>
+                                            </span>
+                                        </template>
+                                    </td>
+
+                                    <td class="button {gray}">
+                                        <div data-type="{index}" class="drop-btn-click Global-tip own orange">
+                                            <button data-index="{index}" data-cmd="users">添加用户</button>
+                                            <span data-cmd="drop-span" data-index="{index}">
+                                                <ul class="{listClass}">
+                                                    <li data-index="{index}" class="bak" data-cmd="manual-bak">手动备份</li>
+                                                    <li data-index="{index}" class="delete" data-cmd="delete">删除账套</li>
+                                                    <li data-index="{index}" data-cmd="disable" class="btn btn-disable">禁用账套</li>
+                                                    <li data-index="{index}" data-cmd="enable" class="btn btn-enable">启用账套</li>
+                                                </ul>
+                                            </span>
+                                            <div class="tip right">
+                                                单击此添加其他用户进入账套
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </template>
+                <template name="add" placeholder="add">
+                    <div data-type="create-account" class="no-data-add Global-tip child orange">
+                        <button class="primary">创建账套</button>
+                        <div class="tip">
+                            单击此创建账套
+                        </div>
+                    </div>
+                </template>
+            </article>
+        </div>
+    </main>
+
+    
+    
+    <div data-panel="/Accounts/Apps" class="alert-common panel-Accounts_Apps" style="display: none;">
+    
+        <div data-panel="/Accounts/Apps/Content" class="content">
+    
+            <ul data-panel="/Accounts/Apps/Content/List">
+                <template>
+                    <li data-index="{index}" class="item {icon-class}">
+                        <p class="title">{name}</p>
+                        <p class="company {show}">公司名称：{company}</p>
+                        <p class="time">到期时间：{time}</p>
+                        <button data-index="{index}" data-cmd="use" class="use">使用</button>
+                    </li>
+                </template>
+            </ul>
+    
+        </div>
+    
+    
+    </div>
+    <div data-panel="/Accounts/Confirm" class="alert-common pro-delete" style="display: none;">
+        <div data-panel="/Accounts/Confirm/Content" class="content">
+            <!-- {describe} -->
+        </div>
+    
+        <div data-panel="/Accounts/Confirm/Footer" class="foot-right">
+            <button data-cmd="ok" class="normal">确定</button>
+            <button data-cmd="cancel" class="primary">取消</button>
+    
+        </div>
+    </div>
+    <div data-panel="/Accounts/Delete" class="alert-common pro-delete" style="display: none;">
+    
+        <div data-panel="/Accounts/Delete/Content" class="content">
+            <template>
+                <div class="content-msg">
+                    当前账套正在使用，如要删除账套，需进行手机验证
+                </div>
+                <div class="cont-input">
+                    <span>手机号码</span>
+                    <input name="phone" value="{phone}" type="text" class="first" maxlength="11" required readonly="readonly" title="当前号码为预绑定的手机号，无法进行修改。"
+                    />
+                </div>
+                <div class="cont-input">
+                    <span>验证码</span>
+                    <a data-cmd="send" class="send">发送验证码</a>
+                    <input name="code" value="{code}" type="text" class="second" maxlength="4" required disabled="disabled" />
+                </div>
+            </template>
+        </div>
+    
+        <div data-panel="/Accounts/Delete/Footer" class="foot">
+            <button data-cmd="ok" class="warning">确认删除</button>
+            <button data-cmd="cancel" class="false">取消</button>
+        </div>
+    </div>
+
+</section>

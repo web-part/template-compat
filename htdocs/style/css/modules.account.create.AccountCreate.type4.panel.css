@@ -1,0 +1,43 @@
+.pro-create-type4 {
+    width: 552px;
+}
+.pro-create-type4 .contanin .cont-input {
+    margin: 24px 0;
+}
+.pro-create-type4 .contanin .cont-input span {
+    color: #001400;
+}
+.pro-create-type4 .contanin .cont-input input {
+    height: 32px;
+}
+.pro-create-type4 .contanin .cont-input input[readonly] {
+    background-color: #F2F5F7;
+    cursor: not-allowed;
+}
+.pro-create-type4 .contanin .cont-input p {
+    color: #AAADB1;
+    margin-top: 8px;
+    margin-left: 96px;
+}
+.pro-create-type4 .contanin .store {
+    margin-top: 30px;
+}
+.pro-create-type4 .contanin .des {
+    color: #AAADB1;
+    margin-top: 8px;
+    padding-right: 20px;
+}
+.pro-create-type4 .contanin .check-box {
+    margin-right: 6px;
+}
+.pro-create-type4 .contanin .special {
+    color: #F55855;
+}
+.pro-create-type4 .foot {
+    position: absolute;
+    bottom: 26px;
+    right: 0;
+}
+.pro-create-type4 .foot button {
+    width: 96px;
+}

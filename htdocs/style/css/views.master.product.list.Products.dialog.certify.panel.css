@@ -1,0 +1,33 @@
+.pro-certify.no-dialog {
+    display: none!important;
+}
+.pro-certify .content {
+    margin: 32px 24px 12px 24px;
+    text-align: justify;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    color: #5a646e;
+}
+.pro-certify .cont-div {
+    margin-top: 24px;
+}
+.pro-certify .cont-div .cont-div-msg {
+    color: #7F848B;
+}
+.pro-certify .cont-div .cont-div-btn {
+    margin: 16px 0 0 16px;
+}
+.pro-certify .cont-div .cont-div-btn button {
+    margin-right: 10px;
+    margin-bottom: 4px;
+}
+.pro-certify .cont-div .cont-div-btn button.on {
+    color: #fff;
+    background-color: #47C1F8;
+}
+.pro-certify .cont-div .cont-div-btn button.long {
+    width: 184px;
+}
+.pro-certify .cont-div .cont-div-btn button.short {
+    width: 120px;
+}

@@ -1,0 +1,214 @@
+.view-Register .content {
+    min-height: 633px;
+    margin: 20px 64px 0 64px;
+    background: #fff;
+    padding: 0 64px;
+    overflow: hidden;
+}
+.view-Register .content .sel-box {
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-top: 64px;
+}
+.view-Register .content .sel-box.on {
+    margin-top: 0;
+}
+.view-Register .content .sel-box h3 {
+    height: 58px;
+    line-height: 58px;
+}
+.view-Register .content .sel-box h3 i {
+    float: left;
+    vertical-align: middle;
+    width: 12px;
+    height: 12px;
+    background-color: #25a6f7;
+    margin-top: 26px;
+}
+.view-Register .content .sel-box h3 span {
+    vertical-align: middle;
+    margin-left: 13px;
+    color: #777;
+    font-size: 17px;
+    font-weight: normal;
+}
+.view-Register .content .sel-box ul li {
+    float: left;
+    width: 25%;
+    height: 286px;
+    cursor: pointer;
+}
+.view-Register .content .sel-box ul li.on {
+    background: #f5fbff;
+    border-radius: 2px 2px 0 0;
+}
+.view-Register .content .sel-box ul li.on .sel-link .company {
+    background-color: #25a6f7;
+}
+.view-Register .content .sel-box ul li.on .sel-link .company i.sel-legal {
+    background-position: -186px -384px;
+}
+.view-Register .content .sel-box ul li.on .sel-link .company i.sel-commercial {
+    background-position: -431px 0;
+}
+.view-Register .content .sel-box ul li.on .sel-link .company i.sel-personal {
+    background-position: -431px -48px;
+}
+.view-Register .content .sel-box ul li.on .sel-link .company i.sel-other {
+    background-position: -431px -96px;
+}
+.view-Register .content .sel-box ul li.on .sel-link .sel-sub {
+    color: #25a6f7;
+}
+.view-Register .content .sel-box ul li:hover .sel-link .company {
+    background-color: #25a6f7;
+}
+.view-Register .content .sel-box ul li:hover .sel-link .company i.sel-legal {
+    background-position: -186px -384px;
+}
+.view-Register .content .sel-box ul li:hover .sel-link .company i.sel-commercial {
+    background-position: -431px 0;
+}
+.view-Register .content .sel-box ul li:hover .sel-link .company i.sel-personal {
+    background-position: -431px -48px;
+}
+.view-Register .content .sel-box ul li:hover .sel-link .company i.sel-other {
+    background-position: -431px -96px;
+}
+.view-Register .content .sel-box ul li:hover .sel-link .sel-sub {
+    color: #25a6f7;
+}
+.view-Register .content .sel-box ul li .sel-link {
+    display: block;
+    margin: 0 auto;
+    width: 148px;
+    border-radius: 4px;
+    transition: all 0.2s ease 0s;
+}
+.view-Register .content .sel-box ul li .sel-link .company {
+    position: relative;
+    margin: 23px auto 0 auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    line-height: 120px;
+    background-color: #ebf1f5;
+}
+.view-Register .content .sel-box ul li .sel-link .company i {
+    background-image: url('../img/reg-company.png');
+    position: absolute;
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 42px;
+    height: 46px;
+}
+.view-Register .content .sel-box ul li .sel-link .company i.sel-legal {
+    background-position: -230px -384px;
+}
+.view-Register .content .sel-box ul li .sel-link .company i.sel-commercial {
+    background-position: -431px -144px;
+}
+.view-Register .content .sel-box ul li .sel-link .company i.sel-personal {
+    background-position: -142px -432px;
+}
+.view-Register .content .sel-box ul li .sel-link .company i.sel-other {
+    background-position: -142px -384px;
+}
+.view-Register .content .sel-box ul li .sel-link .sel-sub {
+    height: 52px;
+    color: #666;
+    text-align: center;
+    font-size: 15px;
+    line-height: 52px;
+}
+.view-Register .content .sel-box ul li .sel-desc {
+    display: block;
+    margin: 0 auto;
+    width: 116px;
+    color: #acb2b5;
+    font-size: 0;
+}
+.view-Register .content .sel-box ul li .sel-desc i {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 8px;
+    width: 5px;
+    height: 5px;
+    background: #6dc2f7;
+    transform: rotate(45deg);
+}
+.view-Register .content .sel-box ul li .sel-desc span {
+    display: inline-block;
+    margin-left: 6px;
+    width: 105px;
+    font-size: 13px;
+    line-height: 21px;
+    cursor: pointer;
+}
+.view-Register .content .reg-box {
+    overflow: hidden;
+    height: 0;
+    background: #f5fbff;
+    transition: all 0.3s ease;
+    padding: 0 18px;
+}
+.view-Register .content .reg-box.on {
+    display: block;
+    height: 235px;
+}
+.view-Register .content .reg-box .reg-title {
+    height: 69px;
+    line-height: 93px;
+    font-size: 0;
+    border-bottom: 1px solid #e5ecf1;
+}
+.view-Register .content .reg-box .reg-title i {
+    display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    height: 12px;
+    background-color: #25a6f7;
+}
+.view-Register .content .reg-box .reg-title span {
+    vertical-align: middle;
+    margin-left: 13px;
+    color: #777;
+    font-size: 17px;
+    font-weight: normal;
+}
+.view-Register .content .reg-box .reg-form .reg-txt {
+    display: block;
+    padding: 0 15px;
+    margin-top: 35px;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+.view-Register .content .reg-box .reg-form .reg-btn-box {
+    margin: 32px 0 27px 0;
+    text-align: right;
+    font-size: 0;
+}
+.view-Register .content .reg-box .reg-form .reg-btn-box input {
+    width: 100px;
+    background-color: #f5fbff;
+    color: #3bc1f5;
+    border-color: #3bc1f5;
+}
+.view-Register .content .reg-box .reg-form .reg-btn-box .btn-approve {
+    margin-right: 9px;
+}
+.view-Register .content .reg-box .reg-form .reg-btn-box .btn-register {
+    cursor: pointer;
+}

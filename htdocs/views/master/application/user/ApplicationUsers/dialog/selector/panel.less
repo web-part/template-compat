@@ -1,0 +1,179 @@
+//你好
+.alert-common.application-add-user {
+    .content {
+        height: calc(100% - 135px);
+        margin-left: 0;
+        .pager {
+            text-align: right;
+            margin: 0px 20px 10px 0;
+        }
+        .cont-head {
+            margin-left: 24px;
+            margin-top: 8px;
+            span {
+                font-size: 14px;
+                color: #7F848B;
+            }
+            .search {
+                display: inline-block;
+                position: relative;
+                &.on {
+                    .search-img {
+                        display: none;
+                    }
+                    .close-img {
+                        display: inline-block;
+                    }
+                }
+                .search-input {
+                    height: 26px;
+                    padding-left: 8px;
+                }
+                .search-img {
+                    border: 0;
+                    right: 0;
+                    cursor: pointer;
+                }
+                .close-img {
+                    display: none;
+                    background: url(../img/close.png) no-repeat center;
+                    width: 30px;
+                    display: none;
+                    height: 30px;
+                    position: absolute;
+                    top: 1px;
+                    border: 0;
+                    right: 0;
+                    cursor: pointer;
+                }
+            }
+            .add {
+                height: 30px;
+                line-height: 30px;
+                margin-right: 16px;
+                float: right;
+                position: relative;
+                &.show {
+                    .darrow {
+                        display: inline-block;
+                    }
+                    .add-icon {
+                        display: inline-block;
+                    }
+                    .img {
+                        display: none;
+                    }
+                    .add-input {
+                        transition: 0.6s linear all;
+                        width: 240px;
+                    }
+                }
+                div {
+                    display: inline-block;
+                }
+                .add-icon {
+                    cursor: pointer;
+                    display: none;
+                    vertical-align: top;
+                    margin-right: 24px;
+                    span {
+                        color: #47C1F8;
+                    }
+                }
+                .darrow {
+                    display: none;
+                    margin-right: 24px;
+                    height: 12px;
+                    width: 12px;
+                    padding: 10px;
+                    background-image: url(../../style/img/darrow.png);
+                    background-repeat: no-repeat;
+                    vertical-align: middle;
+                    background-size: 12px;
+                    position: absolute;
+                    top: -1px;
+                    right: -30px;
+                    background-position: center;
+                }
+                .img {
+                    cursor: pointer;
+                    margin-right: 16px;
+                    padding: 0 6px;
+                    i {
+                        background-image: url(../../style/img/add.png);
+                        background-repeat: no-repeat;
+                        width: 16px;
+                        height: 16px;
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-top: -2px;
+                    }
+                    span {
+                        color: #47C1F8;
+                    }
+                }
+                .add-input {
+                    width: 0;
+                    overflow: hidden;
+                    float: left;
+                    white-space: nowrap;
+                    input {
+                        width: 92px;
+                        margin-right: 12px;
+                        border-color: #e0e0e0;
+                        height: 26px;
+                    }
+                }
+            }
+        }
+        .add-user-table {
+            margin: 0;
+            top: 18%;
+            td {
+                overflow: hidden;
+                width: 30%;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                &:first-child {
+                    width: 10%;
+                    overflow: visible;
+                }
+            }
+            .table-thead {
+                tr {
+                    height: 32px;
+                }
+            }
+            .table-tbody {
+                height: 416px;
+                tr {
+                    height: 52px;
+                    .Global-tip .tip {
+                        bottom: -18px;
+                        height: 24px;
+                        line-height: 24px;
+                    }
+                    &.checked {
+                        .check-box {
+                            background: url(../img/check.png) no-repeat;
+                            background-position: center;
+                        }
+                    }
+                    &.has-chosed {
+                        .check-box {
+                            background: url(../img/check.png) no-repeat;
+                            background-position: center;
+                            background-color: #ddd;
+                            cursor: not-allowed;
+                        }
+                    }
+                    span.keyword {
+                        color: red;
+                        margin: 0px;
+                        background: #f9e8e8;
+                    }
+                }
+            }
+        }
+    }
+}

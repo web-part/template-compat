@@ -1,0 +1,48 @@
+﻿<div data-panel="/Application/Forbidden" class="alert-common application-forbidden" style="display: none;">
+    <div data-panel="/Application/Forbidden/Content" class="content">
+
+
+        <div class="table-common forbidden-table">
+            <div class="table-thead" data-panel="/Application/Forbidden/Content/Head">
+                <p class="mes-tip">已启用用户数超过当前已购买用户数，请选择需要禁用的用户：</p>
+                <table class="product-table">
+                    <thead>
+                        <tr>
+                            <td>
+                                <span data-cmd="check" data-index="{index}" class="check-box"></span>
+                            </td>
+                            <td>手机号码</td>
+                            <td>用户姓名</td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div data-panel="/Application/Forbidden/Content/List" class="table-tbody">
+                <template name="table" placeholder="table">
+                    <table class="product-table">
+                        <tbody>
+                            <template name="row" placeholder="rows">
+                                <tr data-index="{index}" class="{chosed}">
+                                    <td data-type="{index}" class="Global-tip child">
+                                        <span data-cmd="check" data-index="{index}" class="check-box"></span>
+                                    </td>
+                                    <td title="{tel}">{tel}</td>
+                                    <td title="{name}">{name}</td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </template>
+            </div>
+        </div>
+        <div class="tips" data-cmd="no-data-tip">
+            <p class="no-data-tip no-data-img"></p>
+            <p class="tip-content">即将上架，敬请期待</p>
+        </div>
+    </div>
+
+    <div data-panel="/Application/Forbidden/Footer">
+        <button data-cmd="ok" class="primary">确认</button>
+        <button data-cmd="cancel" class="false">取消</button>
+    </div>
+</div>

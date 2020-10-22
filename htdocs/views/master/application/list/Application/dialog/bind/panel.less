@@ -1,0 +1,96 @@
+//绑定账套弹窗
+.application-bind {
+    /**没有二级列表时，隐藏。*/
+    .tips{
+        display: none;
+        text-align: center;
+        position: absolute;
+        top: 51px;
+        bottom: 0;
+        width: 100%;
+        background-color: #FFF;
+        font-size: 14px;
+        color: #aaa;
+        .no-data-img{
+            margin:180px auto auto auto;
+        }
+        .tip-content{
+            margin-top:10px;
+        }
+        &.show{
+            display: block;
+        }
+    }
+    article {
+        height: calc(100% - 85px);
+    }
+    .content {
+        height: 100%;
+        margin-left: 0;
+        .pager {
+            text-align: right;
+            margin: 0px 20px 10px 0;
+        }
+    }
+    .table-common {
+        height: calc(100% - 70px);
+    }
+    .bind-table {
+        margin: 0;
+        td {
+            overflow: hidden;
+            width: 30%;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            .radio.on ::after {
+                left: 50%;
+                margin-left: -5px;
+            }
+            .radio.gray {
+                i {
+                    background-color: #d1d1d1;
+                    cursor: not-allowed;
+                }
+            }
+            &:first-child {
+                width: 10%;
+                overflow: visible;
+            }
+        }
+        .table-thead {
+            tr {
+                height: 32px;
+            }
+        }
+        .table-tbody {
+            height: calc(100% - 28px);
+            tr {
+                height: 52px;
+                .Global-tip .tip {
+                    bottom: -18px;
+                    height: 24px;
+                    line-height: 24px;
+                }
+                &.checked {
+                    .check-box {
+                        background: url(../img/check.png) no-repeat;
+                        background-position: center;
+                    }
+                }
+                &.has-chosed {
+                    .check-box {
+                        background: url(../img/check.png) no-repeat;
+                        background-position: center;
+                        background-color: #ddd;
+                        cursor: not-allowed;
+                    }
+                }
+                span.keyword {
+                    color: red;
+                    margin: 0px;
+                    background: #f9e8e8;
+                }
+            }
+        }
+    }
+}

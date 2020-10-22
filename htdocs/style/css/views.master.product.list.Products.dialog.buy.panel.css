@@ -1,0 +1,25 @@
+.pro-buy .content {
+    margin-right: 24px;
+}
+.pro-buy .content .top {
+    height: 28px;
+    padding-top: 20px;
+    text-indent: 28px;
+}
+.pro-buy .content .cont-input {
+    margin: 24px 0;
+}
+.pro-buy .content .cont-input span.value {
+    color: #FF9800;
+}
+.pro-buy .content .cont-input input {
+    height: 24px;
+    border-color: #cecdcd;
+    width: 180px;
+}
+.pro-buy .content .cont-input input[readonly] {
+    cursor: text;
+}
+.pro-buy .foot {
+    text-align: center;
+}

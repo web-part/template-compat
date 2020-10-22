@@ -1,0 +1,36 @@
+﻿<div data-panel="/Products/Add" class="alert-common pro-add" style="display: none;">
+    <div data-panel="/Products/Add/Content" class="content">
+
+        <div class="cont-div">
+            <div class="cont-div-msg">选择产品</div>
+            <div data-panel="/Products/Add/Content/Types" class="cont-div-btn">
+                <template>
+                    <button data-index="{index}" class="normal long {disabled}" title="{title}">{name}</button>
+                </template>
+            </div>
+        </div>
+
+        <div class="cont-div items">
+            <div class="cont-div-msg">选择产品</div>
+            <div data-panel="/Products/Add/Content/Items" class="cont-div-btn">
+                <template>
+                    <button data-index="{index}" class="normal long">{name}</button>
+                </template>
+            </div>
+        </div>
+
+        <div class="cont-div hide">   <!-- 选择区域暂时隐藏 -->
+            <div class="cont-div-msg">选择区域</div>
+            <div data-panel="/Products/Add/Content/Regions" class="cont-div-btn">
+                <template>
+                    <button data-index="{index}" data-enabled="{enabled}" class="normal short {forbid-class}">{name}</button>
+                </template>
+            </div>
+        </div>
+    </div>
+
+    <div data-panel="/Products/Add/Footer" class="foot-right">
+        <button class="primary">保存</button>
+        
+    </div>
+</div>

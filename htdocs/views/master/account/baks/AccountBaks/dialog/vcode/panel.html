@@ -1,0 +1,25 @@
+﻿<div data-panel="/AccountBaks/VCode" class="alert-common baks-delete" style="display: none;">
+
+    <div data-panel="/AccountBaks/VCode/Content" class="content">
+        <template>
+            <div class="content-msg">
+                如要{action}账套备份文件，需进行手机验证
+            </div>
+            <div class="cont-input">
+                <span>手机号码</span>
+                <input name="phone" type="text" class="first" maxlength="11" required readonly="readonly" title="当前号码为预绑定的手机号，无法进行修改。"
+                />
+            </div>
+            <div class="cont-input">
+                <span>验证码</span>
+                <a data-cmd="send" class="send">发送验证码</a>
+                <input name="code" value="{code}" type="text" class="second" maxlength="4" required disabled="disabled" />
+            </div>
+        </template>
+    </div>
+
+    <div data-panel="/AccountBaks/VCode/Footer" class="foot">
+        <button data-cmd="ok" class="warning">确认{action}</button>
+        <button data-cmd="cancel" class="false">取消</button>
+    </div>
+</div>

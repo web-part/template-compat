@@ -1,0 +1,218 @@
+.view-Companys {
+    height: 100%;
+}
+.view-Companys nav {
+    height: 72px;
+    background-color: #ffffff;
+    padding-left: 64px;
+    font-size: 16px;
+}
+.view-Companys nav .nav-right {
+    margin: 20px 64px 16px 0;
+    display: inline-block;
+    float: right;
+    cursor: pointer;
+}
+.view-Companys nav .nav-right.right-reg {
+    margin: 25px 24px 16px 0;
+}
+.view-Companys nav .nav-right .add {
+    background: url('../img/add.png') no-repeat center;
+    width: 21px;
+    display: inline-block;
+    height: 21px;
+    position: absolute;
+}
+.view-Companys nav .nav-right a {
+    margin-left: 24px;
+}
+.view-Companys nav .user-nav-ul {
+    padding-top: 25px;
+    display: inline-block;
+}
+.view-Companys nav .user-nav-ul li {
+    display: inline-block;
+}
+.view-Companys nav .user-nav-ul li a {
+    cursor: inherit;
+}
+.view-Companys nav .user-nav-ul li > span {
+    background: url('../img/right.png') no-repeat center;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+}
+.view-Companys .main {
+    font-size: 14px;
+}
+.view-Companys .main .warning {
+    color: #fff;
+    font-size: 15px;
+    margin: 30px 0px 0 80px;
+    background-color: #ff8503;
+    width: 802px;
+    padding: 3px 12px;
+}
+.view-Companys .main .reg-button {
+    display: none;
+}
+.view-Companys .main.no-company {
+    position: relative;
+}
+.view-Companys .main.no-company .warning {
+    display: none;
+}
+.view-Companys .main.no-company .reg-button {
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -60px;
+    left: 50%;
+    margin-left: -140px;
+}
+.view-Companys .main.no-company .reg-button a {
+    display: block;
+    width: 280px;
+    height: 80px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #47C1F8;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.view-Companys .main.no-company .list {
+    display: none;
+}
+.view-Companys .main .list {
+    margin: 16px 54px 0 64px;
+}
+.view-Companys .main .list .item {
+    position: relative;
+    background-color: #ffffff;
+    width: 47%;
+    height: 190px;
+    border-radius: 4px;
+    margin: 16px 0 0 16px;
+    display: inline-block;
+    cursor: pointer;
+}
+.view-Companys .main .list .item:hover {
+    background-color: #e7f6fd;
+}
+.view-Companys .main .list .item::before {
+    content: '';
+    width: 52px;
+    height: 52px;
+    float: right;
+    background-repeat: no-repeat;
+}
+.view-Companys .main .list .item.status-0::before {
+    background-image: url('../img/status0.png');
+}
+.view-Companys .main .list .item.status-1::before {
+    background-image: url('../img/status1.png');
+}
+.view-Companys .main .list .item.status-1 .commit {
+    display: none;
+}
+.view-Companys .main .list .item.status-2::before {
+    background-image: url('../img/status2.png');
+}
+.view-Companys .main .list .item.status-2 .commit {
+    display: none;
+}
+.view-Companys .main .list .item.status-3::before {
+    background-image: url('../img/status3.png');
+}
+.view-Companys .main .list .item .top {
+    padding: 28px 0 0 24px;
+    font-size: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.view-Companys .main .list .item .top img {
+    width: 80px;
+    height: 80px;
+}
+.view-Companys .main .list .item .top .com-msg {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 24px;
+    width: calc(100% - 132px);
+    box-sizing: border-box;
+}
+.view-Companys .main .list .item .top .com-msg .msg-title {
+    color: #2A323D;
+    font-size: 16px;
+    margin-top: 6px;
+    height: 42px;
+}
+.view-Companys .main .list .item .top .com-msg .msg-title .commit,
+.view-Companys .main .list .item .top .com-msg .msg-title .update {
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 2px 4px;
+    margin-left: 4px;
+    white-space: nowrap;
+}
+.view-Companys .main .list .item .top .com-msg .msg-title .commit {
+    border: 1px solid #ff8503;
+    color: #ff8503;
+}
+.view-Companys .main .list .item .top .com-msg .msg-title .commit:hover {
+    background-color: #fceee1;
+}
+.view-Companys .main .list .item .top .com-msg .msg-title .commit:active {
+    background-color: #fae0c8;
+}
+.view-Companys .main .list .item .top .com-msg .msg-title .update {
+    border: 1px solid #17d35f;
+    color: #17d35f;
+}
+.view-Companys .main .list .item .top .com-msg .msg-title .update:hover {
+    background-color: #c5f7d7;
+}
+.view-Companys .main .list .item .top .com-msg .msg-title .update:active {
+    background-color: #aafac6;
+}
+.view-Companys .main .list .item .top .com-msg .msg-p {
+    color: #AAADB1;
+    margin: 10px 0 0 16px;
+    font-size: 14px;
+}
+.view-Companys .main .list .item .bottom {
+    float: right;
+    margin-right: 24px;
+    margin-top: 8px;
+}
+.view-Companys .main .list .item .bottom button {
+    width: 120px;
+    height: 32px;
+    display: block;
+    color: #47C1F8;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 4px;
+    border: 1px solid;
+}
+.view-Companys .main .list .item .bottom button:hover {
+    background-color: #e2f2fa;
+}
+.view-Companys .main .list .item .bottom button:active {
+    background-color: #abe2fa;
+}
+.view-Companys .main .list .item .delete {
+    position: absolute;
+    display: none;
+    bottom: 0px;
+    right: 12px;
+    height: 36px;
+    width: 36px;
+    background: url('../../style/img/del2.png') no-repeat center;
+}
+.view-Companys .main .list .item .delete.show {
+    display: inline-block;
+}

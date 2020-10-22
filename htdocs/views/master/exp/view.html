@@ -1,0 +1,51 @@
+﻿<section data-view="/Exp" class="view-Exp" style="display: none;">
+    <nav data-panel="/Exp/Header" class="common-nav">
+        <template>
+            <span class="user-nav">
+                体验账套
+            </span>
+            <!-- <div data-type="download" class="nav-right Global-tip on child orange">
+                <a href="{plugin}" class="primary large">下载金蝶KIS云插件</a>
+                <div class="tip right">
+                    <span data-type="delete-tip" class="delete-tip"></span>
+                    首次进入账套请下载插件，否则将无法进入账套！
+                </div>
+            </div> -->
+        </template>
+    </nav>
+    <div class="main">
+        <!-- <p class="warning">温馨提示：点击进入账套没反应时，请单击 <a href="http://downloads.cmcloud.cn/kis/kisplus/KISPlusClient.exe"  class="com-down">下载账套插件</a></p> -->
+
+        <article class="list table-common sub-msg">
+            <ul class="content-list-ul" data-panel="/Exp/Main" style="display: none;">
+                <template name="group" placeholder="groups">
+                        <div class="sub-content">
+                            <div class="content-titile">
+                                <span class="com-span">{name}</span>
+                            </div>
+                            <div class="content-list">
+                                <ul class="content-list-ul">
+                                    <template name="item" placeholder="items">
+                                        <li class="{class}">
+                                            <div class="list-company">
+                                                <p title="{name}" class="com-title">账套名称：{name}</p>
+                                                <p title="{desc}" class="com-msg">产品名称：{desc}</p>
+    
+                                            </div>
+                                            <div class="list-button">
+                                                <button data-no="{no}" data-index="{index}" class="normal large">开始使用</button>
+                                            </div>
+                                            <a class="to-yzj {yzj}" target="_blank" href="https://www.yunzhijia.com"></a>
+                                        </li>
+                                    </template>
+                                </ul>
+                            </div>
+                        </div>
+                    </template>
+            </ul>
+        </article>
+
+
+
+    </div>
+</section>

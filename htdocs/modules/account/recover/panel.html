@@ -1,0 +1,53 @@
+<div data-panel="/AccountRecover" class="pro-recover" style="display:none;">
+    <div data-panel="/AccountRecover/Content">
+        <div data-panel="/AccountRecover/Content/Header" class="header">
+            <sapn>产品名称：</sapn>
+            <div data-panel="/AccountRecover/Content/Header/DropList" class="drop-btn-spe"></div>
+        </div>
+        <ul data-panel="/AccountRecover/Content/Tabs" class="change-tab">
+            <li class="on" data-index="0">手动备份</li>
+            <li data-index="1">自动备份</li>
+        </ul>
+        <div data-type="table" class="table-common add-user-table">
+            <div class="table-thead">
+                <table class="product-table">
+                    <thead>
+                        <tr>
+                            <td>选择</td>
+                            <td>账套名称</td>
+                            <td>文件大小</td>
+                            <td>备份时间</td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div data-panel="/AccountRecover/Content/List" class="table-tbody">
+                <template name="table" placeholder="table">
+                    <table class="product-table">
+                        <tbody>
+                            <template name="row" placeholder="rows">
+                                <tr data-index="{index}">
+                                    <td data-type="{index}">
+                                        <span data-cmd="check" data-index="{index}" class="check-box"></span>
+                                    </td>
+                                    <td>{accountName}</td>
+                                    <td>{size}M</td>
+                                    <td>{time}</td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </template>
+            </div>
+        </div>
+        <div data-panel="/AccountRecover/Content/Pager" class="pager">
+            <div></div>
+        </div>
+    </div>
+
+    <div data-panel="/AccountRecover/Footer" class="recover-footer">
+        <button class="primary" data-cmd="sure">确认</button>
+        <button class="normal" data-cmd="cancel">取消</button>
+    </div>
+
+</div>

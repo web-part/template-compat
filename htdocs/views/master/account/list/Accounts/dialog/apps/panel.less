@@ -1,0 +1,83 @@
+.panel-Accounts_Apps {
+    .content {
+        position: absolute;
+        padding: 0px 10px 0 80px;
+        top: 51px;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        overflow-y: auto;
+        background-color: #f7f7f7;
+        margin-left:0;
+        border-radius: 0 0 4px 4px;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+        .item {
+            display: inline-block;
+            height: 256px;
+            width: 260px;
+            background-color: #fff;
+            margin-top: 40px;
+            margin-right: 70px;
+            text-align: center;
+            padding: 33px 0 22px 0;
+            box-sizing: border-box;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-origin: content-box;
+            &.qj {
+                background-image: url('../img/kis.png');
+            }
+            &.zy {
+                background-image: url('../img/kiscloud.png');
+            }
+            &.share {
+                background-image: url('../img/share.png');
+            }
+            &.sm {
+                background-image: url('../img/sm.png');
+            }
+            &.jgj {
+                background-image: url('../img/jgj.png');
+            }
+            &.jxc {
+                background-image: url('../img/jxc.png');
+            }
+        }
+        .title {
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.85);
+            line-height: 24px;
+            margin-top: 85px;
+            font-weight: bold;
+        }
+        .time,
+        .company {
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.65);
+            line-height: 22px;
+            margin: 0px 0 12px 0;
+        }
+        .company {
+            visibility: hidden;
+            margin: 0;
+            line-height: 18px;
+            &.show {
+                visibility: visible;
+            }
+        }
+        .use {
+            height: 40px;
+            width: 130px;
+            background: #47C1F8;
+            border-radius: 4px;
+            color: #fff;
+            &:hover {
+                background-color: #59C7F8;
+            }
+            &:active {
+                background-color: #3FADDE;
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+﻿<section data-view="/Auth" class="view-Auth" style="display: none;">
+    <nav data-panel="/Auth/Header" class="common-nav">
+        <template>
+            <ul class="user-nav-ul">
+                <li data-cmd="company-list">
+                    <a>我的企业</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a>{company}</a>
+                    <span></span>
+                </li>
+                <li>企业资料</li>
+            </ul>
+        </template>
+    </nav>
+
+
+    <div data-panel="/Auth/Main" class="main">
+        <div class="content">
+            <aside class="approve" style="display: block;">
+                <div class="icon"></div>
+                <div class="news">
+                    <h2>你的企业还没有提交认证</h2>
+                    <a class="link" href="http://cms.kingdeetech.com/?p=581" target="_blank">企业认证有什么用？</a>
+                    <p>按照国家相关法律法规要求，同时为了保护企业的合法权益，请您尽快完善企业档案并进行实名认证，认证后的企业将会享受更多的权益。</p>
+                    <p>认证时间 周一至周五：上午9:00 - 下午5:30，提交认证后，1个工作日内完成审核。</p>
+                    <i>认证遇到问题请拨打电话：4008-836-836</i>
+                </div>
+            </aside>
+            <article class="form-msg">
+                <form>
+                    
+                    <link rel="html" href="Auth/Main/base/panel.html" />
+                    <link rel="html" href="Auth/Main/user/panel.html" />
+                    <link rel="html" href="Auth/Main/auth/panel.html" />
+
+                    <div data-panel="/Auth/Main/Submit" class="form-btn">
+                        <button data-cmd="submit" class="normal">提交认证</button>
+                    </div>
+                </form>
+            </article>
+        </div>
+    </div>
+</section>

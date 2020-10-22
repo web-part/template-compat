@@ -1,0 +1,119 @@
+.pro-create-type3 {
+    width: 552px;
+}
+.pro-create-type3 .content {
+    margin: 0 32px;
+}
+.pro-create-type3 .content strong {
+    font-size: 15px;
+}
+.pro-create-type3 .content .header {
+    margin-top: 24px;
+}
+.pro-create-type3 .content .header ul li {
+    display: inline-block;
+    height: 40px;
+    background-repeat: no-repeat;
+    width: 244px;
+    background-size: 244px auto;
+}
+.pro-create-type3 .content .header .first {
+    background-image: url('../../style/img/spe1.png');
+}
+.pro-create-type3 .content .header .first.on {
+    background-image: url('../../style/img/spe1-on.png');
+}
+.pro-create-type3 .content .header .second {
+    background-image: url('../../style/img/spe2.png');
+}
+.pro-create-type3 .content .header .second.on {
+    background-image: url('../../style/img/spe2-on.png');
+}
+.pro-create-type3 .content .contanin .first,
+.pro-create-type3 .content .contanin .second,
+.pro-create-type3 .content .contanin .third {
+    display: none;
+}
+.pro-create-type3 .content .contanin .first.on,
+.pro-create-type3 .content .contanin .second.on,
+.pro-create-type3 .content .contanin .third.on {
+    display: block;
+}
+.pro-create-type3 .content .contanin .cont-input {
+    margin: 24px 0;
+}
+.pro-create-type3 .content .contanin .cont-input span {
+    color: #001400;
+}
+.pro-create-type3 .content .contanin .cont-input input {
+    height: 32px;
+}
+.pro-create-type3 .content .contanin .cont-input input[readonly] {
+    background-color: #F2F5F7;
+    cursor: not-allowed;
+}
+.pro-create-type3 .content .contanin .cont-input p {
+    color: #AAADB1;
+    margin-top: 8px;
+    margin-left: 96px;
+}
+.pro-create-type3 .content .contanin .second .one {
+    margin-top: 20px;
+}
+.pro-create-type3 .content .contanin .second .one .cont-input span {
+    width: 90px;
+    display: inline-block;
+}
+.pro-create-type3 .content .contanin .second .one .cont-input input {
+    width: 284px;
+    box-sizing: border-box;
+}
+.pro-create-type3 .content .contanin .second .two {
+    margin-top: 32px;
+}
+.pro-create-type3 .content .contanin .second .two .primary {
+    margin-left: 12px;
+}
+.pro-create-type3 .content .contanin .second .two .date {
+    margin: 20px 0;
+}
+.pro-create-type3 .content .contanin .second .two .date > span {
+    display: inline-block;
+    width: 136px;
+}
+.pro-create-type3 .content .contanin .second .two .date > div {
+    display: inline-block;
+}
+.pro-create-type3 .content .contanin .second .two .date .start input {
+    width: 84px;
+}
+.pro-create-type3 .content .contanin .second .two .date .start span {
+    margin-left: 20px;
+    color: grey;
+}
+.pro-create-type3 .content .contanin .second .two p {
+    margin-top: 30px;
+    color: grey;
+}
+.pro-create-type3 .foot {
+    float: none;
+    position: absolute;
+    bottom: 26px;
+    right: 0;
+}
+.pro-create-type3 .foot button {
+    width: 96px;
+}
+.pro-create-type3 .foot button.hide {
+    display: none;
+}
+.pro-create-type3 .foot .pre {
+    background-color: #F2F5F7;
+    color: #7F848B;
+}
+.pro-create-type3 .foot .create {
+    display: none;
+}
+.pro-create-type3 .foot .create.on {
+    display: inline-block;
+}

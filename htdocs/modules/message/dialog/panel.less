@@ -1,0 +1,62 @@
+.panel-Message {
+    background: #FFFFFF;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    position: absolute;
+    right: 10px;
+    z-index: 10;
+    top: 90px;
+    width: 357px;
+    padding-bottom: 9px;
+    .close {
+        background: url('../img/close.png') no-repeat center;
+        width: 26px;
+        height: 26px;
+        float: right;
+        cursor: pointer;
+        &:active {
+            background-size: 6px;
+        }
+    }
+    .content {
+        padding: 0 22px 0px 90px;
+        margin-bottom:9px;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.65);
+        line-height: 22px;
+        margin-top: 26px;
+        background: url('../img/message-a.png') no-repeat;
+        background-size: 73px 70px;
+        background-position: top 50% left 9px;
+        .title {
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.85);
+            line-height: 22px;
+            margin-bottom: 5PX;
+            font-weight: bold;
+        }
+        .detail {
+            display: -webkit-box;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            word-break: break-all;
+            text-align: justify;
+        }
+    }
+    .link {
+        display: block;
+        font-size: 14px;
+        color: #47C1F8;
+        text-align: left;
+        line-height: 22px;
+        text-align: center;
+        padding-right: 16px;
+        width: 64px;
+        float: right;
+        &:active {
+            font-size: 12px;
+        }
+    }
+}

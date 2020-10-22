@@ -1,0 +1,131 @@
+.panel-master {
+    height: calc(100% - 64px);
+    font-size: 0px;
+    position: relative;
+    &.hide {
+        .sidebar {
+            width: 40px;
+            transition: width 0.1s ease-in-out;
+            .sidebar-left {
+                .side-user {
+                    width: 40px;
+                    .change-user {
+                        margin-right: 0;
+                    }
+                    .user-img {
+                        width: 32px;
+                        height: 32px;
+                    }
+                    .user-msg span {
+                        display: none;
+                    }
+                }
+                .side-list .side-list-ul {
+                    .list-ul-second {
+                        display: none;
+                    }
+                    li {
+                        >div {
+                            padding-left: 12px;
+                        }
+                        &.on {
+                            >div {
+                                border-left: 4px solid #47C1F8;
+                                padding-left: 8px;
+                                .li-name {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .sidebar-right {
+                // left: 40px;
+                transition: left 0.05s;
+                left: 40px;
+            }
+        }
+        .views {
+            width: calc(100% - 40px);
+            transition: width 0.1s ease-in-out;
+        }
+    } //用户中心
+    .views {
+        position: relative;
+        section {
+            height: 100%;
+        }
+        display: inline-block;
+        background-color: #F2F5F7;
+        vertical-align: top;
+        width: calc(100% - 200px);
+        height: 100%;
+        .main {
+            letter-spacing: 0;
+            overflow-x: hidden;
+            overflow-y: auto;
+            height: calc(100% - 72px);
+            font-size: 14px;
+        }
+        .common-nav {
+            height: 72px;
+            line-height: 72px;
+            background-color: #ffffff;
+            padding-left: 36px;
+            font-size: 16px;
+            .nav-right {
+                display: inline-block;
+                float: right;
+                margin-right: 36px;
+                cursor: pointer;
+                .large {
+                    line-height: 34px;
+                }
+                &.right-reg {
+                    margin: 25px 24px 16px 0;
+                }
+                .add {
+                    background: url('../img/add.png') no-repeat center;
+                    width: 21px;
+                    display: inline-block;
+                    height: 21px;
+                    position: absolute;
+                }
+                a {
+                    margin-left: 24px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: #47C1F8;
+                    height: 32px;
+                    width: 136px;
+                    display: inline-block;
+                    text-align: center;
+                    line-height: 32px;
+                    border-radius: 4px;
+                    font-size: 14px;
+                }
+            }
+            .user-nav-ul {
+                display: inline-block;
+                li {
+                    display: inline-block;
+                    >a {
+                        max-width: 210px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+                    >span {
+                        background: url('../img/right.png') no-repeat center;
+                        display: inline-block;
+                        width: 13px;
+                        height: 13px;
+                    }
+                }
+            }
+        }
+    }
+}

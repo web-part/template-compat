@@ -1,0 +1,37 @@
+<section data-view="/AccountApps" class="view-AccountApps" style="display: none;">
+    <nav data-panel="/AccountApps/Header" class="common-nav">
+        <ul class="user-nav-ul">
+            <li data-cmd="company-list">
+                <a>我的企业</a>
+                <span></span>
+            </li>
+            <li data-cmd="product-list">
+                <a title="{company}">{company}</a>
+                <span></span>
+            </li>
+            <li data-cmd="account-list">
+                <a title="{product}">{product}</a>
+                <span></span>
+            </li>
+            <li data-cmd="refresh">
+                <a title="{account}">{account}</a>
+                <span></span>
+            </li>
+            <li>应用列表</li>
+        </ul>
+
+    </nav>
+    <div data-panel="/AccountApps/Main" class="main">
+        <ul data-panel="/AccountApps/Main/List" >
+            <template>
+                <li data-index="{index}" class="item {icon-class}">
+                    <p class="title">{name}</p>
+                    <p class="company {show}">公司名称：{company}</p>
+                    <p class="time">到期时间：{time}</p>
+                    <button data-index="{index}" data-cmd="use" class="use">使用</button>
+                </li>
+            </template>
+        </ul>
+    </div>
+
+</section>

@@ -1,0 +1,41 @@
+.pro-activate .content .top {
+    height: 28px;
+    padding-top: 20px;
+}
+.pro-activate .content .top .name {
+    font-size: 18px;
+    color: #47C1F8;
+}
+.pro-activate .content .top .status {
+    color: #ff8503;
+}
+.pro-activate .content .cont-input {
+    margin: 24px 0;
+}
+.pro-activate .content .cont-input > span {
+    margin-right: 16px;
+}
+.pro-activate .content .cont-input > span.spe {
+    margin-right: 18px;
+}
+.pro-activate .content .cont-input ul {
+    display: inline;
+    white-space: nowrap;
+}
+.pro-activate .content .cont-input ul li {
+    display: inline-block;
+}
+.pro-activate .content .cont-input ul li input {
+    height: 24px;
+    border-color: #cecdcd;
+    width: 73px;
+}
+.pro-activate .content .cont-input ul li input.spe {
+    width: 72px;
+}
+.pro-activate .content .cont-input ul li input.long {
+    width: 371px;
+}
+.pro-activate .foot {
+    text-align: center;
+}

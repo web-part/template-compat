@@ -1,0 +1,58 @@
+.application-purchase {
+    /**没有二级列表时，隐藏。*/
+}
+.application-purchase article {
+    height: calc(100% - 85px);
+}
+.application-purchase .content {
+    height: 100%;
+    margin-left: 0;
+}
+.application-purchase .content .pager {
+    text-align: right;
+    margin: 0px 20px 10px 0;
+}
+.application-purchase .table-common {
+    height: calc(100% - 50px);
+}
+.application-purchase .purchase-table {
+    margin: 0;
+}
+.application-purchase .purchase-table td {
+    overflow: hidden;
+    width: 30%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.application-purchase .purchase-table td:first-child {
+    overflow: visible;
+}
+.application-purchase .purchase-table .table-thead tr {
+    height: 32px;
+}
+.application-purchase .purchase-table .table-tbody {
+    height: calc(100% - 28px);
+}
+.application-purchase .purchase-table .table-tbody tr {
+    height: 52px;
+}
+.application-purchase .purchase-table .table-tbody tr .Global-tip .tip {
+    bottom: -18px;
+    height: 24px;
+    line-height: 24px;
+}
+.application-purchase .purchase-table .table-tbody tr.checked .check-box {
+    background: url(../img/check.png) no-repeat;
+    background-position: center;
+}
+.application-purchase .purchase-table .table-tbody tr.has-chosed .check-box {
+    background: url(../img/check.png) no-repeat;
+    background-position: center;
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+.application-purchase .purchase-table .table-tbody tr span.keyword {
+    color: red;
+    margin: 0px;
+    background: #f9e8e8;
+}

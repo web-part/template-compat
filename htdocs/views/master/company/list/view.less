@@ -1,0 +1,231 @@
+.view-Companys {
+    height: 100%;
+    nav {
+        height: 72px;
+        background-color: #ffffff;
+        padding-left: 64px;
+        font-size: 16px;
+        .nav-right {
+            margin: 20px 64px 16px 0;
+            display: inline-block;
+            float: right;
+            cursor: pointer;
+            &.right-reg {
+                margin: 25px 24px 16px 0;
+            }
+            .add {
+                background: url('../img/add.png') no-repeat center;
+                width: 21px;
+                display: inline-block;
+                height: 21px;
+                position: absolute;
+            }
+            a {
+                margin-left: 24px;
+            }
+        }
+        .user-nav-ul {
+            padding-top: 25px;
+            display: inline-block;
+            li {
+                display: inline-block;
+                a {
+                    cursor: inherit;
+                }
+                >span {
+                    background: url('../img/right.png') no-repeat center;
+                    display: inline-block;
+                    width: 13px;
+                    height: 13px;
+                }
+            }
+        }
+    }
+    .main {
+        font-size: 14px;
+        .warning {
+            color: #fff;
+            font-size: 15px;
+            margin: 30px 0px 0 80px;
+            background-color: #ff8503;
+            width: 802px;
+            padding: 3px 12px;
+        }
+        .reg-button {
+            display: none;
+        }
+        &.no-company {
+            // display: -webkit-box;
+            // -webkit-box-pack: center;
+            // -webkit-box-align: center;
+            position: relative; // top: -76px;
+            // height: calc(100% - 76px);
+            .warning {
+                display: none;
+            }
+            .reg-button {
+                display: block;
+                position: absolute;
+                top: 50%;
+                margin-top: -60px;
+                left: 50%;
+                margin-left: -140px;
+                a {
+                    display: block;
+                    width: 280px;
+                    height: 80px;
+                    font-size: 32px;
+                    font-weight: bold;
+                    color: #ffffff;
+                    background-color: #47C1F8;
+                    line-height: 80px;
+                    text-align: center;
+                    border-radius: 4px;
+                    text-decoration: none;
+                }
+            }
+            .list {
+                display: none;
+            }
+        }
+        .list {
+            margin: 16px 54px 0 64px;
+            .item {
+                position: relative;
+                background-color: #ffffff;
+                width: 47%;
+                height: 190px;
+                border-radius: 4px;
+                margin: 16px 0 0 16px;
+                display: inline-block;
+                cursor: pointer;
+                &:hover {
+                    background-color: #e7f6fd;
+                }
+                &::before {
+                    content: '';
+                    width: 52px;
+                    height: 52px;
+                    float: right;
+                    background-repeat: no-repeat;
+                } //企业认证状态，0为未认证，1为审核中，2通过认证，3未通过审核
+                //未认证。
+                &.status-0 {
+                    &::before {
+                        background-image: url('../img/status0.png');
+                    }
+                } //审核中。
+                &.status-1 {
+                    &::before {
+                        background-image: url('../img/status1.png');
+                    } //隐藏认证按钮。
+                    .commit {
+                        display: none;
+                    }
+                } //已认证。
+                &.status-2 {
+                    &::before {
+                        background-image: url('../img/status2.png');
+                    } //隐藏认证按钮。
+                    .commit {
+                        display: none;
+                    }
+                } //未通过审核（认证失败）。
+                &.status-3 {
+                    &::before {
+                        background-image: url('../img/status3.png');
+                    }
+                }
+                .top {
+                    padding: 28px 0 0 24px;
+                    font-size: 0;
+                    width: 100%;
+                    box-sizing: border-box;
+                    img {
+                        width: 80px;
+                        height: 80px;
+                    }
+                    .com-msg {
+                        display: inline-block;
+                        vertical-align: top;
+                        padding-left: 24px;
+                        width: calc(100% - 132px);
+                        box-sizing: border-box;
+                        .msg-title {
+                            color: #2A323D;
+                            font-size: 16px;
+                            margin-top: 6px;
+                            height: 42px;
+                            .commit,
+                            .update {
+                                border-radius: 4px;
+                                font-size: 12px;
+                                padding: 2px 4px;
+                                margin-left: 4px;
+                                white-space: nowrap;
+                            }
+                            .commit {
+                                border: 1px solid #ff8503;
+                                color: #ff8503;
+                                &:hover {
+                                    background-color: #fceee1;
+                                }
+                                &:active {
+                                    background-color: #fae0c8;
+                                }
+                            }
+                            .update {
+                                border: 1px solid #17d35f;
+                                color: #17d35f;
+                                &:hover {
+                                    background-color: #c5f7d7;
+                                }
+                                &:active {
+                                    background-color: #aafac6;
+                                }
+                            }
+                        }
+                        .msg-p {
+                            color: #AAADB1;
+                            margin: 10px 0 0 16px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .bottom {
+                    float: right;
+                    margin-right: 24px;
+                    margin-top: 8px;
+                    button {
+                        width: 120px;
+                        height: 32px;
+                        display: block;
+                        color: #47C1F8;
+                        text-align: center;
+                        line-height: 24px;
+                        border-radius: 4px;
+                        border: 1px solid;
+                        &:hover {
+                            background-color: #e2f2fa;
+                        }
+                        &:active {
+                            background-color: rgb(171, 226, 250);
+                        }
+                    }
+                }
+                .delete {
+                    position: absolute;
+                    display: none;
+                    bottom: 0px;
+                    right: 12px;
+                    height: 36px;
+                    width: 36px;
+                    background: url('../../style/img/del2.png') no-repeat center;
+                    &.show {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}

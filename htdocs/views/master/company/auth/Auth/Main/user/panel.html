@@ -1,0 +1,41 @@
+﻿
+<fieldset data-panel="/Auth/Main/User" class="field">
+    <legend>
+        <i>2</i>联系人信息
+    </legend>
+    <div data-panel="/Auth/Main/User/Name" class="cell">
+        <label>
+            <span class="must">
+                联系人姓名：
+            </span>
+        </label>
+        <input class="text" type="text" placeholder="请填写联系人姓名" />
+    </div>
+
+    <div data-panel="/Auth/Main/User/Phone" class="cell phone">
+        <label>
+            <span class="must">
+                联系人手机：
+            </span>
+        </label>
+        <span class="num">+86</span>
+        <input class="text" type="text" placeholder="请填写联系人手机" maxlength="11" />
+    </div>
+
+    <div data-panel="/Auth/Main/User/Code" class="cell code">
+        <div data-panel="/Auth/Main/User/Code/Code">
+            <input class="text" type="text" placeholder="请填写手机验证码" maxlength="6" disabled />
+            <button data-cmd="send" class="primary send" disabled>获取验证码</button>
+            <a href="http://cms.kingdeetech.com/text-message-with-pin/" target="_blank">没有收到短信？</a>
+        </div>
+    </div>
+
+    <div data-panel="/Auth/Main/User/Email" class="cell">
+        <label>
+            <span class="must">
+                联系人邮箱：
+            </span>
+        </label>
+        <input class="text" type="text" placeholder="请填写联系人邮箱" />
+    </div>
+</fieldset>

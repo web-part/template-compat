@@ -1,0 +1,28 @@
+﻿<div data-panel="/AccountCreate/Type4" class="alert-common pro-create-type4" style="display: none;">
+    <div data-panel="/AccountCreate/Type4/Content" class="content">
+        <div class="contanin">
+
+            <article class="first">
+                <form data-panel="/AccountCreate/Type4/Content/Form">
+                    <template>
+                        <div class="cont-input">
+                            <span class="must">{name}</span>
+                            <input type="text" data-index="{index}" class="long" value="{value}" {readonly} {maxlength} {required} />
+                            <p>{desc}</p>
+                        </div>
+                    </template>
+                </form>
+                <div class="store" data-panel="/AccountCreate/Type4/Content/Store">
+                    <p><span class="check-box on" data-cmd="check-box"></span>使用分仓核算</p>
+                    <p class="des">选定则每个仓库独立核算成本，不选，则所有仓库的相同货品成本相同
+                        <span class="special">（建账后不可修改）</span>
+                    </p>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div data-panel="/AccountCreate/Type4/Footer" class="foot">
+        <button class="warning create" data-cmd="create">创建账套</button>
+    </div>
+</div>

@@ -1,0 +1,255 @@
+.DropList {
+    /*width: 120px;*/
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-image: url('../../style/img/down-tr.png');
+    background-size: 13px;
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+}
+.DropList.on {
+    background-image: url('../../style/img/up-tr.png');
+    background-size: 14px;
+}
+.DropList:hover .text {
+    border-color: #61a7e5;
+}
+.DropList input[disabled] {
+    cursor: auto;
+    background-color: #f1f1f1;
+}
+.DropList input[disabled]:hover {
+    background-color: #f1f1f1;
+    border-color: #dce0e4 !important;
+}
+.DropList .text {
+    font-size: 12px;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #dce0e4;
+    outline: none;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 2px;
+    padding: 0 30px 0 10px;
+    color: #5a646e;
+    vertical-align: middle;
+    box-sizing: border-box;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: transparent;
+    background-position: right 10px top 50%;
+    background-repeat: no-repeat;
+}
+.DropList .text:focus {
+    border-color: #61a7e5;
+}
+.DropList .text::-webkit-input-placeholder {
+    color: #b3bcc5;
+}
+.DropList .text.error {
+    color: red;
+}
+.DropList .list {
+    border: 1px solid #dce1e7;
+    min-width: 100%;
+    color: #5a646e;
+    padding: 6px 0;
+    background-color: #fff;
+    text-align: left;
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 28px;
+    left: -1px;
+    overflow-y: auto;
+    max-height: 305px;
+    /**够展示 20 条的高度*/
+    display: none;
+}
+.DropList .list::-webkit-scrollbar {
+    width: 8px !important;
+    height: 8px !important;
+}
+.DropList .list::-webkit-scrollbar-track-piece {
+    background-color: #fff;
+}
+.DropList .list::-webkit-scrollbar-thumb {
+    background-color: #dce1e7;
+    border-radius: 4px;
+}
+.DropList .list::-webkit-resizer {
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.DropList .list .dotting {
+    display: none;
+}
+@keyframes dot {
+    25% {
+      border-color: transparent;
+      background-color: transparent;
+    }
+    50% {
+      border-right-color: transparent;
+      background-color: transparent;
+    }
+    75% {
+      border-right-color: transparent;
+    }
+}
+.DropList .list.loading {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    cursor: default;
+}
+.DropList .list.loading .Table {
+    display: none;
+}
+.DropList .list.loading:after {
+    content: '加载中...';
+    color: #5a646e;
+    font-size: 13px;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 50%;
+    margin-top: -15px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+}
+.DropList .list.nodata {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    cursor: default;
+}
+.DropList .list.nodata:after {
+    content: '(暂无数据)';
+    color: #ccc;
+    font-size: 13px;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 50%;
+    margin-top: -15px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+}
+.DropList .list.nodata .Table {
+    display: none;
+}
+.DropList .list .Table {
+    text-align: center;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 13px;
+    background-color: #fff;
+    min-width: 100%;
+}
+.DropList .list .Table tr {
+    height: 28px;
+    box-sizing: border-box;
+}
+.DropList .list .Table tr.on {
+    background-color: #fdf59a;
+}
+.DropList .list .Table tr.on.hover {
+    background-color: #ffd16a;
+}
+.DropList .list .Table tr:nth-of-type(odd) {
+    background-color: #fff;
+}
+.DropList .list .Table tr:nth-of-type(odd):hover {
+    background-color: #d7e9f8;
+    color: #28323c;
+}
+.DropList .list .Table tr:nth-of-type(odd).on {
+    background-color: #fdf59a;
+}
+.DropList .list .Table tr:nth-of-type(odd).on.hover {
+    background-color: #ffd16a;
+}
+.DropList .list .Table tr td {
+    max-width: 280px;
+    table-layout: fixed;
+    box-sizing: border-box;
+    padding: 0 12px;
+    text-align: left;
+    border: none;
+    border-right: 1px solid #e8ecf0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /*&:first-child {
+                          color: #b5b5b5;
+                      }*/
+}
+.DropList .list .Table tr td:last-child {
+    border-right: none;
+}
+.DropList .list .Table tr td .keyword {
+    color: red;
+    padding: 0 !important;
+}
+.DropList .list .Table tr:hover {
+    background-color: #d7e9f8;
+    color: #28323c;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.DropList .list .Table tr:hover td:first-child {
+    background: none !important;
+}
+.DropList .list .Table tr.hover {
+    background-color: #d7e9f8;
+    color: #28323c;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.DropList.on {
+    border-color: #61a7e5;
+    z-index: 1025;
+}
+.DropList.on.right .list {
+    left: auto;
+    right: -1px;
+}
+.DropList.on .list {
+    display: block;
+}
+.DropList.on .list.up {
+    top: auto;
+    bottom: 28px;
+    position: absolute;
+    max-height: 202px;
+}
+@media screen and (max-width: 1300px) {
+    .first .DropList {
+      width: 74px;
+    }
+}
+@media (min-width: 1301px) and (max-width: 1349px) {
+    .first .DropList {
+      width: 80px;
+    }
+}
+@media (min-width: 1350px) and (max-width: 1550px) {
+    .first .DropList {
+      width: 98px;
+    }
+}
+@media (min-width: 1551px) and (max-width: 1680px) {
+    .first .DropList {
+      width: 135px;
+    }
+}
+@media (min-width: 1681px) {
+    .first .DropList {
+      width: 150px;
+    }
+}

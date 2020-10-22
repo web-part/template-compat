@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Welcome to webpart</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+    <meta name="keywords" content="KIS云、金蝶KIS云、金蝶KIS云专业版、金蝶KIS云旗舰版、金蝶KIS云商贸版、管账、管货、企业上云、上云用云、混合云、公有云、私有云、生产制造、供应链、财务"/>
+    <meta name="description" content="金蝶KIS云，小微企业管理云服务产品。包含三大产品系列：金蝶KIS云·旗舰版、金蝶KIS云·专业版、金蝶KIS云·商贸版。采用混合云模式，支持公有云与私有云的自由切换，解决用户异地协同办公。提供管理中心和工作台供用户使用，同时提供通过KIS云插件直接使用产品。管理员可创建企业、添加产品、创建账套、添加用户，工作台则提供有权限的用户使用KIS云产品。"/>
+    <link href="f/font-awesome/css/font-awesome.debug.css" rel="stylesheet" />
+    <link href="f/kisp/kisp.debug.css" rel="stylesheet" />
+    <link href="f/datetimepicker/datetimepicker.mod.debug.css" rel="stylesheet" />
+
+    <!--master.less.begin-->
+    <script>
+        [
+            'style/less/global.less',
+            'style/less/common.less',
+            'style/less/chrome.less',
+            'style/less/KISP.less',
+
+            'lib/**/*.less',
+            'modules/**/*.less',
+            'views/**/*.less',
+        ]
+    </script>
+    <!--master.less.end-->
+
+
+</head>
+
+
+
+<body>
+    <link rel="html" href="modules/loading/panel.html" />
+    <div class="alert">
+        <div class="contain">
+            <p class="name">提示</p>
+            <p class="des">为提升性能和体验，本网站仅支持 Chrome、Safari 等主流浏览器。</p>
+            <div class="button">
+                <a class="first" href="http://downloads.cmcloud.cn/kis/kisplus/browser/68.0.3440.75_chrome_installer_32.exe">立即下载 32 位</a>
+                <a class="second" href="http://downloads.cmcloud.cn/kis/kisplus/browser/68.0.3440.75_chrome_installer_64.exe">立即下载 64 位</a>
+            </div>
+        </div>
+    </div>
+    <div class="wrap">
+        <link rel="html" href="modules/header/panel.html" />
+        <link rel="html" href="modules/update/list/panel.html" />
+        <link rel="html" href="modules/message/list/panel.html" />
+        <link rel="html" href="modules/message/dialog/panel.html" />
+
+        <!--master.html.begin-->
+        <script>
+            [
+                'views/**/view.html',
+                '!views/master/**/view.html',
+            ]
+        </script>
+        <!--master.html.end-->
+
+        <div data-panel="/Master" class="panel-master" style="display: none">
+            <link rel="html" href="modules/master/Master/sidebar/panel.html" />
+
+            <div data-panel="/Master/Views" class="views">
+                <!--master.html.begin-->
+                <script>
+                    [
+                        'views/master/**/view.html',
+                    ]
+                </script>
+                <!--master.html.end-->
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!--master.html.begin-->
+    <script>
+        [
+            'lib/**/panel.html',
+            'modules/account/create/panel.html',
+            'modules/account/recover/panel.html',
+        ]
+    </script>
+    <!--master.html.end-->
+
+    <script src="f/polyfill/polyfill.debug.js" data-meta="mode=compat; babel=no;"></script>
+    <script src="f/polyfill/scrollIntoViewIfNeeded.debug.js" data-meta="mode=compat; babel=no;"></script>
+    <script src="f/polyfill/Element.prototype.dataset.debug.js" data-meta="mode=compat; babel=no;"></script>
+
+    <script src="f/jsencrypt/jsencrypt.debug.js" data-meta="mode=normal;"></script>
+    <script src="f/jsencrypt/jsencrypt.babel.debug.js" data-meta="mode=compat; babel=no;"></script>
+
+    <script src="f/kisp/jquery/jquery-3.3.1.debug.js" data-meta="babel=no;"></script>
+
+    <script id="script-KISP" src="f/kisp/kisp.debug.js" data-meta="mode=normal;"></script>
+    <script id="script-KISP" src="f/kisp/kisp.babel.debug.js" data-meta="mode=compat; babel=no;"></script>
+
+
+
+    <script src="f/datetimepicker/datetimepicker.mod.debug.js" data-meta="babel=no;"></script>
+
+    <script src="config.js" data-meta="babel=no;"></script>
+
+    <!--master.js.begin-->
+    <script>
+        [
+            'data/**/*.js',
+            'lib/**/*.js',
+            'modules/**/*.js',
+            'views/**/*.js',
+            'routers/**/*.js',
+            'index.js',
+        ]
+    </script>
+    <!--master.js.end-->
+
+
+</body>
+
+</html>

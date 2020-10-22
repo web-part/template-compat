@@ -1,0 +1,104 @@
+<section data-view="/AccountUsers" class="view-AccountUsers" style="display: none;">
+    <nav data-panel="/AccountUsers/Header" class="common-nav">
+        <ul class="user-nav-ul">
+            <li data-cmd="company-list">
+                <a>我的企业</a>
+                <span></span>
+            </li>
+            <li data-cmd="product-list">
+                <a title="{company}">{company}</a>
+                <span></span>
+            </li>
+            <li data-cmd="account-list">
+                <a title="{product}">{product}</a>
+                <span></span>
+            </li>
+            <li data-cmd="refresh">
+                <a title="{account}">{account}</a>
+                <span></span>
+            </li>
+            <li>账套用户</li>
+        </ul>
+
+    </nav>
+    <div data-panel="/AccountUsers/Main" class="main">
+        <div class="list table-common">
+            <div class="account-users-head">
+                <span>账套用户</span>
+
+                <div data-panel="/AccountUsers/Main/Search" class="search">
+                    <input  class="search-input" type="text" placeholder="请输入手机号或用户名关键字" />
+                    <span data-cmd="submit" class="icon"></span>
+                </div>
+
+                <div data-type="account-select" class="Global-tip child orange">
+                    <button data-cmd="selector" class="primary large">添加账套用户</button>
+                    <div class="tip right">
+                        单击此选择添加账套用户
+                    </div>
+                </div>
+            </div>
+            <div class="table-thead">
+                <table class="product-table">
+                    <thead>
+                        <!-- <tr>
+                            <td colspan="2">云之家用户</td>
+                            <td rowspan="2">用户状态</td>
+                            <td rowspan="2">账套管理员</td>
+                            <td rowspan="2">操作</td>
+                        </tr>
+                        <tr>
+                            <td>手机</td>
+                            <td>姓名</td>
+                        </tr> -->
+                        <tr>
+                            <td>手机</td>
+                            <td>账套用户姓名</td>
+                            <td>用户状态</td>
+                            <td>账套管理员</td>
+                            <td>操作</td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div data-panel="/AccountUsers/Main/List" class="table-tbody">
+                <template name="table" placeholder="table">
+                    <table class="product-table">
+                        <tbody>
+                            <template name="row" placeholder="rows">
+                                <tr data-index="{index}">
+                                    <td>
+                                        {phone}
+                                    </td>
+                                    <td title="{name}" class="long" data-edit="{index}">
+                                        <input value="{name}"></input>
+                                        <p>{name}</p>
+                                        <i class="icon {hideEdit}" data-index="{index}" data-cmd="edit"></i>
+                                    </td>
+                                    <td class="{status-text-class}">{status-text}</td>
+                                    <td>
+                                        <label data-index="{index}" data-cmd="role" class="choose-label {role-enabled}">
+                                        </label>
+                                    </td>
+                                    <td data-type="{index}" class="spe Global-tip child orange">
+                                        <button data-index="{index}" data-action="status" data-enabled="{button-status-enabled}" class="{button-status-class}">
+                                            {button-status-text}
+                                        </button>
+                                        <div class="tip">
+                                            启用后才能登录账套使用
+                                        </div>
+                                        <button data-index="{index}" data-action="delete" data-enabled="{button-delete-enabled}" class="{button-delete-class}">
+                                            删除
+                                        </button>
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </template>
+            </div>
+        </div>
+    </div>
+
+    <link rel="html" href="AccountUsers/dialog/selector/panel.html" />
+</section>

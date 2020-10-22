@@ -1,0 +1,217 @@
+.view-Signup {
+    height: calc(100% - 64px);
+    padding-top: 68px;
+    box-sizing: border-box;
+}
+.view-Signup .reg-content {
+    background: url('../img/rebg.png') no-repeat center bottom;
+    height: 100%;
+}
+.view-Signup .reg-content .bgcircle1 {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    right: 400px;
+    bottom: 150px;
+    background: url('../img/circle1.png') no-repeat center top;
+}
+.view-Signup .reg-content .bgcircle2 {
+    position: absolute;
+    width: 157px;
+    height: 157px;
+    left: 142px;
+    bottom: 21px;
+    background: url('../img/circle2.png') no-repeat center center;
+}
+.view-Signup .reg-content .bgcircle3 {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 240px;
+    bottom: 400px;
+    background: url('../img/circle3.png') no-repeat center center;
+}
+.view-Signup .reg-content .bgcircle4 {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 114px;
+    bottom: 350px;
+    background: url('../img/circle4.png') no-repeat center center;
+}
+.view-Signup .reg-content .reg-div {
+    margin-top: 100px;
+    width: 570px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    background: #fff;
+    padding: 46px 96px 56px 96px;
+    box-shadow: 0 0 28px 0 rgba(95, 121, 176, 0.3);
+    border-radius: 10px;
+}
+.view-Signup .reg-content .reg-div .title-tips {
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    font-size: 14px;
+    color: #666666;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+}
+.view-Signup .reg-content .reg-div .title {
+    text-align: center;
+    font-size: 22px;
+    color: #327BFF;
+    margin: 12px 0 30px 0;
+}
+.view-Signup .reg-content .reg-div .reg-form .reg-msg label {
+    line-height: 17px;
+    font-size: 12px;
+    color: #444;
+    margin-bottom: 12px;
+    margin-top: 18px;
+    display: block;
+}
+.view-Signup .reg-content .reg-div .reg-form .reg-msg .send {
+    background: #2386EE;
+    text-align: center;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0.86px;
+    cursor: pointer;
+    height: 36px;
+    line-height: 36px;
+    margin-right: 7px;
+    width: 136px;
+}
+.view-Signup .reg-content .reg-div .reg-form .reg-msg .send:disabled {
+    background-color: rgba(35, 134, 238, 0.5);
+    cursor: not-allowed;
+}
+.view-Signup .reg-content .reg-div .reg-form .reg-msg ul li {
+    margin-bottom: 18px;
+}
+.view-Signup .reg-content .reg-div .reg-form .reg-msg ul li .area {
+    width: 113px;
+    margin-right: 7px;
+    border: 1px solid #CECECE;
+    border-radius: 6px;
+    padding: 5px 10px 5px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    font-size: 18px;
+}
+.view-Signup .reg-content .reg-div .reg-form .reg-msg ul li .area span {
+    margin-left: 32px;
+}
+.view-Signup .reg-content .reg-div .reg-form .reg-msg ul li .area span:before {
+    content: '';
+    background: url(../img/china.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 11px;
+    left: 10px;
+}
+.view-Signup .reg-content .reg-div .reg-form .reg-msg .input-bar {
+    overflow: hidden;
+}
+.view-Signup .reg-content .reg-div .reg-form .reg-msg .input-text {
+    border: 1px solid #CECECE;
+    border-radius: 6px;
+    padding: 0 10px;
+    height: 36px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+    line-height: 36px;
+    float: right;
+}
+.view-Signup .reg-content .reg-div .reg-form .reg-msg .input-text.long {
+    width: 366px;
+}
+.view-Signup .reg-content .reg-div .reg-form .agree {
+    font-size: 12px;
+    color: #666666;
+    letter-spacing: 0;
+    margin-top: 20px;
+}
+.view-Signup .reg-content .reg-div .reg-form .agree .check-box {
+    border-radius: 3px;
+    vertical-align: top;
+}
+.view-Signup .reg-content .reg-div .reg-form .agree a {
+    font-size: 12px;
+    color: #2386EE;
+    cursor: pointer;
+}
+.view-Signup .reg-content .reg-div .reg-form .sub-button {
+    margin-top: 30px;
+}
+.view-Signup .reg-content .reg-div .reg-form .sub-button button {
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    background: #2386EE;
+    border-radius: 100px;
+    height: 40px;
+}
+.view-Signup .reg-content .reg-div .reg-form .sub-button button:disabled {
+    background-color: rgba(35, 134, 238, 0.5);
+    cursor: not-allowed;
+}
+.view-Signup .reg-content .reg-div .last {
+    width: 370px;
+    bottom: 20px;
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    position: absolute;
+}
+.view-Signup .reg-content .reg-div .last a {
+    color: #2386EE;
+}
+@media screen and (max-width: 1400px) {
+    .panel-signup .reg-content .reg-div {
+      width: 522px;
+      padding: 32px 76px 46px 76px;
+    }
+    .panel-signup .reg-content .reg-div .title-tips {
+      top: 3px;
+    }
+    .panel-signup .reg-content .reg-div .title {
+      margin: 16px 0 22px 0;
+    }
+    .panel-signup .reg-content .reg-div .reg-form .reg-msg .input-text {
+      height: 32px;
+      line-height: 32px;
+      font-size: 15px;
+      width: 218px;
+    }
+    .panel-signup .reg-content .reg-div .reg-form .reg-msg ul li .area {
+      padding: 5px 10px 4px;
+      font-size: 16px;
+    }
+    .panel-signup .reg-content .reg-div .reg-form .reg-msg ul li .area span:before {
+      top: 8px;
+    }
+    .panel-signup .reg-content .reg-div .reg-form .reg-msg ul li .send {
+      height: 32px;
+      line-height: 32px;
+      font-size: 15px;
+    }
+    .panel-signup .reg-content .reg-div .reg-form .sub-button button {
+      height: 40px;
+      line-height: 40px;
+      font-size: 16px;
+    }
+    .panel-signup .reg-content .reg-div .last {
+      bottom: 16px;
+    }
+}

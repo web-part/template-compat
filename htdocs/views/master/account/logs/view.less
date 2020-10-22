@@ -1,0 +1,63 @@
+
+
+
+.view-AccountLogs {
+    .main{
+        .tab{
+            margin-left: 54px;
+            margin-top: 16px;
+            ul{
+                font-size: 0;
+            }
+            li{
+                background-color: #fff;
+                line-height: 32px;
+                display: inline-block;
+                width: 140px;
+                text-align: center;
+                font-size: 15px;
+                line-height: 32px;
+                position: relative;
+                cursor: pointer;
+                padding: 5px 0;
+                &.on{
+                    color: #47C1F8;
+                    &::after{
+                        content: " ";
+                        position: absolute;
+                        left: 13px;
+                        bottom: 0px;
+                        right: 0px;
+                        border-bottom: 3px solid #47C1F8;
+                        width: calc(100% - 24px);
+                        transition: left 0.1s;  
+                    }
+                }
+            }
+        }
+        .table-common{
+            margin-top: 0px;
+            height: calc(100% - 102px);
+        }
+        .list{
+            .product-table{
+                tr td{
+                    width: 17%;
+                    &.long{
+                        width:23%;
+                    }
+                } 
+            }
+        }
+        .copy-list{
+            display: none;
+            .product-table{
+                tr td{
+                    width: 25%;
+                } 
+            }
+        }
+        
+    }
+   
+}

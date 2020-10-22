@@ -1,0 +1,324 @@
+.alert-common.application-add-user .content {
+    height: calc(100% - 135px);
+    margin-left: 0;
+}
+.alert-common.application-add-user .content .pager {
+    text-align: right;
+    margin: 0px 20px 10px 0;
+}
+.alert-common.application-add-user .content .cont-head {
+    margin-left: 24px;
+    margin-top: 8px;
+}
+.alert-common.application-add-user .content .cont-head span {
+    font-size: 14px;
+    color: #7F848B;
+}
+.alert-common.application-add-user .content .cont-head .search {
+    display: inline-block;
+    position: relative;
+}
+.alert-common.application-add-user .content .cont-head .search.on .search-img {
+    display: none;
+}
+.alert-common.application-add-user .content .cont-head .search.on .close-img {
+    display: inline-block;
+}
+.alert-common.application-add-user .content .cont-head .search .search-input {
+    height: 26px;
+    padding-left: 8px;
+}
+.alert-common.application-add-user .content .cont-head .search .search-img {
+    border: 0;
+    right: 0;
+    cursor: pointer;
+}
+.alert-common.application-add-user .content .cont-head .search .close-img {
+    background: url(../img/close.png) no-repeat center;
+    width: 30px;
+    display: none;
+    height: 30px;
+    position: absolute;
+    top: 1px;
+    border: 0;
+    right: 0;
+    cursor: pointer;
+}
+.alert-common.application-add-user .content .cont-head .add {
+    height: 30px;
+    line-height: 30px;
+    margin-right: 16px;
+    float: right;
+    position: relative;
+}
+.alert-common.application-add-user .content .cont-head .add.show .darrow {
+    display: inline-block;
+}
+.alert-common.application-add-user .content .cont-head .add.show .add-icon {
+    display: inline-block;
+}
+.alert-common.application-add-user .content .cont-head .add.show .img {
+    display: none;
+}
+.alert-common.application-add-user .content .cont-head .add.show .add-input {
+    transition: 0.6s linear all;
+    width: 240px;
+}
+.alert-common.application-add-user .content .cont-head .add div {
+    display: inline-block;
+}
+.alert-common.application-add-user .content .cont-head .add .add-icon {
+    cursor: pointer;
+    display: none;
+    vertical-align: top;
+    margin-right: 24px;
+}
+.alert-common.application-add-user .content .cont-head .add .add-icon span {
+    color: #47C1F8;
+}
+.alert-common.application-add-user .content .cont-head .add .darrow {
+    display: none;
+    margin-right: 24px;
+    height: 12px;
+    width: 12px;
+    padding: 10px;
+    background-image: url(../../style/img/darrow.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-size: 12px;
+    position: absolute;
+    top: -1px;
+    right: -30px;
+    background-position: center;
+}
+.alert-common.application-add-user .content .cont-head .add .img {
+    cursor: pointer;
+    margin-right: 16px;
+    padding: 0 6px;
+}
+.alert-common.application-add-user .content .cont-head .add .img i {
+    background-image: url(../../style/img/add.png);
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+.alert-common.application-add-user .content .cont-head .add .img span {
+    color: #47C1F8;
+}
+.alert-common.application-add-user .content .cont-head .add .add-input {
+    width: 0;
+    overflow: hidden;
+    float: left;
+    white-space: nowrap;
+}
+.alert-common.application-add-user .content .cont-head .add .add-input input {
+    width: 92px;
+    margin-right: 12px;
+    border-color: #e0e0e0;
+    height: 26px;
+}
+.alert-common.application-add-user .content .add-user-table {
+    margin: 0;
+    top: 18%;
+}
+.alert-common.application-add-user .content .add-user-table td {
+    overflow: hidden;
+    width: 30%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.alert-common.application-add-user .content .add-user-table td:first-child {
+    width: 10%;
+    overflow: visible;
+}
+.alert-common.application-add-user .content .add-user-table .table-thead tr {
+    height: 32px;
+}
+.alert-common.application-add-user .content .add-user-table .table-tbody {
+    height: 416px;
+}
+.alert-common.application-add-user .content .add-user-table .table-tbody tr {
+    height: 52px;
+}
+.alert-common.application-add-user .content .add-user-table .table-tbody tr .Global-tip .tip {
+    bottom: -18px;
+    height: 24px;
+    line-height: 24px;
+}
+.alert-common.application-add-user .content .add-user-table .table-tbody tr.checked .check-box {
+    background: url(../img/check.png) no-repeat;
+    background-position: center;
+}
+.alert-common.application-add-user .content .add-user-table .table-tbody tr.has-chosed .check-box {
+    background: url(../img/check.png) no-repeat;
+    background-position: center;
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+.alert-common.application-add-user .content .add-user-table .table-tbody tr span.keyword {
+    color: red;
+    margin: 0px;
+    background: #f9e8e8;
+}
+
+.view-ApplicationUsers {
+    /**渲染后才显示【选择云之家用户】按钮。*/
+}
+.view-ApplicationUsers .search {
+    display: inline-block;
+    margin-left: 30px;
+    vertical-align: top;
+    position: relative;
+}
+.view-ApplicationUsers .search .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background: url('../../style/img/search.png') no-repeat center;
+    vertical-align: top;
+    margin-left: -38px;
+    cursor: pointer;
+}
+.view-ApplicationUsers .search-input {
+    display: inline-block;
+    width: 260px;
+    border-radius: 6px;
+}
+.view-ApplicationUsers .nav-right button {
+    margin-left: 10px;
+}
+.view-ApplicationUsers .main.rendered .list .account-users-head .Global-tip {
+    display: block;
+}
+.view-ApplicationUsers .list .account-users-head {
+    height: 56px;
+    margin: 14px 30px 0 24px;
+}
+.view-ApplicationUsers .list .account-users-head span {
+    font-size: 16px;
+    color: #2A323D;
+}
+.view-ApplicationUsers .list .account-users-head .Global-tip {
+    display: none;
+    float: right;
+}
+.view-ApplicationUsers .list .account-users-search {
+    margin: 8px 0 16px 24px;
+}
+.view-ApplicationUsers .list .account-users-search > input {
+    width: 286px !important;
+}
+.view-ApplicationUsers .list .table-thead .product-table .button {
+    width: calc(25% - 6px);
+}
+.view-ApplicationUsers .list .table-tbody {
+    height: calc(100% - 185px);
+}
+.view-ApplicationUsers .list .table-tbody .spe {
+    white-space: nowrap;
+}
+.view-ApplicationUsers .list .table-tbody .spe button {
+    min-width: 60px;
+}
+.view-ApplicationUsers .list .table-tbody .spe .tip {
+    bottom: -24px;
+}
+.view-ApplicationUsers .list .table-tbody .Global-tip > :first-child {
+    margin-right: 12px;
+}
+.view-ApplicationUsers .list .table-tbody .Global-tip.on > :first-child:hover {
+    margin-right: 5px !important;
+}
+.view-ApplicationUsers .list .table-tbody .no-delete {
+    cursor: not-allowed;
+    color: #646464;
+}
+.view-ApplicationUsers .list .table-tbody .delete {
+    border: 1px solid #59C7F8;
+    color: #59C7F8;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.view-ApplicationUsers .list .table-tbody .delete:hover {
+    background-color: #e2f2fa;
+}
+.view-ApplicationUsers .list .table-tbody .delete:active {
+    background-color: #abe2fa;
+}
+.view-ApplicationUsers .list .product-table tr td {
+    width: 20%;
+}
+.view-ApplicationUsers .list .product-table tr td.editbar p {
+    display: none;
+}
+.view-ApplicationUsers .list .product-table tr td.editbar input {
+    display: inline-block;
+    width: 73%;
+    margin-right: 32px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.view-ApplicationUsers .list .product-table tr td.editbar .icon {
+    background-image: url('../img/ok.png');
+}
+.view-ApplicationUsers .list .product-table tr td p {
+    margin-right: 32px;
+}
+.view-ApplicationUsers .list .product-table tr td input {
+    display: none;
+}
+.view-ApplicationUsers .list .product-table tr td .icon {
+    position: absolute;
+    top: 23px;
+    right: 0px;
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    cursor: pointer;
+    background-image: url('../img/edit.png');
+}
+.view-ApplicationUsers .list .product-table tr td .icon.hide {
+    display: none;
+}
+.view-ApplicationUsers .list .product-table tr td.button {
+    width: 25%;
+}
+.view-ApplicationUsers .list .product-table tr td.Global-tip.on.orange.child > :first-child.primary {
+    border: 1px solid #ffda21;
+    box-shadow: 0px 0px 4px 1px #ffda21;
+    padding: 0;
+}
+.view-ApplicationUsers .list .product-table tr td.Global-tip.on.orange.child > :first-child.primary:hover {
+    border-width: 6px !important;
+    border-color: #ffda21 !important;
+    box-shadow: none;
+    transition: all 0.2s linear;
+    margin: 0px;
+}
+.view-ApplicationUsers .list .product-table tr td.Global-tip.on.orange.child > :first-child.warning {
+    border: none;
+    box-shadow: none;
+}
+.view-ApplicationUsers .list .product-table tr td.Global-tip.on.orange.child > :first-child.warning:hover {
+    border-width: 0px !important;
+    border-color: inherit !important;
+    margin: 0px;
+}
+.view-ApplicationUsers .list .product-table tr td.Global-tip.on.orange.child > :first-child.warning + div {
+    display: none !important;
+}
+.view-ApplicationUsers .list .product-table tr td.Global-tip.on.orange.own {
+    border: 1px solid #ffda21;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 1px #ffda21;
+}

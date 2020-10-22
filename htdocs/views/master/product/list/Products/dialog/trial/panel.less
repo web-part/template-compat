@@ -1,0 +1,37 @@
+//试用产品弹窗
+.pro-try {
+    &.no-dialog{
+        display: none!important;
+    }
+    .content {
+        margin: 32px 24px 12px 24px;
+        text-align: justify;
+        word-break: break-all;
+        overflow-wrap: break-word;
+        color: #5a646e;
+        height: 35px;
+    }
+    .cont-div {
+        margin-top: 24px;
+        .cont-div-msg {
+            color: #7F848B;
+        }
+        .cont-div-btn {
+            margin: 16px 0 0 16px;
+            button {
+                margin-right: 10px;
+                margin-bottom: 4px;
+                &.on {
+                    color: #fff;
+                    background-color: #47C1F8;
+                }
+                &.long {
+                    width: 184px;
+                }
+                &.short {
+                    width: 120px;
+                }
+            }
+        }
+    }
+}

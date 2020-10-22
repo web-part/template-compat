@@ -1,0 +1,72 @@
+{
+    "AccountApps": {
+        "css": "style/css/AccountApps.css?8E1D",
+        "js": "packages/items/AccountApps.js?FC28",
+        "html": "packages/items/AccountApps.html?F1C0"
+    },
+    "AccountBaks": {
+        "css": "style/css/AccountBaks.css?6771",
+        "js": "packages/items/AccountBaks.js?0638",
+        "html": "packages/items/AccountBaks.html?6621"
+    },
+    "Accounts": {
+        "css": "style/css/Accounts.css?5942",
+        "js": "packages/items/Accounts.js?F901",
+        "html": "packages/items/Accounts.html?FDDF"
+    },
+    "AccountLogs": {
+        "css": "style/css/AccountLogs.css?F646",
+        "js": "packages/items/AccountLogs.js?10D7",
+        "html": "packages/items/AccountLogs.html?B7B7"
+    },
+    "AccountUsers": {
+        "css": "style/css/AccountUsers.css?CA21",
+        "js": "packages/items/AccountUsers.js?53E6",
+        "html": "packages/items/AccountUsers.html?C316"
+    },
+    "Application": {
+        "css": "style/css/Application.css?F53B",
+        "js": "packages/items/Application.js?0C14",
+        "html": "packages/items/Application.html?99A6"
+    },
+    "ApplicationUsers": {
+        "css": "style/css/ApplicationUsers.css?CC46",
+        "js": "packages/items/ApplicationUsers.js?856E",
+        "html": "packages/items/ApplicationUsers.html?9C88"
+    },
+    "AddCompanys": {
+        "css": "style/css/AddCompanys.css?1397",
+        "js": "packages/items/AddCompanys.js?55BF",
+        "html": "packages/items/AddCompanys.html?9283"
+    },
+    "Auth": {
+        "css": "style/css/Auth.css?B5B9",
+        "js": "packages/items/Auth.js?A765",
+        "html": "packages/items/Auth.html?56E2"
+    },
+    "Companys": {
+        "css": "style/css/Companys.css?8AE9",
+        "js": "packages/items/Companys.js?5DD8",
+        "html": "packages/items/Companys.html?DCCE"
+    },
+    "Register": {
+        "css": "style/css/Register.css?EA20",
+        "js": "packages/items/Register.js?7E5B",
+        "html": "packages/items/Register.html?68BA"
+    },
+    "Products": {
+        "css": "style/css/Products.css?1EDD",
+        "js": "packages/items/Products.js?F483",
+        "html": "packages/items/Products.html?28A6"
+    },
+    "ProductUsers": {
+        "css": "style/css/ProductUsers.css?0C55",
+        "js": "packages/items/ProductUsers.js?AB1C",
+        "html": "packages/items/ProductUsers.html?5CC0"
+    },
+    "Subject": {
+        "css": "style/css/Subject.css?A92B",
+        "js": "packages/items/Subject.js?1287",
+        "html": "packages/items/Subject.html?DB67"
+    }
+}

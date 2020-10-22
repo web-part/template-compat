@@ -1,0 +1,56 @@
+<header data-panel="/Header" class="panel-Header">
+    <div data-panel="/Header/Logo" class="logo-bar">
+        <a data-cmd="home" href="#">
+            <img src="style/img/logo.png" alt="金蝶KIS云" class="logo" />
+        </a>
+        <!-- <span class="logo-spe">福建专版</span>-->
+        <!--<span class="logo-spe move">移动专版</span>-->
+    </div>
+
+
+
+    <div data-panel="/Header/Tips" class="tip-bar">
+        <template>
+            <span class="tips {public-tips}">体验版（数据将不定期清理）</span>
+            <span class="tips {official-tips}">
+                2月28日20:00已对KIS云网页端进行更新...
+                <a href="http://club.kingdee.com/forum.php?mod=viewthread&tid=1453270" target="_blank">
+                    查看详情
+                </a>
+            </span>
+        </template>
+    </div>
+
+
+    <div data-panel="/Header/Nav" class="nav">
+        <template>
+            <a class="down" href="{plugin}" title="首次进入账套请下载插件，否则将无法进入账套">KIS云插件下载</a>
+            <a class="try-icon {try-icon}" href="http://kisapp.kingdee.com:8088/webapp/" target="_blank">我要体验</a>
+            <a class="normal-icon {normal-icon}" href="https://kisyun.kingdee.com/view/" target="_blank">正式使用</a>
+                
+            <span data-cmd="messages" class="message">消息<i class="num" style="{message-display}">{message-count}</i></span>
+
+            <div class="drop">
+                <span class="help">帮助中心</span>
+                <ul>
+                    <li>
+                        <a href="http://downloads.cmcloud.cn/kis/kiscloud/v1.0/noviciate_manual/" target="_blank">新手教程</a>
+                    </li>
+                    <li class="update">
+                        <a data-cmd="updates" href="javascript:">更新日志</a>
+                    </li>
+                    <li>
+                        <a href="http://club.kingdee.com/forum.php?mod=forumdisplay&fid=739" target="_blank">产品论坛</a>
+                    </li>
+                    <li>
+                        <a href="{help}" target="_blank">帮助手册</a>
+                    </li>
+                    <li>
+                        <a href="html/chrome/index.html" target="_blank">chrome下载</a>
+                    </li>
+                    <li data-cmd="my-order"><a>我的订单</a></li>
+                </ul>
+            </div>
+        </template>
+    </div>
+</header>

@@ -1,0 +1,36 @@
+﻿<div data-panel="/Updates" class="panel-Updates" style="display:none">
+    <div class="content">
+        <div data-panel="/Updates/Header" class="top">
+            更新日志
+            <span data-cmd="close" class="close"></span>
+        </div>
+        <div class="main">
+            <ul data-panel="/Updates/List" class="list">
+                <template>
+                    <li data-index="{index}" class="item">
+                        <div class="box">
+                            <a class="bg" href="{url}" target="_blank">
+                                <img src="{cover}" />
+                                <div class="info">
+                                    <p class="title">{title}</p>
+                                    <p class="version">{version}</p>
+                                </div>
+                            </a>
+                        </div>
+                        <p class="s-title">{subTitle}</p>
+                        <p class="time">{time}</p>
+                        <p class="detail">{desc}</p>
+                    </li>
+                </template>
+            </ul>
+
+            <div data-panel="/Updates/More" class="more" style="display: none;">
+                <button>加载更多</button>
+            </div>
+        </div>
+       
+
+    </div>
+
+
+</div>

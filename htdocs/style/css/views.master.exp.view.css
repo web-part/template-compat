@@ -1,0 +1,122 @@
+.view-Exp {
+    height: 100%;
+}
+.view-Exp .user-nav {
+    color: #47C1F8;
+    text-decoration: none;
+}
+.view-Exp .list.table-common {
+    background-color: #F2F5F7;
+    font-size: 17px;
+    margin: 36px 10px 0 36px;
+    padding: 10px;
+    height: calc(100% - 70px);
+}
+.view-Exp .nav-right .tip {
+    bottom: -20px;
+}
+.view-Exp .nav-right .delete-tip {
+    display: inline-block;
+    position: absolute;
+    top: -20px;
+    right: -2px;
+    height: 18px;
+    width: 18px;
+    background: url(../img/del.png) no-repeat center;
+    background-size: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.view-Exp .nav-right.hide {
+    display: none !important;
+}
+.view-Exp .nav-right > a {
+    width: 120px;
+    background-color: #47c1f8;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    height: 32px;
+    display: block;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 4px;
+}
+.view-Exp .main {
+    position: relative;
+    height: calc(100% - 70px);
+    background-color: inherit;
+}
+.view-Exp .main .no-dataspe .table-common {
+    padding: 0;
+}
+.view-Exp .main .com-span {
+    display: inline-block;
+    margin-bottom: 14px;
+}
+.view-Exp .main .content-list .content-list-ul li {
+    border-radius: 4px;
+    display: inline-block;
+    min-width: 308px;
+    background-color: #ffffff;
+    margin-right: 8px;
+    margin-bottom: 12px;
+    width: 24%;
+    position: relative;
+}
+.view-Exp .main .content-list .content-list-ul li .to-yzj {
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    right: 12px;
+    height: 28px;
+    width: 28px;
+    background: url(../img/yunzhijia.jpg) no-repeat center;
+    background-size: 28px 28px;
+}
+.view-Exp .main .content-list .content-list-ul li .to-yzj.no-icon {
+    display: none;
+}
+.view-Exp .main .content-list .content-list-ul li.expire:before {
+    content: '';
+    width: 52px;
+    height: 52px;
+    float: right;
+    background: url('../img/expire.png') no-repeat center;
+    background-size: 48px;
+}
+.view-Exp .main .content-list .content-list-ul li:hover {
+    background-color: #e7f6fd;
+}
+.view-Exp .main .content-list .content-list-ul li.product {
+    background: url('../img/bk1.png') no-repeat center;
+}
+.view-Exp .main .content-list .content-list-ul li.help {
+    background: url('../img/bk2.png') no-repeat center #ffffff;
+}
+.view-Exp .main .content-list .content-list-ul li .list-company p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.view-Exp .main .content-list .content-list-ul li .list-company .com-title {
+    font-size: 14px;
+    color: #2A323D;
+    margin: 20px 36px 10px 36px;
+}
+.view-Exp .main .content-list .content-list-ul li .list-company .com-msg {
+    font-size: 14px;
+    color: #5A646F;
+    margin: 0 36px;
+}
+.view-Exp .main .content-list .content-list-ul li .list-company .com-pany {
+    text-align: left;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+    line-height: 50px;
+    margin: 0 20px;
+}
+.view-Exp .main .content-list .content-list-ul li .list-button {
+    text-align: center;
+    margin: 36px 0 28px 0;
+}

@@ -1,0 +1,29 @@
+﻿<section data-view="/CompanyBind" class="view-CompanyBind" style="display:none;">
+    <article class="reg-content">
+        <div class="bgcircle1"></div>
+        <div class="bgcircle2"></div>
+        <div class="bgcircle3"></div>
+        <div class="bgcircle4"></div>
+
+        <div class="reg-div">
+            <p class="title">绑定企业</p>
+            <form class="reg-form">
+                <div class="reg-msg">
+                    <p class="lable">选择需使用的企业进行绑定:</p>
+                    <ul data-panel="/CompanyBind/List" class="list">
+                        <template>
+                            <li data-index="{index}" class="item">
+                                <span class="radio"></span>{name}
+                            </li>
+                        </template>
+                    </ul>
+                </div>
+                <footer data-panel="/CompanyBind/Footer">
+                    <button data-cmd="submit" class="primary" {disabled}>绑定</button>
+                    <a data-cmd="register" class="link">注册新企业</a>
+                </footer>
+            </form>
+        </div>
+    </article>
+
+</section>

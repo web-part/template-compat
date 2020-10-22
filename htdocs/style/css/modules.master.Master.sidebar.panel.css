@@ -1,0 +1,207 @@
+@keyframes shake {
+    0% {
+      box-shadow: 0 0 8px #f7b332;
+      border: 1px solid #f7b332;
+    }
+    50% {
+      box-shadow: 0 0 8px rgba(247, 179, 50, 0.4);
+      border: 1px solid rgba(247, 179, 50, 0.4);
+    }
+    90% {
+      box-shadow: 0 0 8px rgba(247, 179, 50, 0.9);
+      border: 1px solid rgba(247, 179, 50, 0.9);
+    }
+}
+.sidebar {
+    transition: width 0.1s ease-in-out;
+    display: inline-block;
+    height: 100%;
+    width: 200px;
+    background-color: #353F51;
+    vertical-align: top;
+    font-size: 14px;
+    color: #858B96;
+}
+.sidebar .sidebar-left {
+    width: 200px;
+    display: inline-block;
+}
+.sidebar .sidebar-left .side-user {
+    border-bottom: 1px solid #2A323D;
+    text-align: center;
+}
+.sidebar .sidebar-left .side-user .change-user {
+    height: 26px;
+    line-height: 26px;
+    padding: 0 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #f9bd7d;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 12px;
+    animation: shake 1s linear;
+    animation-iteration-count: 5;
+    border: 1px solid transparent;
+}
+.sidebar .sidebar-left .side-user .out {
+    display: inline-block;
+}
+.sidebar .sidebar-left .side-user .user-img {
+    margin-top: 64px;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+.sidebar .sidebar-left .side-user .user-msg {
+    margin: 16px 0 10px;
+}
+.sidebar .sidebar-left .side-user .user-msg span {
+    margin-bottom: 8px;
+    color: #ffffff;
+    display: block;
+}
+.sidebar .sidebar-left .side-user .user-msg a {
+    font-size: 12px;
+}
+.sidebar .sidebar-left .side-list-ul {
+    font-size: 16px;
+    margin-top: 16px;
+}
+.sidebar .sidebar-left .side-list-ul.show-all > li {
+    display: block;
+}
+.sidebar .sidebar-left .side-list-ul.show-exp > li:nth-child(2) {
+    display: block;
+}
+.sidebar .sidebar-left .side-list-ul li {
+    line-height: 40px;
+    display: none;
+    position: relative;
+    cursor: pointer;
+}
+.sidebar .sidebar-left .side-list-ul li:hover {
+    background-color: rgba(42, 50, 61, 0.4);
+}
+.sidebar .sidebar-left .side-list-ul li a {
+    color: #858B96;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-left: 42px;
+}
+.sidebar .sidebar-left .side-list-ul li:first-child {
+    display: block;
+}
+.sidebar .sidebar-left .side-list-ul li .items {
+    padding-left: 13px;
+}
+.sidebar .sidebar-left .side-list-ul li .items > i {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 8px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sidebar .sidebar-left .side-list-ul li .items a,
+.sidebar .sidebar-left .side-list-ul li .items span {
+    display: none;
+}
+.sidebar .sidebar-left .side-list-ul li.on a {
+    color: #ffffff;
+}
+.sidebar .sidebar-left .side-list-ul li.on .items {
+    border-left: 6px solid #47C1F8;
+    background-color: #303948;
+    color: #ffffff;
+    padding-left: 9px;
+}
+.sidebar .sidebar-left .side-list-ul li.on .exp > i {
+    background-image: url('../img/exp1.png');
+}
+.sidebar .sidebar-left .side-list-ul li.on .company > i {
+    background-image: url('../img/company1.png');
+}
+.sidebar .sidebar-left .side-list-ul li.on .product > i {
+    background-image: url('../img/product1.png');
+}
+.sidebar .sidebar-left .side-list-ul li.on .subject > i {
+    background-image: url('../img/sub1.png');
+}
+.sidebar .sidebar-left .side-list-ul li.on .delete > i {
+    background-image: url('../img/del1.png');
+}
+.sidebar .sidebar-left .side-list-ul li.on .yzj > i {
+    background-image: url('../img/yzj1.png');
+}
+.sidebar .sidebar-left .side-list-ul li.on .yjxc > i {
+    background-image: url('../img/yjxc1.png');
+}
+.sidebar .sidebar-left .side-list-ul li.on .yp > i {
+    background-image: url('../img/yp1.png');
+}
+.sidebar .sidebar-left .side-list-ul li .exp span {
+    display: inline;
+}
+.sidebar .sidebar-left .side-list-ul li .exp > i {
+    background-image: url('../img/exp2.png');
+}
+.sidebar .sidebar-left .side-list-ul li .company span {
+    display: inline;
+}
+.sidebar .sidebar-left .side-list-ul li .company > i {
+    background-image: url('../img/company2.png');
+}
+.sidebar .sidebar-left .side-list-ul li .product span {
+    display: inline;
+}
+.sidebar .sidebar-left .side-list-ul li .product > i {
+    background-image: url('../img/product2.png');
+}
+.sidebar .sidebar-left .side-list-ul li .subject span {
+    display: inline;
+}
+.sidebar .sidebar-left .side-list-ul li .subject > i {
+    background-image: url('../img/sub2.png');
+}
+.sidebar .sidebar-left .side-list-ul li .delete span {
+    display: inline;
+}
+.sidebar .sidebar-left .side-list-ul li .delete > i {
+    background-image: url('../img/del2.png');
+}
+.sidebar .sidebar-left .side-list-ul li .yzj a {
+    display: inline;
+}
+.sidebar .sidebar-left .side-list-ul li .yzj > i {
+    background-size: 14px 14px;
+    background-image: url('../img/yzj2.png');
+}
+.sidebar .sidebar-left .side-list-ul li .yjxc a {
+    display: inline;
+}
+.sidebar .sidebar-left .side-list-ul li .yjxc > i {
+    background-size: 14px 14px;
+    background-image: url('../img/yjxc2.png');
+}
+.sidebar .sidebar-left .side-list-ul li .yp a {
+    display: inline;
+}
+.sidebar .sidebar-left .side-list-ul li .yp > i {
+    background-size: 14px 14px;
+    background-image: url('../img/yp2.png');
+}
+.sidebar .sidebar-right {
+    display: inline-block;
+    background: url('../img/side.png') no-repeat center;
+    position: absolute;
+    left: 200px;
+    top: 410px;
+    width: 15px;
+    height: 57px;
+    cursor: pointer;
+    transition: left 0.1s;
+    z-index: 2;
+}

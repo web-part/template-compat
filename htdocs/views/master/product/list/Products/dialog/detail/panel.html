@@ -1,0 +1,44 @@
+﻿<div data-panel="/Products/Detail" class="alert-common pro-detail" style="display: none;">
+    <div data-panel="/Products/Detail/Content" class="content">
+        <template>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td class="name">产品序列号</td>
+                        <td title="{proNum}">{proNum}</td>
+                        <td class="name">产品名称</td>
+                        <td title="{proName}">{proName}</td>
+                    </tr>
+                    <tr>
+                        <td class="name">首次租赁开始时间</td>
+                        <td>{startTime}</td>
+                        <td class="name">租赁到期时间</td>
+                        <td>{endTime}</td>
+                    </tr>
+                    <tr>
+                        <td class="name">账套总数</td>
+                        <td>{num}(仅公有云模式控制)</td>
+                        <td class="name">用户总数</td>
+                        <td>{userNum}</td>
+                    </tr>
+                    <tr class="high">
+                        <td class="name">已购买模块</td>
+                        <td colspan="3" class="spe"><p>{hasMode}</p></td>
+                    </tr>
+                    <tr class="high">
+                        <td class="name">未购买模块</td>
+                        <td colspan="3" class="spe"><p>{noMode}</p></td>
+                    </tr>
+                    <tr class="high">
+                        <td class="name">备注</td>
+                        <td colspan="3" class="spe"><p>{tip}</p></td>
+                    </tr>
+                </tbody>
+            </table>
+        </template>
+    </div>
+
+    <div data-panel="/Products/Detail/Footer" class="foot">
+        <button class="primary">确认</button>
+    </div>
+</div>

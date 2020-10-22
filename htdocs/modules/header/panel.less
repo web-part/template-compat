@@ -1,0 +1,242 @@
+
+
+
+.panel-Header {
+    padding: 0;
+    background-color: #2A323D;
+    height: 64px;
+    width: 100%;
+    position: relative;
+    z-index: 21;
+
+    .tip-bar {
+        display: inline-block;
+    }
+
+    .tips {
+        display: none;
+        font-size: 18px;
+        color: #eca622;
+        line-height: 64px;
+
+        &.on {
+            display: inline-block;
+            margin-left: 28px;
+        }
+    }
+
+    .try-icon,
+    .normal-icon {
+        color: #fff;
+        height: 30px;
+        line-height: 30px;
+        width: 80px;
+        padding-left: 22px;
+        border-radius: 4px;
+        font-size: 14px;
+        display: none;
+
+        &.show {
+            display: inline-block;
+        }
+    }
+
+    .try-icon {
+        background: url('../img/try-icon.png') no-repeat left;
+    }
+
+    .normal-icon {
+        background: url('../img/normal-icon.png') no-repeat left;
+    }
+
+    .down {
+        color: #fff;
+        font-size: 14px;
+        text-decoration: underline;
+        margin-right: 26px;
+        border-right: 2px solid #060606;
+        padding: 4px 28px;
+    }
+
+    .drop {
+        display: inline-block;
+        position: relative;
+        padding-right: 36px;
+
+        &:hover {
+            ul {
+                display: block;
+            }
+
+            span {
+                &::after {
+                    content: '';
+                    margin-top: -2px;
+                    transform: rotate(180deg);
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+
+        span {
+            &::after {
+                content: '';
+                position: absolute;
+                right: 24px;
+                top: 50%;
+                transition: all 0.3s ease;
+                background: url(../img/xiala.png) no-repeat center;
+                display: inline-block;
+                height: 10px;
+                width: 10px;
+                margin-top: -3px;
+            }
+        }
+
+        ul {
+            display: none;
+            position: absolute;
+            z-index: 2;
+            min-width: 70px;
+            box-shadow: 1px 1px 5px #888888;
+            background-color: #fff;
+            white-space: nowrap;
+            padding: 5px 0;
+            right: 22px;
+            top: 46px;
+            border-radius: 4px;
+
+            li {
+                line-height: 25px;
+            }
+
+            li a {
+                background-color: #fff;
+                text-align: center;
+                line-height: 25px;
+                font-size: 12px;
+                color: #ADB0B5;
+                cursor: pointer;
+                display: inline-block;
+                width: 100%;
+
+                &:hover {
+                    background-color: #F2F5F7;
+                    color: #47C1F8;
+                }
+
+                &.on {
+                    background-color: #F2F5F7;
+                    color: #47C1F8;
+                }
+            }
+        }
+    }
+
+    .logo-bar {
+        height: 100%;
+        padding-left: 60px;
+        line-height: 64px;
+        margin-left: 24px;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    .logo {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .logo-spe {
+        height: 100%;
+        display: inline-block;
+        background: url('../img/location.png') no-repeat left;
+        vertical-align: top;
+        color: #fff;
+        padding-left: 22px;
+        margin-left: 20px;
+
+        &.move {
+            background: url('../img/move-small.png') no-repeat left;
+            padding-left: 24px;
+        }
+    }
+    //登录后才可见的。
+    &.user-logined {
+        .nav {
+            .message {
+                display: inline-block;
+            }
+
+            .update {
+                display: list-item;
+            }
+        }
+    }
+
+    .nav {
+        color: white;
+        float: right;
+        line-height: 63px;
+
+        .message {
+            position: relative;
+            cursor: pointer;
+            display: inline-block;
+            display: none; //这个默认为隐藏。 用户登录后才显示。
+            vertical-align: middle;
+            height: 30px;
+            line-height: 30px;
+            width: 60px;
+            padding-left: 20px;
+            font-size: 14px;
+            background: url(../img/message.png) no-repeat left;
+
+            .num {
+                display: inline-block;
+                background: #FA3232;
+                border-radius: 8px;
+                height: 16px;
+                line-height: 16px;
+                font-style: normal;
+                font-size: 13px;
+                color: #FFFFFF;
+                text-align: justify;
+                padding: 0 4px;
+                position: absolute;
+                top: 0;
+                left: 46px;
+            }
+        }
+
+        .update {
+            display: none;
+        }
+
+        .help {
+            display: inline-block;
+            height: 30px;
+            line-height: 30px;
+            width: 60px;
+            padding-left: 20px;
+            font-size: 14px;
+            vertical-align: middle;
+            background: url('../img/help.png') no-repeat left;
+        }
+
+        li {
+            font-size: 14px;
+
+            a {
+                color: #ffffff;
+                padding: 0 8px;
+                text-decoration: none;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    div {
+        display: inline-block;
+    }
+}

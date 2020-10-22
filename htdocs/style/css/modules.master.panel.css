@@ -1,0 +1,120 @@
+.panel-master {
+    height: calc(100% - 64px);
+    font-size: 0px;
+    position: relative;
+}
+.panel-master.hide .sidebar {
+    width: 40px;
+    transition: width 0.1s ease-in-out;
+}
+.panel-master.hide .sidebar .sidebar-left .side-user {
+    width: 40px;
+}
+.panel-master.hide .sidebar .sidebar-left .side-user .change-user {
+    margin-right: 0;
+}
+.panel-master.hide .sidebar .sidebar-left .side-user .user-img {
+    width: 32px;
+    height: 32px;
+}
+.panel-master.hide .sidebar .sidebar-left .side-user .user-msg span {
+    display: none;
+}
+.panel-master.hide .sidebar .sidebar-left .side-list .side-list-ul .list-ul-second {
+    display: none;
+}
+.panel-master.hide .sidebar .sidebar-left .side-list .side-list-ul li > div {
+    padding-left: 12px;
+}
+.panel-master.hide .sidebar .sidebar-left .side-list .side-list-ul li.on > div {
+    border-left: 4px solid #47C1F8;
+    padding-left: 8px;
+}
+.panel-master.hide .sidebar .sidebar-left .side-list .side-list-ul li.on > div .li-name {
+    display: none;
+}
+.panel-master.hide .sidebar .sidebar-right {
+    transition: left 0.05s;
+    left: 40px;
+}
+.panel-master.hide .views {
+    width: calc(100% - 40px);
+    transition: width 0.1s ease-in-out;
+}
+.panel-master .views {
+    position: relative;
+    display: inline-block;
+    background-color: #F2F5F7;
+    vertical-align: top;
+    width: calc(100% - 200px);
+    height: 100%;
+}
+.panel-master .views section {
+    height: 100%;
+}
+.panel-master .views .main {
+    letter-spacing: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: calc(100% - 72px);
+    font-size: 14px;
+}
+.panel-master .views .common-nav {
+    height: 72px;
+    line-height: 72px;
+    background-color: #ffffff;
+    padding-left: 36px;
+    font-size: 16px;
+}
+.panel-master .views .common-nav .nav-right {
+    display: inline-block;
+    float: right;
+    margin-right: 36px;
+    cursor: pointer;
+}
+.panel-master .views .common-nav .nav-right .large {
+    line-height: 34px;
+}
+.panel-master .views .common-nav .nav-right.right-reg {
+    margin: 25px 24px 16px 0;
+}
+.panel-master .views .common-nav .nav-right .add {
+    background: url('../img/add.png') no-repeat center;
+    width: 21px;
+    display: inline-block;
+    height: 21px;
+    position: absolute;
+}
+.panel-master .views .common-nav .nav-right a {
+    margin-left: 24px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #47C1F8;
+    height: 32px;
+    width: 136px;
+    display: inline-block;
+    text-align: center;
+    line-height: 32px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.panel-master .views .common-nav .user-nav-ul {
+    display: inline-block;
+}
+.panel-master .views .common-nav .user-nav-ul li {
+    display: inline-block;
+}
+.panel-master .views .common-nav .user-nav-ul li > a {
+    max-width: 210px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: top;
+}
+.panel-master .views .common-nav .user-nav-ul li > span {
+    background: url('../img/right.png') no-repeat center;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+}

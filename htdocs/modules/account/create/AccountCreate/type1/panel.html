@@ -1,0 +1,141 @@
+﻿
+
+
+<div data-panel="/AccountCreate/Type1" class="alert-common pro-create-type1" style="display: none;">
+    <div data-panel="/AccountCreate/Type1/Content" class="content">
+        <div class="header">
+            <ul>
+                <li data-step="1" class="first"></li>
+                <li data-step="2" class="second"></li>
+                <li data-step="3" class="third"></li>
+            </ul>
+        </div>
+        <div class="contanin">
+
+            <article data-step="1" class="first">
+                <form data-panel="/AccountCreate/Type1/Content/Form">
+                    <template>
+                        <div class="cont-input">
+                            <span class="must">{name}</span>
+                            <input type="text" data-index="{index}" class="long" value="{value}" {readonly} {maxlength} {required} />
+                            <p>{desc}</p>
+                        </div>
+                    </template>
+                </form>
+            </article>
+
+
+
+            <article data-step="2" class="second">
+                <div data-panel="/AccountCreate/Type1/Content/Mode" class="radio-cont">
+                    <div class="title">
+                        请选择应用模式
+                        <span>（注意：一旦选择不可以更改，请根据实际情况正确选择）</span>
+                    </div>
+                    <div data-index="0" class="radio-spe">
+                        <span class="radio">
+                            <i></i>
+                        </span>
+                        <span>财务与业务结合使用</span>
+                        <p>说明：业务单据可以通过凭证制作自动生成财务凭证，实现业务数据的共享。</p>
+                    </div>
+                    <div data-index="1" class="radio-spe">
+                        <span class="radio">
+                            <i></i>
+                            财务与业务分开使用
+                        </span>
+                        <p>说明：财务与业务模块各自独立</p>
+                    </div>
+                </div>
+
+                <div data-panel="/AccountCreate/Type1/Content/Types" class="check-cont">
+                    <div class="title">请选择核算方式</div>
+                    <div data-panel="/AccountCreate/Type1/Content/Types/List">
+                        <template>
+                            <div data-index="{index}" class="check {checked}">
+                                <span class="check-box"></span>
+                                <span>{title}</span>
+                                <p>{desc}</p>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </article>
+
+            <article data-step="3" class="third">
+                <div class="one">
+                    <div data-panel="/AccountCreate/Type1/Content/Money" class="select left">
+                        <p>记账本位币</p>
+                        <div class="drop cont-input">
+                            <span class="must">名称</span>
+                            <div data-id="droplist" class="drop-btn">
+                            </div>
+                        </div>
+                        <div class="drop cont-input">
+                            <span class="must">代码</span>
+                            <div class="drop-btn">
+                                <input data-id="code" type="text" maxlength="8" required />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div data-panel="/AccountCreate/Type1/Content/Subject" class="select right">
+                        <p>科目体系</p>
+                        <ul data-panel="/AccountCreate/Type1/Content/Subject/List">
+                            <template>
+                                <li data-index="{index}">
+                                    <span class="radio"><i></i>{name}</span>
+                                </li>
+                            </template>
+                        </ul>
+                        <button class="primary" data-cmd="subject-href"> <a target="_blank" href="http://kisdep.kingdee.com:8181/docs/show/105">查看科目</a></button>
+                        
+                    </div>
+                </div>
+                <div data-panel="/AccountCreate/Type1/Content/Period" class="two">
+                    <p>定义会计期间的界定方式：</p>
+                    <div class="date">
+                        <span>账套启用会计期间</span>
+                        <div>
+                            <div data-panel="/AccountCreate/Type1/Content/Period/Year" class="drop-btn-spe">
+                                <button class="more"></button>
+
+                                <ul data-panel="/AccountCreate/Type1/Content/Period/Year/List" style="z-index: 1025;">
+                                    <template>
+                                        <li data-index="{index}">{value}</li>
+                                    </template>
+                                </ul>
+                            </div>
+                            <span>年</span>
+
+                            <div data-panel="/AccountCreate/Type1/Content/Period/Month" class="drop-btn-spe" style="z-index: 1025;">
+                                <button class="more"></button>
+                                <ul data-panel="/AccountCreate/Type1/Content/Period/Month/List">
+                                    <template>
+                                        <li data-index="{index}">{value}</li>
+                                    </template>
+                                </ul>
+                            </div>
+                            <span>月</span>
+                        </div>
+                    </div>
+                    <div data-panel="/AccountCreate/Type1/Content/Period/Result" class="date">
+                        <template>
+                            <span>账套启用日期</span>
+                            <div>{year} 年 {month} 月 1 日</div>
+                        </template>
+                    </div>
+                    <p class="des">建议使用当前期间启用账套，如果要从年初开始记账可以调整到第一期</p>
+                </div>
+
+            </article>
+
+        </div>
+    </div>
+
+    <div data-panel="/AccountCreate/Type1/Footer" class="foot">
+        <button class="pre" data-cmd="prev">上一步</button>
+        <button class="primary" data-cmd="next">下一步</button>
+        <button class="warning create" data-cmd="create">创建账套</button>
+    </div>
+</div>

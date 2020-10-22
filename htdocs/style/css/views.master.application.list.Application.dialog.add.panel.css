@@ -1,0 +1,81 @@
+.application-add {
+    /**没有二级列表时，隐藏。*/
+}
+.application-add .tips {
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 51px;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFF;
+    font-size: 14px;
+    color: #aaa;
+}
+.application-add .tips .no-data-img {
+    margin: 180px auto auto auto;
+}
+.application-add .tips .tip-content {
+    margin-top: 10px;
+}
+.application-add .tips.show {
+    display: block;
+}
+.application-add article {
+    height: calc(100% - 85px);
+}
+.application-add .content {
+    height: 100%;
+    margin-left: 0;
+}
+.application-add .content .pager {
+    text-align: right;
+    margin: 0px 20px 10px 0;
+}
+.application-add .table-common {
+    height: calc(100% - 70px);
+}
+.application-add .add-table {
+    margin: 0;
+}
+.application-add .add-table td {
+    overflow: hidden;
+    width: 30%;
+    text-overflow: ellipsis;
+}
+.application-add .add-table td:first-child {
+    width: 10%;
+    overflow: visible;
+}
+.application-add .add-table .table-thead tr {
+    height: 32px;
+}
+.application-add .add-table .table-tbody {
+    height: calc(100% - 28px);
+}
+.application-add .add-table .table-tbody tr {
+    height: 52px;
+}
+.application-add .add-table .table-tbody tr td:last-child {
+    text-align: left;
+}
+.application-add .add-table .table-tbody tr .Global-tip .tip {
+    bottom: -18px;
+    height: 24px;
+    line-height: 24px;
+}
+.application-add .add-table .table-tbody tr.checked .check-box {
+    background: url(../img/check.png) no-repeat;
+    background-position: center;
+}
+.application-add .add-table .table-tbody tr.has-chosed .check-box {
+    background: url(../img/check.png) no-repeat;
+    background-position: center;
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+.application-add .add-table .table-tbody tr span.keyword {
+    color: red;
+    margin: 0px;
+    background: #f9e8e8;
+}

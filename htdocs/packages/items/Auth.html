@@ -1,0 +1,286 @@
+<section data-view="/Auth" class="view-Auth" style="display: none;">
+    <nav data-panel="/Auth/Header" class="common-nav">
+        <template>
+            <ul class="user-nav-ul">
+                <li data-cmd="company-list">
+                    <a>我的企业</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a>{company}</a>
+                    <span></span>
+                </li>
+                <li>企业资料</li>
+            </ul>
+        </template>
+    </nav>
+
+
+    <div data-panel="/Auth/Main" class="main">
+        <div class="content">
+            <aside class="approve" style="display: block;">
+                <div class="icon"></div>
+                <div class="news">
+                    <h2>你的企业还没有提交认证</h2>
+                    <a class="link" href="http://cms.kingdeetech.com/?p=581" target="_blank">企业认证有什么用？</a>
+                    <p>按照国家相关法律法规要求，同时为了保护企业的合法权益，请您尽快完善企业档案并进行实名认证，认证后的企业将会享受更多的权益。</p>
+                    <p>认证时间 周一至周五：上午9:00 - 下午5:30，提交认证后，1个工作日内完成审核。</p>
+                    <i>认证遇到问题请拨打电话：4008-836-836</i>
+                </div>
+            </aside>
+            <article class="form-msg">
+                <form>
+                    
+                    <fieldset data-panel="/Auth/Main/Base" class="field">
+                        <legend>
+                            <i>1</i>基础信息
+                        </legend>
+                        <div data-panel="/Auth/Main/Base/Company" class="cell">
+                            <label>
+                                <span class="must">企业名称：</span>
+                            </label>
+                            <input class="text" type="text" data-cmd="company" placeholder="请填写1-200位企业名称" value="" maxlength="200" />
+                            <ul data-panel="/Auth/Main/Base/Company/List"  class="company-list">
+                                <template>
+                                    <li data-index="{index}">{companyName}</li>
+                                </template>
+                            </ul>
+                    
+                    
+                        </div>
+                        <div data-panel="/Auth/Main/Base/Industry" class="cell">
+                            <label>
+                                <span class="must">所属行业：</span>
+                            </label>
+                            <div data-panel="/Auth/Main/Base/Industry/DropList" class="drop-btn-spe long">
+                            </div>
+                        </div>
+                        <div data-panel="/Auth/Main/Base/Address" class="cell">
+                            <label>
+                                <span class="must">企业地址：</span>
+                            </label>
+                            <div data-panel="/Auth/Main/Base/Address/Country" class="drop-btn-spe short">
+                            </div>
+                    
+                            <div data-panel="/Auth/Main/Base/Address/Province" class="drop-btn-spe short">
+                            </div>
+                    
+                            <div data-panel="/Auth/Main/Base/Address/City" class="drop-btn-spe short">
+                            </div>
+                    
+                            <div data-panel="/Auth/Main/Base/Address/Town" class="drop-btn-spe short">
+                            </div>
+                            <div data-panel="/Auth/Main/Base/Address/More" class="cell" style="display: none;">
+                                <input type="text" class="text no-label" placeholder="请填写5-30位企业地址" maxlength="30" />
+                            </div>
+                        </div>
+                    
+                        <div data-panel="/Auth/Main/Base/Scale" class="cell">
+                            <label>
+                                <span class="must">企业规模：</span>
+                            </label>
+                            <div data-panel="/Auth/Main/Base/Scale/DropList" class="drop-btn-spe long">
+                            </div>
+                        </div>
+                        <!-- <div data-panel="/Auth/Main/Base/Code" class="cell">
+                            <label>
+                                <span class="">伙伴编码：</span>
+                            </label>
+                            <input class="text" type="text" placeholder="请填写伙伴编码" value="" maxlength="200" />
+                        </div> -->
+                    </fieldset>
+                    
+                    <fieldset data-panel="/Auth/Main/User" class="field">
+                        <legend>
+                            <i>2</i>联系人信息
+                        </legend>
+                        <div data-panel="/Auth/Main/User/Name" class="cell">
+                            <label>
+                                <span class="must">
+                                    联系人姓名：
+                                </span>
+                            </label>
+                            <input class="text" type="text" placeholder="请填写联系人姓名" />
+                        </div>
+                    
+                        <div data-panel="/Auth/Main/User/Phone" class="cell phone">
+                            <label>
+                                <span class="must">
+                                    联系人手机：
+                                </span>
+                            </label>
+                            <span class="num">+86</span>
+                            <input class="text" type="text" placeholder="请填写联系人手机" maxlength="11" />
+                        </div>
+                    
+                        <div data-panel="/Auth/Main/User/Code" class="cell code">
+                            <div data-panel="/Auth/Main/User/Code/Code">
+                                <input class="text" type="text" placeholder="请填写手机验证码" maxlength="6" disabled />
+                                <button data-cmd="send" class="primary send" disabled>获取验证码</button>
+                                <a href="http://cms.kingdeetech.com/text-message-with-pin/" target="_blank">没有收到短信？</a>
+                            </div>
+                        </div>
+                    
+                        <div data-panel="/Auth/Main/User/Email" class="cell">
+                            <label>
+                                <span class="must">
+                                    联系人邮箱：
+                                </span>
+                            </label>
+                            <input class="text" type="text" placeholder="请填写联系人邮箱" />
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset data-panel="/Auth/Main/Auth" class="field">
+                        <legend>
+                            <i>3</i>认证信息
+                        </legend>
+                        <div class="cell">
+                            <label>
+                                <span class="must">
+                                    企业类型：
+                                </span>
+                            </label>
+                            <ul data-panel="/Auth/Main/Auth/Type" class="type">
+                                <template>
+                                    <li data-index="{index}">
+                                        <span class="radio">
+                                            <i></i>{name}
+                                        </span>
+                                    </li>
+                                </template>
+                            </ul>
+                        </div>
+                    
+                        <div data-panel="/Auth/Main/Auth/License">
+                    
+                            
+                            <article data-panel="/Auth/Main/Auth/License/Type0" class="msgs">
+                            
+                                <div data-panel="/Auth/Main/Auth/License/Type0/Code" class="cell spe">
+                                    <label>
+                                        <span class="must">
+                                            统一社会信
+                                        </span>
+                                        <span class="second">
+                                            用代码：
+                                        </span>
+                                    </label>
+                                    <input class="text" type="text" placeholder="请正确填写18位统一社会信用代码" maxlength="18" />
+                                    <a class="icon normal" href="https://www.cods.org.cn/" target="blank">查询统一社会信用代码</a>
+                                </div>
+                            
+                                <div data-panel="/Auth/Main/Auth/License/Type0/Photo" class="cell">
+                                    <label>
+                                        <span class="must">
+                                            营业执照：
+                                        </span>
+                                    </label>
+                                    <p>
+                                        1.支持图片格式：JPG(JPEG)、PNG、BMP（文件格式大小写都支持）。
+                                        <br /> 2.图片像素尺寸：最小1000*500像素 (长大于1000像素,宽大于500像素)。
+                                        <br /> 3.图片文件大小：>=1MB。
+                                        <br /> 4.保证图片清晰，营业执照图像文字信息完整且尽量占满图片的大部分。
+                                        <br /> 5.若拍摄营业执照，营业执照尽量平放于纯色背景之上（如纯色桌面上）。
+                                        <br /> 6.黑白、彩色均可，尽量提供彩色营业执照图片。
+                                    </p>
+                                    <div class="image type0">
+                                        <span class="example">
+                                            <b>示例：</b>
+                                            <i data-cmd="demo"></i>
+                                        </span>
+                                        <input type="file" class="file" />
+                                        <span class="choose">上传营业执照</span>
+                                        <a data-cmd="show-photo" class="show-photo">查看我的营业执照</a>
+                                        
+                                    </div>
+                                </div>
+                            </article>
+                            <article data-panel="/Auth/Main/Auth/License/Type2" class="msgs">
+                                <div data-panel="/Auth/Main/Auth/License/Type2/Name" class="cell">
+                                    <label>
+                                        <span class="must">
+                                            负责人姓名：
+                                        </span>
+                                    </label>
+                                    <input class="text" type="text" placeholder="请填写负责人姓名" maxlength="18" />
+                                </div>
+                                <div data-panel="/Auth/Main/Auth/License/Type2/Code" class="cell">
+                                    <label>
+                                        <span class="must">
+                                            负责人身份
+                                        </span>
+                                        <span class="second">
+                                            证号码：
+                                        </span>
+                                    </label>
+                                    <input class="text" type="text" placeholder="请填写负责人身份证号码(15位或18位)" maxlength="18" />
+                                </div>
+                                <div data-panel="/Auth/Main/Auth/License/Type2/Photo" class="cell">
+                                    <label>
+                                        <span class="must">
+                                            负责人身份
+                                        </span>
+                                        <span class="second">
+                                            证扫描件：
+                                        </span>
+                                    </label>
+                                    <p>
+                                        请上传有效的身份证
+                                        <br />支持：jpg、png、bmp、gif格式照片，大小不超过10M。
+                                    </p>
+                                    <div class="image type2">
+                                        <input type="file" class="file" />
+                                        <span class="choose">选择图片</span>
+                            
+                                        <a data-cmd="show-photo" class="look show-photo">查看图片</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article data-panel="/Auth/Main/Auth/License/Type3" class="msgs">
+                                <div data-panel="/Auth/Main/Auth/License/Type3/Code" class="cell">
+                                    <label>
+                                        <span class="must">
+                                            组织机构代
+                                        </span>
+                                        <span class="second">
+                                            码证或其它
+                                            <br />&emsp;&thinsp;证件号码：
+                                        </span>
+                                    </label>
+                                    <input class="text" type="text" placeholder="证件号码需与上传图片中号码一致" />
+                                </div>
+                                <div data-panel="/Auth/Main/Auth/License/Type3/Photo" class="cell">
+                                    <label>
+                                        <span class="must">
+                                            组织机构代
+                                        </span>
+                                        <span class="second">
+                                            码证或其它
+                                            <br /> &emsp;&thinsp;证件扫描件：
+                                        </span>
+                                    </label>
+                                    <p>
+                                        请上传组织机构代码证或其它证件清晰彩色原件扫描件或数码照在有效期内且
+                                        <br /> 年检章齐全, 支持：jpg、png、bmp、git格式照片，大小不超过10M。
+                                    </p>
+                                    <div class="image">
+                                        <input type="file" class="file" />
+                                        <span class="choose">选择图片</span>
+                                        <a data-cmd="show-photo" class="look show-photo">查看图片</a>
+                                    </div>
+                                </div>
+                            </article>
+                    
+                        </div>
+                    
+                    </fieldset>
+
+                    <div data-panel="/Auth/Main/Submit" class="form-btn">
+                        <button data-cmd="submit" class="normal">提交认证</button>
+                    </div>
+                </form>
+            </article>
+        </div>
+    </div>
+</section>

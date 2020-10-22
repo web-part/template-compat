@@ -1,0 +1,87 @@
+.application-chose {
+    /**没有二级列表时，隐藏。*/
+}
+.application-chose .tips {
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 51px;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFF;
+    font-size: 14px;
+    color: #aaa;
+}
+.application-chose .tips .no-data-img {
+    margin: 180px auto auto auto;
+}
+.application-chose .tips .tip-content {
+    margin-top: 10px;
+}
+.application-chose .tips.show {
+    display: block;
+}
+.application-chose article {
+    height: calc(100% - 85px);
+}
+.application-chose .content {
+    height: 100%;
+    margin-left: 0;
+}
+.application-chose .content .pager {
+    text-align: right;
+    margin: 0px 20px 10px 0;
+}
+.application-chose .table-common {
+    height: calc(100% - 70px);
+}
+.application-chose .chose-table {
+    margin: 0;
+}
+.application-chose .chose-table td {
+    overflow: hidden;
+    width: 30%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.application-chose .chose-table td .radio.on ::after {
+    left: 50%;
+    margin-left: -5px;
+}
+.application-chose .chose-table td .radio.gray i {
+    background-color: #d1d1d1;
+    cursor: not-allowed;
+}
+.application-chose .chose-table td:first-child {
+    width: 10%;
+    overflow: visible;
+}
+.application-chose .chose-table .table-thead tr {
+    height: 32px;
+}
+.application-chose .chose-table .table-tbody {
+    height: calc(100% - 28px);
+}
+.application-chose .chose-table .table-tbody tr {
+    height: 52px;
+}
+.application-chose .chose-table .table-tbody tr .Global-tip .tip {
+    bottom: -18px;
+    height: 24px;
+    line-height: 24px;
+}
+.application-chose .chose-table .table-tbody tr.checked .check-box {
+    background: url(../img/check.png) no-repeat;
+    background-position: center;
+}
+.application-chose .chose-table .table-tbody tr.has-chosed .check-box {
+    background: url(../img/check.png) no-repeat;
+    background-position: center;
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+.application-chose .chose-table .table-tbody tr span.keyword {
+    color: red;
+    margin: 0px;
+    background: #f9e8e8;
+}

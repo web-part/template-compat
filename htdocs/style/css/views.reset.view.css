@@ -1,0 +1,300 @@
+.view-Reset {
+    height: calc(100% - 64px);
+}
+.view-Reset .reset-content {
+    margin-top: 5%;
+    background: url('../img/rebg.png') no-repeat center bottom;
+    height: 100%;
+}
+.view-Reset .reset-content a {
+    font-size: 12px;
+    color: #2386EE;
+    cursor: pointer;
+}
+.view-Reset .reset-content .bgcircle1 {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    right: 400px;
+    bottom: 150px;
+    background: url('../img/circle1.png') no-repeat center top;
+}
+.view-Reset .reset-content .bgcircle2 {
+    position: absolute;
+    width: 157px;
+    height: 157px;
+    left: 142px;
+    bottom: 21px;
+    background: url('../img/circle2.png') no-repeat center center;
+}
+.view-Reset .reset-content .bgcircle3 {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 240px;
+    bottom: 400px;
+    background: url('../img/circle3.png') no-repeat center center;
+}
+.view-Reset .reset-content .bgcircle4 {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 114px;
+    bottom: 350px;
+    background: url('../img/circle4.png') no-repeat center center;
+}
+.view-Reset .reset-content .reset-div {
+    width: 550px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    background: #fff;
+    padding: 60px 90px;
+    box-shadow: 0 0 28px 0 rgba(95, 121, 176, 0.3);
+    border-radius: 10px;
+}
+.view-Reset .reset-content .reset-div .title {
+    text-align: center;
+    font-size: 24px;
+    color: #327BFF;
+    margin: 10px 0 50px 0;
+}
+.view-Reset .reset-content .reset-div .step-box {
+    padding-left: 5px;
+    margin-bottom: 56px;
+    font-size: 0;
+}
+.view-Reset .reset-content .reset-div .step-box .step {
+    display: inline-block;
+    position: relative;
+    width: 26px;
+    height: 26px;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #C2D1EB;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 26px;
+}
+.view-Reset .reset-content .reset-div .step-box .step .step-text {
+    position: absolute;
+    font-size: 12px;
+    color: #666;
+    letter-spacing: 0.83px;
+    line-height: 17px;
+    width: 55px;
+    top: 38px;
+    left: 50%;
+    margin-left: -28px;
+}
+.view-Reset .reset-content .reset-div .step-box .step.on {
+    background: #2386EE;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+}
+.view-Reset .reset-content .reset-div .step-box .step.step-line {
+    width: 140px;
+    height: 1px;
+}
+.view-Reset .reset-content .reset-div .reg-msg {
+    display: none;
+}
+.view-Reset .reset-content .reset-div .reg-msg.on {
+    display: block;
+}
+.view-Reset .reset-content .reset-div .reg-msg .hide {
+    display: none;
+}
+.view-Reset .reset-content .reset-div .reg-msg .success i {
+    height: 70px;
+    display: block;
+    background: url('../img/success.png') no-repeat center center;
+}
+.view-Reset .reset-content .reset-div .reg-msg .success .success-text {
+    font-size: 16px;
+    color: #555555;
+    letter-spacing: 1.14px;
+    text-align: center;
+    line-height: 36px;
+}
+.view-Reset .reset-content .reset-div .reg-msg .email .code a {
+    color: #888888;
+    float: right;
+    margin-top: 10px;
+}
+.view-Reset .reset-content .reset-div .reg-msg .email .code i {
+    background: url(../img/yzm.png) no-repeat;
+    width: 78px;
+    height: 34px;
+    display: inline-block;
+}
+.view-Reset .reset-content .reset-div .reg-msg .form-title label {
+    line-height: 17px;
+    font-size: 12px;
+    color: #444;
+    margin-bottom: 12px;
+    margin-top: 24px;
+    display: inline-block;
+}
+.view-Reset .reset-content .reset-div .reg-msg .form-title span {
+    font-size: 12px;
+    color: #2386EE;
+    cursor: pointer;
+    margin-left: 204px;
+}
+.view-Reset .reset-content .reset-div .reg-msg .text .send {
+    display: inline-block;
+    background: #2386EE;
+    text-align: center;
+    font-size: 15px;
+    color: #FFFFFF;
+    letter-spacing: 0.86px;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 7px;
+    width: 130px;
+    vertical-align: middle;
+}
+.view-Reset .reset-content .reset-div .reg-msg .text .send:disabled {
+    background-color: rgba(35, 134, 238, 0.5);
+    cursor: not-allowed;
+}
+.view-Reset .reset-content .reset-div .reg-msg .text .area {
+    width: 107px;
+    margin-right: 7px;
+    border: 1px solid #CECECE;
+    border-radius: 6px;
+    padding: 7px 10px 7px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    font-size: 18px;
+    /*cursor: pointer;*/
+}
+.view-Reset .reset-content .reset-div .reg-msg .text .area span {
+    margin-left: 32px;
+}
+.view-Reset .reset-content .reset-div .reg-msg .text .area span:before {
+    content: '';
+    background: url(../img/china.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 11px;
+    left: 10px;
+}
+.view-Reset .reset-content .reset-div .reg-msg .text .area span:after {
+    display: none;
+    /**��ʱ���ء�*/
+    content: '';
+    background: url(../img/down-arrow.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+.view-Reset .reset-content .reset-div .reg-msg .input-text {
+    display: inline-block;
+    border: 1px solid #CECECE;
+    border-radius: 6px;
+    padding: 0 10px;
+    height: 40px;
+    font-size: 18px;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+    line-height: 40px;
+    width: 228px;
+    vertical-align: middle;
+}
+.view-Reset .reset-content .reset-div .reg-msg .input-text[readonly] {
+    background: #eee;
+}
+.view-Reset .reset-content .reset-div .reg-msg .input-text.long {
+    width: 370px;
+}
+.view-Reset .reset-content .reset-div .reg-msg .input-text.top {
+    vertical-align: top;
+}
+.view-Reset .reset-content .reset-div .reg-msg .input-text.first {
+    margin-bottom: 20px;
+}
+.view-Reset .reset-content .reset-div .no-msg {
+    margin-top: 5px;
+}
+.view-Reset .reset-content .reset-div .no-msg a {
+    float: right;
+}
+.view-Reset .reset-content .reset-div .sub-button {
+    margin-top: 72px;
+}
+.view-Reset .reset-content .reset-div .sub-button .loginBtn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 44px;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    background: #2386EE;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.view-Reset .reset-content .reset-div .sub-button button {
+    width: 100%;
+    text-align: center;
+    line-height: 44px;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    background: #2386EE;
+    border-radius: 100px;
+    height: 44px;
+}
+.view-Reset .reset-content .reset-div .sub-button button:disabled {
+    background-color: rgba(35, 134, 238, 0.5);
+    cursor: not-allowed;
+}
+.view-Reset .reset-content .last {
+    width: 370px;
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    margin-top: 10px;
+}
+@media screen and (max-width: 1400px) {
+    .panel-reset .reset-content .reset-div {
+      width: 492px;
+      padding: 36px 60px;
+    }
+    .panel-reset .reset-content .reset-div .title {
+      margin: 10px 0 40px 0;
+      font-size: 22px;
+    }
+    .panel-reset .reset-content .reset-div .reg-msg .text .area {
+      padding: 6px 10px 5px;
+      font-size: 16px;
+    }
+    .panel-reset .reset-content .reset-div .reg-msg .text .area span:before {
+      top: 8px;
+    }
+    .panel-reset .reset-content .reset-div .reg-msg .text .send {
+      height: 34px;
+      line-height: 34px;
+      font-size: 15px;
+    }
+    .panel-reset .reset-content .reset-div .reg-msg .input-text {
+      height: 34px;
+      line-height: 34px;
+      font-size: 16px;
+    }
+    .panel-reset .reset-content .reset-div .sub-button button {
+      height: 40px;
+      line-height: 40px;
+      font-size: 16px;
+    }
+}

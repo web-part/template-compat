@@ -1,0 +1,229 @@
+.pro-create-type2 .content {
+    margin: 0 30px;
+}
+.pro-create-type2 .content strong {
+    font-size: 15px;
+}
+.pro-create-type2 .content .header {
+    margin-top: 24px;
+}
+.pro-create-type2 .content .header ul li {
+    display: inline-block;
+    height: 40px;
+    background-repeat: no-repeat;
+    width: 170px;
+}
+.pro-create-type2 .content .header .first {
+    background-image: url('../../style/img/cre1.png');
+}
+.pro-create-type2 .content .header .first.on {
+    background-image: url('../../style/img/cre1-on.png');
+}
+.pro-create-type2 .content .header .second {
+    background-image: url('../../style/img/cre2.png');
+}
+.pro-create-type2 .content .header .second.on {
+    background-image: url('../../style/img/cre2-on.png');
+}
+.pro-create-type2 .content .header .third {
+    width: 158px;
+    background-image: url('../../style/img/cre3.png');
+}
+.pro-create-type2 .content .header .third.on {
+    background-image: url('../../style/img/cre3-on.png');
+}
+.pro-create-type2 .content .contain .must.no-required:before {
+    content: '';
+    width: 7px;
+    display: inline-block;
+}
+.pro-create-type2 .content .contain .first,
+.pro-create-type2 .content .contain .second,
+.pro-create-type2 .content .contain .third {
+    display: none;
+}
+.pro-create-type2 .content .contain .first .radio-spe,
+.pro-create-type2 .content .contain .second .radio-spe,
+.pro-create-type2 .content .contain .third .radio-spe {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 48px;
+    position: relative;
+    cursor: pointer;
+}
+.pro-create-type2 .content .contain .first .radio-spe p,
+.pro-create-type2 .content .contain .second .radio-spe p,
+.pro-create-type2 .content .contain .third .radio-spe p {
+    font-size: 12px;
+    color: #7F848B;
+    margin-left: 38px;
+}
+.pro-create-type2 .content .contain .first .radio-spe.on i,
+.pro-create-type2 .content .contain .second .radio-spe.on i,
+.pro-create-type2 .content .contain .third .radio-spe.on i {
+    border: 1px solid #47C1F8;
+}
+.pro-create-type2 .content .contain .first .radio-spe.on i::after,
+.pro-create-type2 .content .contain .second .radio-spe.on i::after,
+.pro-create-type2 .content .contain .third .radio-spe.on i::after {
+    background-color: #47C1F8;
+    border-radius: 100%;
+    content: "";
+    display: inline-block;
+    height: 10px;
+    margin: 2px;
+    width: 10px;
+    position: absolute;
+}
+.pro-create-type2 .content .contain .first.on,
+.pro-create-type2 .content .contain .second.on,
+.pro-create-type2 .content .contain .third.on {
+    display: block;
+}
+.pro-create-type2 .content .contain .check {
+    margin-bottom: 26px;
+}
+.pro-create-type2 .content .contain .cont-input {
+    margin: 20px 0;
+}
+.pro-create-type2 .content .contain .cont-input .primary {
+    margin-left: 32px;
+}
+.pro-create-type2 .content .contain .cont-input .primary a {
+    color: #fff;
+}
+.pro-create-type2 .content .contain .cont-input .short {
+    width: 90px;
+    display: inline-block;
+}
+.pro-create-type2 .content .contain .cont-input span {
+    color: #001400;
+}
+.pro-create-type2 .content .contain .cont-input input {
+    height: 32px;
+    box-sizing: border-box;
+}
+.pro-create-type2 .content .contain .cont-input input[readonly] {
+    background-color: #F2F5F7;
+    cursor: not-allowed;
+}
+.pro-create-type2 .content .contain .cont-input p {
+    color: #AAADB1;
+    margin-top: 8px;
+    margin-left: 96px;
+}
+.pro-create-type2 .content .contain .second .cont-input {
+    margin: 15px 0;
+}
+.pro-create-type2 .content .contain .second input {
+    width: 210px;
+}
+.pro-create-type2 .content .contain .second .radio-cont .rate {
+    padding-left: 20px;
+}
+.pro-create-type2 .content .contain .second .radio-cont .title {
+    display: inline-block;
+}
+.pro-create-type2 .content .contain .second .title {
+    margin: 18px 0;
+}
+.pro-create-type2 .content .contain .second .title > span {
+    color: red;
+}
+.pro-create-type2 .content .contain .second .warning {
+    color: red;
+}
+.pro-create-type2 .content .contain .second .two {
+    margin-top: 22px;
+}
+.pro-create-type2 .content .contain .second .two .drop {
+    margin-left: 20px;
+}
+.pro-create-type2 .content .contain .second .two .date {
+    margin: 18px 20px;
+}
+.pro-create-type2 .content .contain .second .two .date > span {
+    display: inline-block;
+    width: 140px;
+}
+.pro-create-type2 .content .contain .second .two .date .primary {
+    margin-left: 20px;
+}
+.pro-create-type2 .content .contain .second .two .date > div {
+    display: inline-block;
+}
+.pro-create-type2 .content .contain .second .two .date .start input {
+    width: 84px;
+}
+.pro-create-type2 .content .contain .second .two .date .start span {
+    margin-left: 10px;
+    color: grey;
+}
+.pro-create-type2 .content .contain .second .two .des {
+    margin-top: 30px;
+    color: grey;
+    padding-left: 20px;
+    text-align: justify;
+}
+.pro-create-type2 .content .contain .third .DropList {
+    width: 210px;
+}
+.pro-create-type2 .content .contain .third .one {
+    margin-top: 20px;
+}
+.pro-create-type2 .content .contain .third input {
+    width: 210px;
+}
+.pro-create-type2 .content .contain .third .set-list {
+    margin-top: 20px;
+}
+.pro-create-type2 .content .contain .third .set-list strong {
+    margin-bottom: 14px;
+    display: inline-block;
+}
+.pro-create-type2 .content .contain .third .set-list li {
+    margin-bottom: 6px;
+    position: relative;
+    height: 22px;
+}
+.pro-create-type2 .content .contain .third .set-list li.on span {
+    position: relative;
+}
+.pro-create-type2 .content .contain .third .set-list li.on span i {
+    border: 1px solid #47C1F8;
+}
+.pro-create-type2 .content .contain .third .set-list li.on span::after {
+    background-color: #47C1F8;
+    border-radius: 100%;
+    content: "";
+    display: inline-block;
+    height: 10px;
+    margin: 3px;
+    width: 10px;
+    position: absolute;
+    bottom: 50%;
+    left: 0px;
+    margin-bottom: -5px;
+}
+.pro-create-type2 .foot {
+    float: none;
+    position: absolute;
+    bottom: 26px;
+    right: 0;
+}
+.pro-create-type2 .foot button {
+    width: 96px;
+}
+.pro-create-type2 .foot button.hide {
+    display: none;
+}
+.pro-create-type2 .foot .pre {
+    background-color: #F2F5F7;
+    color: #7F848B;
+}
+.pro-create-type2 .foot .create {
+    display: none;
+}
+.pro-create-type2 .foot .create.on {
+    display: inline-block;
+}

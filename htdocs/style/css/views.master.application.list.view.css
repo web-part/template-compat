@@ -1,0 +1,179 @@
+.view-Application .common-nav .nav-right {
+    cursor: auto !important;
+}
+.view-Application .common-nav .nav-right .large {
+    line-height: 34px;
+}
+.view-Application .news {
+    position: relative;
+}
+.view-Application .news.hide {
+    display: none;
+}
+.view-Application .news i {
+    background-image: url(../img/laba.png);
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    margin: 22px 0 0 70px;
+}
+.view-Application .news .marquee {
+    margin-left: 64px;
+    margin-top: 16px;
+    color: #fff;
+    font-size: 15px;
+    background-color: #ff8503;
+    width: 600px;
+    padding: 3px 0 3px 30px;
+    display: inline-block;
+}
+.view-Application .news .marquee marquee {
+    vertical-align: middle;
+}
+.view-Application .news .marquee marquee span {
+    margin-right: 60px;
+}
+.view-Application .list.table-common {
+    height: calc(100% - 128px);
+}
+.view-Application .list .table-thead .product-table tr {
+    height: 65px;
+}
+.view-Application .list .product-table tr td {
+    width: 8%;
+    position: relative;
+}
+.view-Application .list .product-table tr td.hide {
+    display: none;
+}
+.view-Application .list .product-table tr td.editbar p {
+    display: none;
+}
+.view-Application .list .product-table tr td.editbar input {
+    display: inline-block;
+}
+.view-Application .list .product-table tr td.editbar .icon {
+    background-image: url('../img/ok.png');
+}
+.view-Application .list .product-table tr td .manage {
+    color: #47C1F8;
+    text-decoration: none;
+    cursor: pointer;
+}
+.view-Application .list .product-table tr td p {
+    margin-right: 36px;
+}
+.view-Application .list .product-table tr td input {
+    width: 84%;
+    box-sizing: border-box;
+    display: none;
+    margin-right: 32px;
+    padding: 6px 10px;
+    height: 36px;
+    border: 1px solid #e1e1e1;
+}
+.view-Application .list .product-table tr td input:hover {
+    border: 1px solid #59C7F8;
+}
+.view-Application .list .product-table tr td .icon {
+    position: absolute;
+    top: 23px;
+    right: 0px;
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    cursor: pointer;
+    background-image: url('../img/edit.png');
+}
+.view-Application .list .product-table tr td .drop-span {
+    margin: 0;
+}
+.view-Application .list .product-table tr td.short {
+    width: 7%;
+}
+.view-Application .list .product-table tr td.long {
+    width: 14%;
+}
+.view-Application .list .product-table tr td.button {
+    width: 11%;
+    /*针对 js 动态控制的*/
+}
+.view-Application .list .product-table tr td.button .change {
+    display: none;
+}
+.view-Application .list .product-table tr td.button .change.has {
+    display: block;
+}
+.view-Application .list .product-table tr td.button .drop-btn-click {
+    vertical-align: middle;
+}
+.view-Application .list .product-table tr td.button .drop-btn-click ul {
+    padding: 5px 0;
+}
+.view-Application .list .product-table tr td.button .drop-btn-click button {
+    margin-left: 0;
+    margin-top: 2px;
+    width: 84px;
+}
+.view-Application .list .product-table tr td.button .application-list {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #59C7F8;
+    height: 26px;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #59C7F8;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+.view-Application .list .product-table tr td.button .gray .free,
+.view-Application .list .product-table tr td.button .gray .bind,
+.view-Application .list .product-table tr td.button .gray .manage {
+    background-color: #d1d1d1;
+    cursor: not-allowed;
+    height: 100%;
+    vertical-align: top;
+    margin-top: 0;
+}
+.view-Application .list .product-table tr td.button .user-manage .manage {
+    display: inherit;
+}
+.view-Application .list .product-table tr td.button .free-test .free {
+    display: inherit;
+}
+.view-Application .list .product-table tr td.button .bind-account .bind {
+    display: inherit;
+}
+.view-Application .list .product-table tr td.button .free,
+.view-Application .list .product-table tr td.button .bind,
+.view-Application .list .product-table tr td.button .manage {
+    display: none;
+}
+.view-Application .list .product-table tr td.button .no-select .drop-span {
+    background-color: #d1d1d1;
+    height: 24px;
+    vertical-align: top;
+    cursor: not-allowed;
+}
+.view-Application .list .product-table tr td.button .no-select .drop-span:after {
+    content: '';
+    margin-top: 0px;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+.view-Application .list .product-table tr td.button .no-select .drop-span ul {
+    display: none;
+}
+.view-Application .list .product-table tr td i {
+    cursor: pointer;
+    margin-left: 8px;
+    font-size: 1.7em;
+    color: #cecece;
+    position: absolute;
+}
+.view-Application .list .product-table tr td i:hover {
+    color: #47C1F8;
+}

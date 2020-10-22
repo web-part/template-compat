@@ -1,0 +1,205 @@
+﻿.view-Application {
+    .common-nav {
+        .nav-right {
+            cursor: auto !important;
+            .large {
+                line-height: 34px;
+            }
+        }
+    }
+    .news {
+        position: relative;
+        &.hide {
+            display: none;
+        }
+        i {
+            background-image: url(../img/laba.png);
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            margin: 22px 0 0 70px;
+        }
+        .marquee {
+            margin-left: 64px;
+            margin-top: 16px;
+            color: #fff;
+            font-size: 15px;
+            background-color: #ff8503;
+            width: 600px;
+            padding: 3px 0 3px 30px;
+            display: inline-block;
+            marquee {
+                vertical-align: middle;
+                span {
+                    margin-right: 60px;
+                }
+            }
+        }
+    }
+    .list {
+        &.table-common {
+            height: calc(100% - 128px);
+        }
+        .table-thead {
+            .product-table {
+                tr {
+                    height: 65px;
+                } // .button {
+                //     width: calc(23% - 6px);
+                // }
+            }
+        }
+        .product-table {
+            tr td {
+                width: 8%;
+                position: relative;
+                &.hide {
+                    display: none;
+                }
+                &.editbar {
+                    p {
+                        display: none;
+                    }
+                    input {
+                        display: inline-block;
+                    }
+                    .icon {
+                        background-image: url('../img/ok.png');
+                    }
+                }
+                .manage {
+                    color: #47C1F8;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+                p {
+                    margin-right: 36px;
+                }
+                input {
+                    width: 84%;
+                    box-sizing: border-box;
+                    display: none;
+                    margin-right: 32px;
+                    padding: 6px 10px;
+                    height: 36px;
+                    border: 1px solid #e1e1e1;
+                    &:hover {
+                        border: 1px solid #59C7F8;
+                    }
+                }
+                .icon {
+                    position: absolute;
+                    top: 23px;
+                    right: 0px;
+                    display: inline-block;
+                    height: 28px;
+                    width: 28px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 22px;
+                    cursor: pointer;
+                    background-image: url('../img/edit.png');
+                }
+                .drop-span {
+                    margin: 0;
+                }
+                &.short {
+                    width: 7%;
+                }
+                &.long {
+                    width: 14%;
+                }
+                &.button {
+                    width: 11%;
+                    .change {
+                        display: none;
+                        &.has {
+                            display: block;
+                        }
+                    }
+                    .drop-btn-click {
+                        vertical-align: middle;
+                        ul {
+                            padding: 5px 0;
+                        }
+                        button {
+                            margin-left: 0;
+                            margin-top: 2px;
+                            width: 84px;
+                        }
+                    }
+                    .application-list {
+                        display: inline-block;
+                        cursor: pointer;
+                        border: 1px solid #59C7F8;
+                        height: 26px;
+                        border-radius: 4px;
+                        background-color: #fff;
+                        color: #59C7F8;
+                        vertical-align: middle;
+                        margin-left: 8px;
+                    }
+                    /*针对 js 动态控制的*/
+                    .gray {
+                        .free,
+                        .bind,
+                        .manage {
+                            background-color: #d1d1d1;
+                            cursor: not-allowed;
+                            height: 100%;
+                            vertical-align: top;
+                            margin-top: 0;
+                        }
+                    }
+                    .user-manage {
+                        .manage {
+                            display: inherit;
+                        }
+                    }
+                    .free-test {
+                        .free {
+                            display: inherit;
+                        }
+                    }
+                    .bind-account {
+                        .bind {
+                            display: inherit;
+                        }
+                    }
+                    .free,
+                    .bind,
+                    .manage {
+                        display: none;
+                    }
+                    .no-select {
+                        .drop-span {
+                            background-color: #d1d1d1;
+                            height: 24px;
+                            vertical-align: top;
+                            cursor: not-allowed;
+                            &:after {
+                                content: '';
+                                margin-top: 0px;
+                                transform: rotate(0deg);
+                                transition: all 0.3s ease;
+                            }
+                            ul {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                & i {
+                    cursor: pointer;
+                    margin-left: 8px;
+                    font-size: 1.7em;
+                    color: #cecece;
+                    position: absolute;
+                    &:hover {
+                        color: #47C1F8;
+                    }
+                }
+            }
+        }
+    }
+}

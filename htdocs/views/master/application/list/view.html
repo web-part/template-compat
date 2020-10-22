@@ -1,0 +1,100 @@
+<section data-view="/Application" class="view-Application" style="display: none;">
+    <nav data-panel="/Application/Header" class="common-nav">
+        <template>
+            <ul class="user-nav-ul">
+                <li data-cmd="company-list">
+                    <a>我的企业</a>
+                    <span></span>
+                </li>
+                <li data-cmd="product-list">
+                    <a title="{company}">{company}</a>
+                    <span></span>
+                </li>
+                <li data-cmd="my-product">
+                    <a title="{product}">{product}</a>
+                    <span></span>
+                </li>
+                <li>
+                    我的应用
+                </li>
+            </ul>
+            <div data-type="add-bar" class="nav-right Global-tip child orange">
+                <button data-cmd="add-application" class="primary large">添加应用</button>
+                <div class="tip">
+                    单击此添加应用
+                </div>
+            </div>
+        </template>
+    </nav>
+
+    <main data-panel="/Application/Main" class="main">
+        <div data-panel="/Application/Main/News" class="news">
+            <i></i>
+            <div class="marquee">
+                <marquee behavior="scroll" direction="left"></marquee>
+            </div>
+        </div>
+
+        <div class="list table-common">
+            <header class="table-thead" data-panel="/Application/Main/Header">
+                <table class="product-table">
+                    <thead>
+                        <tr>
+                            <td class="long">应用名称</td>
+                            <td class="short" data-cmd="hide-item">用户数</td>
+                            <td class="short" data-cmd="hide-item">应用状态</td>
+                            <td class="button">操作</td>
+                        </tr>
+                    </thead>
+                </table>
+            </header>
+            <div data-panel="/Application/Main/List" class="table-tbody">
+                <template name="table" placeholder="table">
+                    <table class="product-table">
+                        <tbody>
+                            <template name="row" placeholder="rows">
+                                <tr>
+
+                                    <td class="long">{name}
+                                        <span class="manage" data-index="{index}" data-type="{type}" data-cmd="manage">(应用管理)</span>
+                                    </td>
+                                    <td class="short">{users}</td>
+                                    <td class="{status-text-class}" class="short">{status}
+                                        <template name="refresh" placeholder="refresh">
+                                            <span data-cmd="refresh" data-index="{index}" title="刷新状态">
+                                                <i class="fa fa-refresh "></i>
+                                            </span>
+                                        </template>
+                                    </td>
+                                    <td class="button">
+                                        <div data-type="{index}" class="drop-btn-click Global-tip own orange {no-select} {button} {style}">
+                                            <button data-index="{index}" data-cmd="bind-account" class="bind">绑定账套</button>
+                                            <button data-index="{index}" data-cmd="user-manage" class="manage">用户管理</button>
+                                            <button data-index="{index}" data-cmd="free-test" class="free">开通应用</button>
+                                            <span class="drop-span" data-cmd="drop-span" data-index="{index}">
+                                                <ul>
+                                                    <template name="drop" placeholder="drop">
+                                                        <li data-index="{index}" data-cmd="{cmd}" class="add-users">{dropname}</li>
+                                                    </template>
+                                                </ul>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </template>
+
+            </div>
+        </div>
+    </main>
+
+
+    <link rel="html" href="Application/dialog/add/panel.html" />
+    <link rel="html" href="Application/dialog/manage/panel.html" />
+    <link rel="html" href="Application/dialog/forbidden/panel.html" />
+    <link rel="html" href="Application/dialog/purchase/panel.html" />
+    <link rel="html" href="Application/dialog/bind/panel.html" />
+    <link rel="html" href="Application/dialog/choseacct/panel.html" />
+</section>

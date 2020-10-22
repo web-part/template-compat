@@ -1,0 +1,87 @@
+.application-bind {
+    /**没有二级列表时，隐藏。*/
+}
+.application-bind .tips {
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 51px;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFF;
+    font-size: 14px;
+    color: #aaa;
+}
+.application-bind .tips .no-data-img {
+    margin: 180px auto auto auto;
+}
+.application-bind .tips .tip-content {
+    margin-top: 10px;
+}
+.application-bind .tips.show {
+    display: block;
+}
+.application-bind article {
+    height: calc(100% - 85px);
+}
+.application-bind .content {
+    height: 100%;
+    margin-left: 0;
+}
+.application-bind .content .pager {
+    text-align: right;
+    margin: 0px 20px 10px 0;
+}
+.application-bind .table-common {
+    height: calc(100% - 70px);
+}
+.application-bind .bind-table {
+    margin: 0;
+}
+.application-bind .bind-table td {
+    overflow: hidden;
+    width: 30%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.application-bind .bind-table td .radio.on ::after {
+    left: 50%;
+    margin-left: -5px;
+}
+.application-bind .bind-table td .radio.gray i {
+    background-color: #d1d1d1;
+    cursor: not-allowed;
+}
+.application-bind .bind-table td:first-child {
+    width: 10%;
+    overflow: visible;
+}
+.application-bind .bind-table .table-thead tr {
+    height: 32px;
+}
+.application-bind .bind-table .table-tbody {
+    height: calc(100% - 28px);
+}
+.application-bind .bind-table .table-tbody tr {
+    height: 52px;
+}
+.application-bind .bind-table .table-tbody tr .Global-tip .tip {
+    bottom: -18px;
+    height: 24px;
+    line-height: 24px;
+}
+.application-bind .bind-table .table-tbody tr.checked .check-box {
+    background: url(../img/check.png) no-repeat;
+    background-position: center;
+}
+.application-bind .bind-table .table-tbody tr.has-chosed .check-box {
+    background: url(../img/check.png) no-repeat;
+    background-position: center;
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+.application-bind .bind-table .table-tbody tr span.keyword {
+    color: red;
+    margin: 0px;
+    background: #f9e8e8;
+}

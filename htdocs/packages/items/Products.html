@@ -1,0 +1,308 @@
+<section data-view="/Products" class="view-Products" style="display: none;">
+    <nav data-panel="/Products/Header" class="common-nav">
+        <template>
+            <ul class="user-nav-ul">
+                <li data-cmd="company-list">
+                    <a>我的企业</a>
+                    <span></span>
+                </li>
+                <li data-cmd="product-list">
+                    <a title="{company}">{company}</a>
+                    <span></span>
+                </li>
+                <li>我的产品</li>
+            </ul>
+            <div data-type="add-bar" class="nav-right Global-tip child orange">
+                <button data-cmd="add-product" class="primary large">添加产品</button>
+                <div class="tip">
+                    单击此添加产品
+                </div>
+            </div>
+        </template>
+    </nav>
+
+    <main data-panel="/Products/Main" class="main">
+        <div data-panel="/Products/Main/News" class="news">
+            <i></i>
+            <div class="marquee">
+                <marquee behavior="scroll" direction="left"></marquee>
+            </div>
+        </div>
+
+        <div class="list table-common">
+            <header class="table-thead" data-panel="/Products/Main/Header" >
+                <template>
+                    <table class="product-table">
+                        <thead>
+                            <tr>
+                                <td class="long">产品名称</td>
+                                <td class="short {hide}">已用账套</td>
+                                <td class="short">账套总数</td>
+                                <td class="short">用户数量</td>
+                                <td class="short {hide}">已用空间</td>
+                                <td>到期时间</td>
+                                <td>产品状态</td>
+                                <td class="button">操作</td>
+                            </tr>
+                        </thead>
+                    </table>
+                </template>
+            </header>
+            <div data-panel="/Products/Main/List" class="table-tbody">
+                <template name="table" placeholder="table">
+                    <table class="product-table">
+                        <tbody>
+                            <template name="row" placeholder="rows">
+                                <tr>
+                                    <td class="long" data-edit="{index}">
+                                        <input value="{name}" />
+                                        <p>{name}</p>
+                                        <i class="icon" data-index="{index}" data-cmd="edit"></i>
+                                    </td>
+
+                                    <td class="short {hide}">{count1}</td>
+                                    <td class="short">{count2}</td>
+                                    <td class="short ">{users}</td>
+                                    <td class="short {hide}">{usedSize} M</td>
+                                    <td class="{expire-class}">{expire}</td>
+                                    <td class="{status-class}">{status}</td>
+                                    <td class="button {actived-class} {gray}">
+
+                                        <div data-type="{index}" class="drop-btn-click Global-tip own orange {if-free}">
+                                            <button data-index="{index}" data-cmd="list" class="list">账套列表</button>
+                                            <button data-index="{index}" data-cmd="free-test" class="free-test">免费试用</button>
+                                            <button data-index="{index}" data-cmd="to-pub" class="public">启用公有云</button>
+
+                                            <span class="drop-span" data-index="{index}">
+                                                <ul>
+                                                    <li data-index="{index}" data-cmd="baks" class="">账套备份列表</li>
+                                                    <li data-index="{index}" data-cmd="users" class="">在线用户</li>
+                                                    <li data-index="{index}" data-cmd="update" class="update">更新服务</li>
+                                                    <li data-index="{index}" data-cmd="active" class="active">开通服务</li>
+                                                    <li data-index="{index}" data-cmd="create" class="">创建账套</li>
+                                                    <li data-index="{index}" data-cmd="detail" class="detail">产品详情</li>
+                                                    <li data-index="{index}" data-cmd="change" class="change {owner}">切换为私有云</li>
+
+                                                    <template name="delete" placeholder="button-delete">
+                                                        <li data-index="{index}" data-cmd="delete" class="delete">删除产品</li>
+                                                    </template>
+
+                                                    <li data-index="{index}" data-cmd="buy" style="display: {kis-o2o-1-display};">我要购买</li>
+                                                    <li data-index="{index}" data-cmd="kis-o2o" data-type="2" style="display: {kis-o2o-2-display};">加模加用户</li>
+                                                    <li data-index="{index}" data-cmd="kis-o2o" data-type="3" style="display: {kis-o2o-3-display};">续租</li>
+
+                                                   
+
+                                                </ul>
+                                            </span>
+
+                                            <div class="tip right">
+                                                单击此进入账套列表
+                                            </div>
+                                        </div>
+                                        <button data-index="{index}" data-cmd="app-list" class="app-list" {app-list-disalbed}>应用列表</button>
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </template>
+
+            </div>
+        </div>
+    </main>
+
+    <div data-panel="/Products/Buy" class="alert-common pro-buy" style="display: none;">
+        <div data-panel="/Products/Buy/Content" class="content">
+            <template>
+                <p class="top">
+                    请输入服务商编码，不输入则由金蝶为您分配对应官方授权服务商，订单支付完成后在订单详情中进行查看。
+                </p>
+                <ul class="cont-input">
+                    <li>
+                        <span class="spe">服务商编码：</span>
+                        <input type="text" value="{value}" placeholder="请输入服务商编码" readonly />   
+                        <button data-cmd="verify" class="primary">校验</button>
+                    </li>
+                    <li data-id="name" style="{name-display}">
+                        <span class="spe">服务商名称：</span>
+                        <span class="value">{name}</span>
+                    </li>
+    
+                </ul>
+            </template>
+        </div>
+    
+        <div data-panel="/Products/Buy/Footer">
+            <button data-cmd="cancel" class="normal">取消</button>
+            <button data-cmd="submit" class="primary">确定</button>
+        </div>
+    </div>
+    <div data-panel="/Products/Active" class="alert-common pro-activate" style="display: none;">
+        <div data-panel="/Products/Active/Content" class="content">
+            <div data-panel="/Products/Active/Content/Company" class="top">
+                <template>
+                    <span>当前企业：</span>
+                    <span class="name">{company}</span>
+                    <span class="status">（{status}）</span>
+                </template>
+            </div>
+            <div data-panel="/Products/Active/Content/Sn" class="cont-input">
+                <template>
+                    <span class="spe">序列号</span>
+                    <ul>
+                        <li>
+                            <input type="text" name="sn" class="long" maxlength="20" />
+                        </li>
+                    </ul>
+                </template>
+            </div>
+            <div data-panel="/Products/Active/Content/Cdkey" class="cont-input">
+                <template>
+                    <span>CDKEY</span>
+                    <ul>
+                        <li>
+                            <input type="text" name="cdkey" data-index="0" maxlength="4">
+                            <span>-</span>
+                        </li>
+                        <li>
+                            <input type="text" name="cdkey" data-index="1" maxlength="4">
+                            <span>-</span>
+                        </li>
+                        <li>
+                            <input type="text" name="cdkey" data-index="2" maxlength="4">
+                            <span>-</span>
+                        </li>
+                        <li>
+                            <input type="text" name="cdkey" data-index="3" maxlength="4">
+                        </li>
+                    </ul>
+                </template>
+            </div>
+        </div>
+    
+        <div data-panel="/Products/Active/Footer">
+            <button class="primary">开通服务</button>
+        </div>
+    </div>
+    <div data-panel="/Products/Add" class="alert-common pro-add" style="display: none;">
+        <div data-panel="/Products/Add/Content" class="content">
+    
+            <div class="cont-div">
+                <div class="cont-div-msg">选择产品</div>
+                <div data-panel="/Products/Add/Content/Types" class="cont-div-btn">
+                    <template>
+                        <button data-index="{index}" class="normal long {disabled}" title="{title}">{name}</button>
+                    </template>
+                </div>
+            </div>
+    
+            <div class="cont-div items">
+                <div class="cont-div-msg">选择产品</div>
+                <div data-panel="/Products/Add/Content/Items" class="cont-div-btn">
+                    <template>
+                        <button data-index="{index}" class="normal long">{name}</button>
+                    </template>
+                </div>
+            </div>
+    
+            <div class="cont-div hide">   <!-- 选择区域暂时隐藏 -->
+                <div class="cont-div-msg">选择区域</div>
+                <div data-panel="/Products/Add/Content/Regions" class="cont-div-btn">
+                    <template>
+                        <button data-index="{index}" data-enabled="{enabled}" class="normal short {forbid-class}">{name}</button>
+                    </template>
+                </div>
+            </div>
+        </div>
+    
+        <div data-panel="/Products/Add/Footer" class="foot-right">
+            <button class="primary">保存</button>
+            
+        </div>
+    </div>
+    
+    <div data-panel="/Products/Detail" class="alert-common pro-detail" style="display: none;">
+        <div data-panel="/Products/Detail/Content" class="content">
+            <template>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td class="name">产品序列号</td>
+                            <td title="{proNum}">{proNum}</td>
+                            <td class="name">产品名称</td>
+                            <td title="{proName}">{proName}</td>
+                        </tr>
+                        <tr>
+                            <td class="name">首次租赁开始时间</td>
+                            <td>{startTime}</td>
+                            <td class="name">租赁到期时间</td>
+                            <td>{endTime}</td>
+                        </tr>
+                        <tr>
+                            <td class="name">账套总数</td>
+                            <td>{num}(仅公有云模式控制)</td>
+                            <td class="name">用户总数</td>
+                            <td>{userNum}</td>
+                        </tr>
+                        <tr class="high">
+                            <td class="name">已购买模块</td>
+                            <td colspan="3" class="spe"><p>{hasMode}</p></td>
+                        </tr>
+                        <tr class="high">
+                            <td class="name">未购买模块</td>
+                            <td colspan="3" class="spe"><p>{noMode}</p></td>
+                        </tr>
+                        <tr class="high">
+                            <td class="name">备注</td>
+                            <td colspan="3" class="spe"><p>{tip}</p></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </template>
+        </div>
+    
+        <div data-panel="/Products/Detail/Footer" class="foot">
+            <button class="primary">确认</button>
+        </div>
+    </div>
+    <div data-panel="/Products/Delete" class="alert-common pro-delete" style="display: none;">
+        <div data-panel="/Products/Delete/Content" class="content">
+            <!--你确认删除产品【{name}】吗-->
+        </div>
+    
+        <div data-panel="/Products/Delete/Footer" class="foot-right">
+            <button data-cmd="ok" class="normal">确定</button>
+            <button data-cmd="cancel" class="primary">取消</button>
+            
+        </div>
+    </div>
+    
+    <div data-panel="/Products/Certify" class="alert-common pro-certify" style="display: none;">
+        <div data-panel="/Products/Certify/Content" class="content">
+            <!--{msg}-->
+        </div>
+    
+        <div data-panel="/Products/Certify/Footer" class="foot-right">
+            <button data-cmd="ok" class="primary">认证企业</button>
+            <button data-cmd="cancel" class="normal">取消</button>
+            
+        </div>
+    </div>
+    
+    <div data-panel="/Products/Trial" class="alert-common pro-try" style="display: none;">
+        <div data-panel="/Products/Trial/Content" class="content">
+            <template>
+                当前企业{text}仅可试用7天，认证后将可试用30天。如试用产品成功后再进行企业认证，试用期限将不会延长。
+            </template>
+        </div>
+    
+        <div data-panel="/Products/Trial/Footer" class="foot-right">
+            <button data-cmd="ok" class="normal">继续试用</button>
+            <button data-cmd="go" class="primary">认证企业</button>
+            
+        </div>
+    </div>
+    
+
+</section>

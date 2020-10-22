@@ -1,0 +1,134 @@
+.view-AccountBaks {
+    .nav-right {
+        button {
+            margin-left: 10px;
+        }
+    }
+    .main {
+        height: calc(100% - 90px);
+        .change-tab {
+            >li {
+                display: inline-block;
+                height: 40px;
+                line-height: 37px;
+                font-size: 15px;
+                margin: 0 14px 10px 0;
+                cursor: pointer;
+                &.on {
+                    border-bottom: 3px solid #47C1F8;
+                    color: #47C1F8;
+                }
+            }
+        }
+        >p {
+            margin-left: 64px;
+            margin-top: 16px;
+            color: #fff;
+            font-size: 15px;
+            background-color: #ff8503;
+            width: 600px;
+            padding: 3px 12px;
+        }
+        .panel-main {
+            height: calc(100% - 64px);
+            position: relative;
+            .progress{
+                position: absolute;
+                top: -52px;
+                right: 160px;
+                font-size: 13px;
+                text-align: center;
+                .bar{
+                    position: relative;
+                    height: 10px;
+                    width: 150px;
+                    border: 1px solid #ccc;
+                    border-radius: 6px;
+                    margin-top: 6px;
+                    i{
+                        position: absolute;
+                        left:0;
+                        border-radius: 6px;
+                        width:0;
+                        display: inline-block;
+                        background-color:#47C1F8;
+                        height: 10px;
+                    }
+                }
+            }
+            .tips {
+                position: absolute;
+                top: -44px;
+                right: -6px;
+                font-size: 13px;
+                color:#ff8503;
+            }
+            .all-delete {
+                position: absolute;
+                top: -50px;
+                right: 6px;
+                &[disabled] {
+                    background: #dedede;
+                    cursor: not-allowed;
+                }
+            }
+        }
+    }
+    .list {
+        &.table-common {
+            height: calc(100% - 128px);
+        }
+        .table-tbody {
+            height: calc(100% - 96px); //ֻҪ��һ����¼��ѡ���ˣ��򽻸��������������ڵĲ�������á�
+            &.checked {
+                button.small {
+                    background-color: #eee;
+                    cursor: not-allowed;
+                    border: 1px solid #cacaca;
+                    color: #afafaf;
+                }
+            }
+        }
+        .product-table {
+            tr td {
+                width: 10%;
+                position: relative;
+                word-break: break-all;
+                &.hide {
+                    display: none;
+                }
+                &.long {
+                    width: 21%;
+                } // &.button {
+                //     width: 28%;
+                // }
+                i {
+                    cursor: pointer;
+                    margin-left: 8px;
+                    font-size: 1.7em;
+                    color: #cecece;
+                    position: absolute;
+                    &:hover {
+                        color: #47C1F8;
+                    }
+                }
+            }
+        }
+    }
+    .pager {
+        text-align: right;
+        margin-right: 20px;
+        margin-top: 20px;
+        .el-pagination {
+            display: inline-block;
+        }
+        .el-pagination-jump {
+            position: relative;
+            top: 18px;
+        }
+        .total-num {
+            position: relative;
+            top: 13px;
+        }
+    }
+}

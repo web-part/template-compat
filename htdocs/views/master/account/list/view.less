@@ -1,0 +1,242 @@
+.view-Accounts {
+    .nav-right {
+        button,
+        .create,
+        .recover {
+            display: inline-block;
+            line-height: 34px;
+        }
+        .recover {
+            margin-left: 16px;
+        }
+        .delete-tip {
+            display: inline-block;
+            position: absolute;
+            top: -20px;
+            right: -2px;
+            height: 18px;
+            width: 18px;
+            background: url(../img/del.png) no-repeat center;
+            background-size: 18px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+        .hide {
+            display: none;
+        }
+        a {
+            margin-left: 16px !important;
+            display: inline-block !important;
+            &:hover {
+                background-color: #59C7F8 !important;
+            }
+            &:active {
+                background-color: #3FADDE !important;
+            }
+        }
+    }
+    .main {
+        .main-tip {
+            margin-left: 64px;
+            margin-top: 16px;
+            color: #fff;
+            font-size: 15px;
+            background-color: #ff8503;
+            width: 380px;
+            padding: 3px 12px;
+            a {
+                color: #fff;
+                text-decoration: underline;
+                font-weight: bold;
+            }
+        }
+    }
+    .list {
+        position: relative;
+        .table-thead {
+            .product-table {
+                tr {
+                    height: 65px;
+                }
+            }
+        }
+        .table-tbody {
+            tr {
+                td:first-child {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+            .Global-tip {
+                a {
+                    padding: 6px;
+                }
+                .center {
+                    bottom: -24px;
+                }
+            }
+            &.no-data {
+                background-position: center 136px;
+            }
+        }
+        .no-data-add {
+            top: 400px;
+            position: absolute;
+            left: 50%;
+            margin-left: -80px;
+            font-size: 20px;
+            height: 50px;
+            width: 160px;
+            button {
+                height: 50px;
+                width: 160px;
+                box-sizing: border-box;
+                font-size: 18px;
+            }
+        }
+        .product-table {
+            tr td {
+                width: 10%;
+                position: relative;
+                .has-remark {
+                    display: inline-block;
+                    height: 19px;
+                    line-height: 19px;
+                    width: 16px;
+                    text-align: center;
+                    background: url(../img/question.png) no-repeat center;
+                    vertical-align: top;
+                }
+                .no-remark {
+                    display: none;
+                }
+                &.editbar {
+                    p {
+                        display: none;
+                    }
+                    input {
+                        display: inline-block;
+                        width: 80%;
+                        margin-right: 32px;
+                    }
+                    .icon {
+                        background-image: url('../img/ok.png');
+                    }
+                }
+                p {
+                    margin-right: 32px;
+                }
+                input {
+                    display: none;
+                }
+                .icon {
+                    position: absolute;
+                    top: 23px;
+                    right: 0px;
+                    display: inline-block;
+                    height: 28px;
+                    width: 28px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 22px;
+                    cursor: pointer;
+                    background-image: url('../img/edit.png');
+                }
+                &.button {
+                    button {
+                        height: 24px;
+                        margin: 0;
+                        border-radius: 4px 0 0 4px;
+                    }
+                    .drop-btn-click{
+                        vertical-align: middle;
+                    }
+                    .drop-btn-click span {
+                        .has-some {
+                            li {
+                                &.btn {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                    &.no-delete {
+                        .delete {
+                            display: none;
+                        }
+                    }
+                    &.gray {
+                        .drop-btn-click {
+                            button {
+                                background-color: #d1d1d1;
+                                cursor: not-allowed;
+                            }
+                            span {
+                                ul {
+                                    >li {
+                                        display: none;
+                                        &.delete {
+                                            display: block;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.all-gray {
+                        .drop-btn-click {
+                            span:hover:after {
+                                content: '';
+                                margin-top: auto;
+                                transform: rotate(0);
+                                transition: all 0.3s ease;
+                            }
+                            button {
+                                background-color: #d1d1d1;
+                                cursor: not-allowed;
+                            }
+                            span {
+                                background-color: #d1d1d1;
+                                cursor: not-allowed;
+                                height: 24px;
+                                border-radius: 0 4px 4px 0;
+                                ul {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.long {
+                    width: 20%;
+                }
+                &.short {
+                    width: 6%;
+                }
+                & i {
+                    cursor: pointer;
+                    margin-left: 8px;
+                    font-size: 1.7em;
+                    color: #cecece;
+                    position: absolute;
+                    &:hover {
+                        color: #47C1F8;
+                    }
+                }
+            }
+            tr.status-2 {
+                .btn-enable {
+                    display: none;
+                }
+            }
+            tr.status-3,
+            tr.status-4,
+            tr.status-5 {
+                .btn-disable {
+                    display: none;
+                }
+            }
+        }
+    }
+}

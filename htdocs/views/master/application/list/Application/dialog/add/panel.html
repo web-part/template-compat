@@ -1,0 +1,53 @@
+﻿<div data-panel="/Application/Add" class="alert-common application-add" style="display: none;">
+    <div data-panel="/Application/Add/Content" class="content">
+
+
+        <div class="table-common add-table">
+            <div class="table-thead">
+                <table class="product-table">
+                    <thead>
+                        <tr>
+                            <td>选择</td>
+                            <td>应用名称</td>
+                            <td>应用说明</td>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div data-panel="/Application/Add/Content/List" class="table-tbody">
+                <template name="table" placeholder="table">
+                    <table class="product-table">
+                        <tbody>
+                            <template name="row" placeholder="rows">
+                                <tr data-index="{index}" class="{chosed}">
+                                    <td data-type="{index}" class="Global-tip child">
+                                        <span data-cmd="check" data-index="{index}" class="check-box"></span>
+                                        <div class="tip arrow-left">
+                                            列表中选择用户后单击确认
+                                        </div>
+                                    </td>
+                                    <td title="{name}">{name}</td>
+                                    <td title="{detail}">{detail}</td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </template>
+            </div>
+        </div>
+        <div class="tips" data-cmd="no-data-tip">
+            <p class="no-data-tip no-data-img"></p>
+            <p class="tip-content">即将上架，敬请期待</p>
+        </div>
+        
+        <div data-panel="/Application/Add/Content/Pager" class="pager">
+            <div></div>
+        </div>
+
+    </div>
+    
+    <div data-panel="/Application/Add/Footer">
+        <button data-cmd="ok" class="primary">确认</button>
+        <button data-cmd="cancel" class="false">取消</button>
+    </div>
+</div>

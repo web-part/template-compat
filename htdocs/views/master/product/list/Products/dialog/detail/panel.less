@@ -1,0 +1,57 @@
+.pro-detail {
+    position: absolute;
+    .content {
+        overflow-x: hidden;
+        overflow-y: auto;
+        display: block;
+        margin-top: 23px;
+        table {
+            width: calc(100% - 24px);
+            border-collapse: collapse;
+            text-align: center;
+            table-layout: fixed;
+            .name {
+                background-color: #eff4f7;
+                width: 84px;
+                text-align: left;
+                padding: 0 10px;
+                white-space: normal; 
+            }
+            tr {
+                height: 50px;
+                border: 1px solid #e1e1e1;
+                border-bottom: none;
+                &.high{
+                    height: 82px;
+                }
+                &:last-child {
+                    border-bottom: 1px solid #e1e1e1;
+                }
+                td {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                .spe {
+                    overflow: auto;
+                    text-overflow: inherit;
+                    white-space: normal;
+                    p {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 4;
+                        -webkit-box-orient: vertical;
+                        text-align: left;
+                        padding: 0 10px;
+                    }
+                }
+            }
+        }
+    }
+    .foot {
+        position: absolute;
+        bottom: 20px;
+        right: 30px;
+    }
+}

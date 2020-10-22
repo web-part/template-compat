@@ -1,0 +1,26 @@
+﻿<div data-panel="/Products/Buy" class="alert-common pro-buy" style="display: none;">
+    <div data-panel="/Products/Buy/Content" class="content">
+        <template>
+            <p class="top">
+                请输入服务商编码，不输入则由金蝶为您分配对应官方授权服务商，订单支付完成后在订单详情中进行查看。
+            </p>
+            <ul class="cont-input">
+                <li>
+                    <span class="spe">服务商编码：</span>
+                    <input type="text" value="{value}" placeholder="请输入服务商编码" readonly />   
+                    <button data-cmd="verify" class="primary">校验</button>
+                </li>
+                <li data-id="name" style="{name-display}">
+                    <span class="spe">服务商名称：</span>
+                    <span class="value">{name}</span>
+                </li>
+
+            </ul>
+        </template>
+    </div>
+
+    <div data-panel="/Products/Buy/Footer">
+        <button data-cmd="cancel" class="normal">取消</button>
+        <button data-cmd="submit" class="primary">确定</button>
+    </div>
+</div>

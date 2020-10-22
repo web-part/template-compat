@@ -1,0 +1,13 @@
+.ImageViewer {
+    background: transparent;
+    box-shadow: none;
+}
+.ImageViewer header {
+    border-bottom: none;
+}
+.ImageViewer .content {
+    text-align: center;
+}
+.ImageViewer .content img {
+    max-width: 100%;
+}

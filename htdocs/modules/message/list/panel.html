@@ -1,0 +1,52 @@
+﻿<div data-panel="/Messages" class="panel-Messages" style="display:none;">
+
+    <div class="content">
+        <span data-cmd="close" class="close"></span>
+        <span class="line"></span>
+        <section data-panel="/Messages/Sidebar" class="left">
+            <div class="top">
+                <div class="drop-select">
+                    <span class="num">消息类型</span>
+
+                    <ul data-panel="/Messages/Sidebar/Types">
+                        <template>
+                            <li data-index="{index}">
+                                <span data-cmd="check" data-index="1" class="check-box {checked}"></span>
+                                <span class="type">{text}</span>
+                            </li>
+                        </template>
+                    </ul>
+                </div>
+            </div>
+            <div class="no-message-contain">
+                <p>暂无消息</p>
+            </div>
+            <ul data-panel="/Messages/Sidebar/List" class="info">
+                <template>
+                    <li data-index="{index}" class="{type-class} {status-class}">
+                        <p class="time-bar">
+                            <span>{date}</span>
+                            <span>星期{weekday}</span>
+                        </p>
+                        <p class="title">{type-text}</p>
+                        <p class="detail">{summary}</p>
+                    </li>
+                </template>
+            </ul>
+        </section>
+
+        <section data-panel="/Messages/Main" class="right">
+            <div data-panel="/Messages/Main/Detail">
+                <template>
+                    <h3 class="title">{title}</h3>
+                    <p class="first">尊敬的客户：</p>
+                    <p class="hello">您好！</p>
+                    <p>{content}</p>
+                    <p class="team">{team}</p>
+                    <p class="time">{time}</p>
+                </template>
+            </div>
+        </section>
+    </div>
+
+</div>

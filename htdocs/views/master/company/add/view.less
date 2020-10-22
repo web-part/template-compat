@@ -1,0 +1,136 @@
+.view-AddCompanys {
+    height: 100%;
+    .header {
+        height: 72px;
+        background-color: #ffffff;
+        padding-left: 64px;
+        font-size: 16px;
+        .nav-right {
+            margin: 20px 24px 16px 0;
+            float: right;
+            cursor: pointer;
+            >button {
+                padding: 0 20px;
+            }
+        }
+        .user-nav-ul {
+            padding-top: 25px;
+            display: inline-block;
+            li {
+                display: inline-block;
+                a {
+                    &.spe {
+                        color: #545454;
+                        cursor: inherit;
+                    }
+                }
+                >span {
+                    background: url(../img/right.png) no-repeat center;
+                    display: inline-block;
+                    width: 13px;
+                    height: 13px;
+                }
+            }
+        }
+        .search {
+            display: inline-block;
+            margin-left: 30px;
+            margin-top:20px;
+            vertical-align: top;
+            position: relative;
+            .icon {
+                position: absolute;
+                top:0;
+                right:0;
+                display: inline-block;
+                height: 32px;
+                width: 32px;
+                background: url('../../style/img/search.png') no-repeat center;
+                vertical-align: top;
+                margin-left: -38px;
+                cursor: pointer;
+            }
+        }
+        .search-input {
+            display: inline-block;
+            width: 240px;
+            border-radius: 6px;
+        }
+        .primary {
+            margin-right: 18px;
+        }
+    }
+    .content {
+        height: calc(100% - 135px);
+        margin-left: 0;
+        .no-data-add {
+            top: 400px;
+            position: absolute;
+            left: 50%;
+            margin-left: -80px;
+            font-size: 20px;
+            height: 50px;
+            width: 160px;
+            button {
+                height: 50px;
+                width: 160px;
+                box-sizing: border-box;
+                font-size: 18px;
+            }
+        }
+        .pager {
+            text-align: right;
+            margin: 0px 20px 10px 0;
+        }
+        .add-user-table {
+            height: 100%;
+            position: relative;
+            td {
+                overflow: hidden;
+                width: 30%;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                &:first-child {
+                    width: 15%;
+                    max-width: 90px;
+                    overflow: visible;
+                }
+            }
+            .table-thead {
+                tr {
+                    height: 65px;
+                    line-height: 65px;
+                }
+            }
+            .table-tbody {
+                tr {
+                    height: 52px;
+                    .Global-tip .tip {
+                        bottom: -18px;
+                        height: 24px;
+                        line-height: 24px;
+                    }
+                    &.checked {
+                        .check-box {
+                            background: url(../img/check.png) no-repeat;
+                            background-position: center;
+                        }
+                    }
+                    &.has-chosed {
+                        .check-box {
+                            background: url(../img/check.png) no-repeat;
+                            background-position: center;
+                            background-color: #ddd;
+                            cursor: not-allowed;
+                        }
+                    }
+                    span.keyword {
+                        color: red;
+                        margin: 0px;
+                        background: #f9e8e8;
+                    }
+                }
+            }
+        }
+    }
+}
