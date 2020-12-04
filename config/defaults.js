@@ -131,8 +131,8 @@ module.exports = {
     packages: {
         enabled: false,                      //是否启用 pack 分包功能。        
         dest: {
-            dir: 'packages/items/',         //分包资源输出的目录。
             file: 'packages/all.json',      //总包输出的文件。 必须要与 KISP 的配置一致。
+            dir: 'packages/items/',         //分包资源输出的目录。
         },
 
         patterns: [     //通过指定 patterns 为空数组或去掉，可以禁用分包打包功能。

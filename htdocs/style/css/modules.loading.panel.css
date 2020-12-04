@@ -1,4 +1,4 @@
-.panel-loading {
+[data-panel="/Loading"] {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -9,7 +9,7 @@
     min-width: 1300px;
     z-index: 1000;
 }
-.panel-loading .UI-Loading {
+[data-panel="/Loading"] ul {
     position: absolute;
     font-size: 0px;
     left: 50%;
@@ -18,27 +18,27 @@
     transform: translate(-50%, -50%);
     font-size: 0;
 }
-.panel-loading .UI-Loading li {
+[data-panel="/Loading"] ul li {
     display: inline-block;
     height: 10px;
     width: 10px;
     border-radius: 50%;
     opacity: 0.9;
 }
-.panel-loading .UI-Loading li:nth-child(2) {
+[data-panel="/Loading"] ul li:nth-child(2) {
     margin: 0 20px;
 }
-.panel-loading .UI-Loading li.red {
+[data-panel="/Loading"] ul li.red {
     background-color: #f75c50;
     animation: red 2.2s linear infinite;
     transform: translateX(30px);
 }
-.panel-loading .UI-Loading li.yellow {
+[data-panel="/Loading"] ul li.yellow {
     background-color: #ffdb32;
     animation: yellow 2.2s linear infinite;
     /*animation-delay: 0.35s;*/
 }
-.panel-loading .UI-Loading li.green {
+[data-panel="/Loading"] ul li.green {
     background-color: #bfe962;
     transform: translateX(-30px);
     animation: green 2.2s linear infinite;

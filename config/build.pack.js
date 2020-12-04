@@ -1,8 +1,6 @@
 ﻿
 
 module.exports = {
-
-    dir: 'build.pack/',
     packages: {
         minify: true,
         name: '{md5}',
