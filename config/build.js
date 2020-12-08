@@ -35,13 +35,13 @@ module.exports = {
 
             let list = [
                 {
-                    begin: '/**master.debug.begin*/',
-                    end: '/**master.debug.end*/',
+                    begin: '/**webpart.debug.begin*/',
+                    end: '/**webpart.debug.end*/',
                     value: "",
                 },
                 {
-                    begin: '/**master.test.begin*/',
-                    end: '/**master.test.end*/',
+                    begin: '/**webpart.test.begin*/',
+                    end: '/**webpart.test.end*/',
                     value: '',
                 },
             ];

@@ -1,8 +1,7 @@
 
-const path = require('path');
 const express = require('express');
 const app = express();
-const { port, dir, } = require('./config').server;
+const port = 8000;
 
 function getHost() {
     var os = require('os');
@@ -27,21 +26,11 @@ function getHost() {
 
 let host = getHost();
 
-let msg = `
-webpart dev-server is running at 
-    local: http://localhost:${port}/
-    network: http://${host}:${port}/
+let msg = `webpart dev-server is running at 
+    local: http://localhost:${port}/ 
+    network: http://${host}:${port}/ 
 `;
 
-let dirs = Array.isArray(dir) ? dir : [dir];
-
-dirs.forEach((dir) => {
-
-    let sdir = path.join(__dirname, `./${dir}`);
-    console.log(dir, sdir)
-
-    app.use(`/${dir}/`, express.static(sdir));
-});
 
 app.use(express.static('./'));
 
@@ -49,12 +38,6 @@ app.use(express.static('./'));
 app.get('/', (req, res) => {
     res.send(msg);
 });
-
-app.listen(port, () => {
-    console.log(msg);
-});
-
-
 
 app.get('/qr', (req, res) => {
     const qr = require('qr-image');
@@ -66,8 +49,11 @@ app.get('/qr', (req, res) => {
         size: size || 10,   //默认是 5。
     });
 
-
     res.setHeader('Content-type', 'image/png');
-
     image.pipe(res);
+});
+
+
+app.listen(port, () => {
+    console.log(msg);
 });

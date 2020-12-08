@@ -104,16 +104,16 @@ module.exports = {
     //标记批量动态引入 less、html、js 的区块的开始标记和结束标记。 
     tags: {
         less: {
-            begin: '<!--master.less.begin-->',
-            end: '<!--master.less.end-->',
+            begin: '<!--webpart.less.begin-->',
+            end: '<!--webpart.less.end-->',
         },
         html: {
-            begin: '<!--master.html.begin-->',
-            end: '<!--master.html.end-->',
+            begin: '<!--webpart.html.begin-->',
+            end: '<!--webpart.html.end-->',
         },
         js: {
-            begin: '<!--master.js.begin-->',
-            end: '<!--master.js.end-->',
+            begin: '<!--webpart.js.begin-->',
+            end: '<!--webpart.js.end-->',
         },
     },
 
