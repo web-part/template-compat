@@ -1,10 +1,9 @@
 {
   "name": "test-compat",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "用于创建兼容模式的网站的模板。",
   "scripts": {
-    "start": "node watch"
+    "start": "webpart watch -c"
   },
   "author": "",
   "license": "ISC",
